@@ -1,0 +1,4 @@
+<additional>
+    <laneData id="0" file="lane.data.out"/>
+		<poi id="AP" x='300' y='300' type='eNodeB'/>
+</additional>	

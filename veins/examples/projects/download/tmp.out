@@ -1,0 +1,1101 @@
+OMNeT++ Discrete Event Simulation  (C) 1992-2014 Andras Varga, OpenSim Ltd.
+Version: 4.6, build: 141202-f785492, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+Setting up Cmdenv...
+Loading NED files from ../../../../simulte/src: 30
+Loading NED files from ../../../../inet/src: 272
+Loading NED files from ../../../src/veins: 44
+Loading NED files from .: 2
+Loading NED files from /home/vince/Dropbox/vmDropbox/workspace/veins-lte/veins/examples/toyota/download: 2
+
+Preparing for running configuration nodebug, run #0...
+Scenario: $queue=2MiB, $maxBytesPerTti=3MiB, $scheduler="MAXCI", $RB=100, $numUEs=1000, $repetition=0
+Assigned runID=nodebug-0-20171226-18:36:09-16202
+Setting up network `scenario'...
+Initializing...
+
+Running simulation...
+** Event #1   T=0   Elapsed: 0.000s (0m 00s)  0% completed
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 12   present: 12   in FES: 8
+Loading configuration... done.
+Step #0.00 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.10 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.20 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.30 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.40 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.50 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.60 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.70 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.80 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.90 (1ms ~= 1000.00*RT, ~1000.00UPS, vehicles TOT 1 ACT 1)             Step #1.00 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.10 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.20 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.30 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.40 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.50 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.60 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.70 (1ms ~= 1000.00*RT, ~1000.00UPS, vehicles TOT 1 ACT 1)             Step #1.80 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #1.90 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.00 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.10 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.20 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.30 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.40 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.50 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.60 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.70 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.80 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #2.90 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #3.00 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #3.10 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #3.20 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #3.30 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #3.40 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #3.50 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #3.60 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #3.70 (1ms ~= 1000.00*RT, ~2000.00UPS, vehicles TOT 2 ACT 2)             Step #3.80 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #3.90 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.00 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.10 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.20 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.30 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.40 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.50 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.60 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.70 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.80 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #4.90 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.00 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.10 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.20 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.30 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.40 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.50 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.60 (1ms ~= 1000.00*RT, ~2000.00UPS, vehicles TOT 2 ACT 2)             Step #5.70 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.80 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #5.90 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #6.00 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #6.10 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #6.20 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #6.30 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #6.40 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #6.50 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #6.60 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #6.70 (1ms ~= 1000.00*RT, ~3000.00UPS, vehicles TOT 3 ACT 3)             Step #6.80 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #6.90 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.00 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.10 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.20 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.30 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.40 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.50 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.60 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.70 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.80 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #7.90 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.00 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.10 (1ms ~= 1000.00*RT, ~3000.00UPS, vehicles TOT 3 ACT 3)             Step #8.20 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.30 (1ms ~= 1000.00*RT, ~3000.00UPS, vehicles TOT 3 ACT 3)             Step #8.40 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.50 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.60 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.70 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.80 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #8.90 (1ms ~= 1000.00*RT, ~3000.00UPS, vehicles TOT 3 ACT 3)             Step #9.00 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #9.10 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #9.20 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #9.30 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #9.40 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #9.50 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #9.60 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #9.70 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #9.80 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #9.90 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #10.00 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.10 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.20 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.30 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.40 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.50 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.60 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.70 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.80 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #10.90 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.00 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.10 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.20 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.30 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.40 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.50 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.60 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.70 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.80 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #11.90 (1ms ~= 1000.00*RT, ~4000.00UPS, vehicles TOT 4 ACT 4)            Step #12.00 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #12.10 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                            Step #12.20 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #12.30 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #12.40 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #12.50 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #12.60 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #12.70 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #12.80 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #12.90 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.00 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.10 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.20 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.30 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.40 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.50 (1ms ~= 1000.00*RT, ~5000.00UPS, vehicles TOT 5 ACT 5)            Step #13.60 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.70 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.80 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #13.90 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.00 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.10 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.20 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.30 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.40 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.50 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.60 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.70 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.80 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #14.90 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #15.00 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #15.10 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                            Step #15.20 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #15.30 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #15.40 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #15.50 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #15.60 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #15.70 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #15.80 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #15.90 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.00 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.10 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.20 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.30 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.40 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.50 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.60 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.70 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.80 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #16.90 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.00 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.10 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.20 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.30 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.40 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.50 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.60 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.70 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.80 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #17.90 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #18.00 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #18.10 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                            Step #18.20 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #18.30 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #18.40 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #18.50 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #18.60 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #18.70 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #18.80 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #18.90 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.00 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.10 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.20 (1ms ~= 1000.00*RT, ~7000.00UPS, vehicles TOT 7 ACT 7)            Step #19.30 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.40 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.50 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.60 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.70 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.80 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #19.90 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #20.00 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #20.10 (1ms ~= 1000.00*RT, ~7000.00UPS, vehicles TOT 7 ACT 7)            Step #20.20 (1ms ~= 1000.00*RT, ~7000.00UPS, vehicles TOT 7 ACT 7)            Step #20.30 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #20.40 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #20.50 (1ms ~= 1000.00*RT, ~7000.00UPS, vehicles TOT 7 ACT 7)            Step #20.60 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #20.70 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #20.80 (1ms ~= 1000.00*RT, ~7000.00UPS, vehicles TOT 7 ACT 7)            Step #20.90 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #21.00 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #21.10 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                            Step #21.20 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #21.30 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #21.40 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #21.50 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #21.60 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #21.70 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #21.80 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #21.90 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.00 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.10 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.20 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.30 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.40 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.50 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.60 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.70 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.80 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #22.90 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.00 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.10 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.20 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.30 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.40 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.50 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.60 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.70 (1ms ~= 1000.00*RT, ~8000.00UPS, vehicles TOT 8 ACT 8)            Step #23.80 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #23.90 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #24.00 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #24.10 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                            Step #24.20 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #24.30 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #24.40 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #24.50 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #24.60 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #24.70 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #24.80 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #24.90 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.00 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.10 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.20 (1ms ~= 1000.00*RT, ~9000.00UPS, vehicles TOT 9 ACT 9)            Step #25.30 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.40 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.50 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.60 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.70 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.80 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #25.90 (0ms ?*** Event #290304   T=29.402   Elapsed: 10.000s (0m 10s)  29% completed
+     Speed:     ev/sec=29030.4   simsec/sec=2.9402   ev/simsec=9873.61
+     Messages:  created: 104385   present: 120   in FES: 32
+RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.00 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.10 (1ms ~= 1000.00*RT, ~9000.00UPS, vehicles TOT 9 ACT 9)            Step #26.20 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.30 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.40 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.50 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.60 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.70 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.80 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #26.90 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #27.00 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #27.10 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                            Step #27.20 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #27.30 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #27.40 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #27.50 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #27.60 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #27.70 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #27.80 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #27.90 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.00 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.10 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.20 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.30 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.40 (1ms ~= 1000.00*RT, ~10000.00UPS, vehicles TOT 10 ACT 10)         Step #28.50 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.60 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.70 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.80 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #28.90 (1ms ~= 1000.00*RT, ~10000.00UPS, vehicles TOT 10 ACT 10)         Step #29.00 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.10 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.20 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.30 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.40 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.50 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.60 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.70 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.80 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #29.90 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #30.00 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                          Step #30.10 (1ms ~= 1000.00*RT, ~10000.00UPS, vehicles TOT 10 ACT 10)         Step #30.20 (1ms ~= 1000.00*RT, ~11000.00UPS, vehicles TOT 11 ACT 11)         Step #30.30 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #30.40 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #30.50 (1ms ~= 1000.00*RT, ~11000.00UPS, vehicles TOT 11 ACT 11)         Step #30.60 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #30.70 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #30.80 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #30.90 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.00 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.10 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.20 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.30 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.40 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.50 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.60 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.70 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.80 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #31.90 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.00 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.10 (1ms ~= 1000.00*RT, ~11000.00UPS, vehicles TOT 11 ACT 11)         Step #32.20 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.30 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.40 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.50 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.60 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.70 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.80 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #32.90 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #33.00 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #33.10 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #33.20 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                          Step #33.30 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #33.40 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #33.50 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #33.60 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #33.70 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #33.80 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #33.90 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.00 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.10 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.20 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.30 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.40 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.50 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.60 (1ms ~= 1000.00*RT, ~12000.00UPS, vehicles TOT 12 ACT 12)         Step #34.70 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.80 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #34.90 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.00 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.10 (1ms ~= 1000.00*RT, ~12000.00UPS, vehicles TOT 12 ACT 12)         Step #35.20 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.30 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.40 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.50 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.60 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.70 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #35.80 (1ms ~= 1000.00*RT, ~12000.00UPS, vehicles TOT 12 ACT 12)         Step #35.90 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #36.00 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #36.10 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #36.20 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                          Step #36.30 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #36.40 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #36.50 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #36.60 (1ms ~= 1000.00*RT, ~13000.00UPS, vehicles TOT 13 ACT 13)         Step #36.70 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #36.80 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #36.90 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.00 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.10 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.20 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.30 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.40 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.50 (1ms ~= 1000.00*RT, ~13000.00UPS, vehicles TOT 13 ACT 13)         Step #37.60 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.70 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.80 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #37.90 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.00 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.10 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.20 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.30 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.40 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.50 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.60 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.70 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.80 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #38.90 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #39.00 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #39.10 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #39.20 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #39.30 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                          Step #39.40 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #39.50 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #39.60 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #39.70 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #39.80 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #39.90 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.00 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.10 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.20 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.30 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.40 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.50 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.60 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.70 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #40.80 (1ms ~= 1000.00*RT, ~14000.00UPS, vehicles TOT 14 ACT 14)         Step #40.90 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.00 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.10 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.20 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.30 (1ms ~= 1000.00*RT, ~14000.00UPS, vehicles TOT 14 ACT 14)         Step #41.40 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)          ** Event #628736   T=44.66   Elapsed: 20.006s (0m 20s)  44% completed
+     Speed:     ev/sec=33822.9   simsec/sec=1.52489   ev/simsec=22180.6
+     Messages:  created: 233651   present: 163   in FES: 40
+                Step #41.50 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.60 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.70 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.80 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #41.90 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #42.00 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #42.10 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #42.20 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #42.30 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                          Step #42.40 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #42.50 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #42.60 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #42.70 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #42.80 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #42.90 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.00 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.10 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.20 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.30 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.40 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.50 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.60 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.70 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.80 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #43.90 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.00 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.10 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.20 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.30 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.40 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.50 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.60 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.70 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.80 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #44.90 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #45.00 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #45.10 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #45.20 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #45.30 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                          Step #45.40 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #45.50 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #45.60 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #45.70 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #45.80 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #45.90 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.00 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.10 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.20 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.30 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.40 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.50 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.60 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.70 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.80 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #46.90 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.00 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.10 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.20 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.30 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.40 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.50 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.60 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.70 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.80 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #47.90 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #48.00 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #48.10 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #48.20 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #48.30 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #48.40 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                          Step #48.50 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #48.60 (1ms ~= 1000.00*RT, ~17000.00UPS, vehicles TOT 17 ACT 17)         Step #48.70 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #48.80 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #48.90 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.00 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.10 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.20 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.30 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.40 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.50 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.60 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.70 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.80 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #49.90 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.00 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.10 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.20 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.30 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.40 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.50 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.60 (1ms ~= 1000.00*RT, ~17000.00UPS, vehicles TOT 17 ACT 17)         Step #50.70 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.80 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #50.90 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #51.00 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #51.10 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #51.20 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #51.30 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                          Step #51.40 (1ms ~= 1000.00*RT, ~17000.00UPS, vehicles TOT 17 ACT 17)         Step #51.50 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #51.60 (1ms ~= 1000.00*RT, ~18000.00UPS, vehicles TOT 18 ACT 18)         Step #51.70 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #51.80 (0ms ?*RT. ?UPS, vehicles ** Event #970752   T=56.231   Elapsed: 30.009s (0m 30s)  56% completed
+     Speed:     ev/sec=34194.8   simsec/sec=1.15687   ev/simsec=29558
+     Messages:  created: 365825   present: 199   in FES: 44
+TOT 18 ACT 18)                          Step #51.90 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.00 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.10 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.20 (1ms ~= 1000.00*RT, ~18000.00UPS, vehicles TOT 18 ACT 18)         Step #52.30 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.40 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.50 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.60 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.70 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.80 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #52.90 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.00 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.10 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.20 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.30 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.40 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.50 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.60 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.70 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.80 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #53.90 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #54.00 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #54.10 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #54.20 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #54.30 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #54.40 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                          Step #54.50 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #54.60 (1ms ~= 1000.00*RT, ~19000.00UPS, vehicles TOT 19 ACT 19)         Step #54.70 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #54.80 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #54.90 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.00 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.10 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.20 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.30 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.40 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.50 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.60 (1ms ~= 1000.00*RT, ~19000.00UPS, vehicles TOT 19 ACT 19)         Step #55.70 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.80 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #55.90 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.00 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.10 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.20 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.30 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.40 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.50 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.60 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.70 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.80 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #56.90 (1ms ~= 1000.00*RT, ~19000.00UPS, vehicles TOT 19 ACT 19)         Step #57.00 (0ms ?*RT. ?UP[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 00 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 01 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 02 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 03 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 04 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 05 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 06 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 07 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 08 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 09 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 10 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 11 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 12 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 13 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 14 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 15 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 16 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 17 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 18 Bytes: 5120
+[INF][58][38][scenario.server.udpApp[0]:110] Server sending message to 19 Bytes: 5120
+[INF][58.005][54][scenario.node[0].appl:111] Veh00 broadcasting 1
+[INF][58.006][85][scenario.node[1].appl:111] Veh01 broadcasting 2
+[INF][58.007][178][scenario.node[4].appl:111] Veh04 broadcasting 5
+[INF][58.007][116][scenario.node[2].appl:111] Veh02 broadcasting 3
+[INF][58.008][240][scenario.node[6].appl:111] Veh06 broadcasting 7
+[INF][58.008][147][scenario.node[3].appl:111] Veh03 broadcasting 4
+[INF][58.009][302][scenario.node[8].appl:111] Veh08 broadcasting 9
+[INF][58.009][209][scenario.node[5].appl:111] Veh05 broadcasting 6
+[INF][58.01][364][scenario.node[10].appl:111] Veh10 broadcasting 11
+[INF][58.01][271][scenario.node[7].appl:111] Veh07 broadcasting 8
+[INF][58.011][426][scenario.node[12].appl:111] Veh12 broadcasting 13
+[INF][58.011][333][scenario.node[9].appl:111] Veh09 broadcasting 10
+[INF][58.012][488][scenario.node[14].appl:111] Veh14 broadcasting 15
+[INF][58.012][395][scenario.node[11].appl:111] Veh11 broadcasting 12
+[INF][58.013][457][scenario.node[13].appl:111] Veh13 broadcasting 14
+[INF][58.014][519][scenario.node[15].appl:111] Veh15 broadcasting 16
+[INF][58.015][612][scenario.node[18].appl:111] Veh18 broadcasting 19
+[INF][58.015][581][scenario.node[17].appl:111] Veh17 broadcasting 18
+[INF][58.015][550][scenario.node[16].appl:111] Veh16 broadcasting 17
+[INF][58.016][643][scenario.node[19].appl:111] Veh19 broadcasting 20
+[INF][58.072919][302][scenario.node[8].appl:146] Veh08 received: 10 from: 09
+[INF][58.072919][364][scenario.node[10].appl:146] Veh10 received: 10 from: 09
+[INF][58.072919][271][scenario.node[7].appl:146] Veh07 received: 10 from: 09
+[INF][58.072919][395][scenario.node[11].appl:146] Veh11 received: 10 from: 09
+[INF][58.072919][240][scenario.node[6].appl:146] Veh06 received: 10 from: 09
+[INF][58.072919][426][scenario.node[12].appl:146] Veh12 received: 10 from: 09
+[INF][58.072919][209][scenario.node[5].appl:146] Veh05 received: 10 from: 09
+[INF][58.072919][457][scenario.node[13].appl:146] Veh13 received: 10 from: 09
+[INF][58.07292][178][scenario.node[4].appl:146] Veh04 received: 10 from: 09
+[INF][58.07292][488][scenario.node[14].appl:146] Veh14 received: 10 from: 09
+[INF][58.07292][147][scenario.node[3].appl:146] Veh03 received: 10 from: 09
+[INF][58.07292][519][scenario.node[15].appl:146] Veh15 received: 10 from: 09
+[INF][58.07292][550][scenario.node[16].appl:146] Veh16 received: 10 from: 09
+[INF][58.07292][116][scenario.node[2].appl:146] Veh02 received: 10 from: 09
+[INF][58.07292][581][scenario.node[17].appl:146] Veh17 received: 10 from: 09
+[INF][58.103075][550][scenario.node[16].appl:146] Veh16 received: 16 from: 15
+[INF][58.103075][488][scenario.node[14].appl:146] Veh14 received: 16 from: 15
+[INF][58.103075][581][scenario.node[17].appl:146] Veh17 received: 16 from: 15
+[INF][58.103075][612][scenario.node[18].appl:146] Veh18 received: 16 from: 15
+[INF][58.103075][643][scenario.node[19].appl:146] Veh19 received: 16 from: 15
+[INF][58.103075][457][scenario.node[13].appl:146] Veh13 received: 16 from: 15
+[INF][58.103076][426][scenario.node[12].appl:146] Veh12 received: 16 from: 15
+[INF][58.103076][395][scenario.node[11].appl:146] Veh11 received: 16 from: 15
+[INF][58.103076][364][scenario.node[10].appl:146] Veh10 received: 16 from: 15
+[INF][58.103076][333][scenario.node[9].appl:146] Veh09 received: 16 from: 15
+[INF][58.103076][302][scenario.node[8].appl:146] Veh08 received: 16 from: 15
+[INF][58.122285][426][scenario.node[12].appl:146] Veh12 received: 12 from: 11
+[INF][58.122285][364][scenario.node[10].appl:146] Veh10 received: 12 from: 11
+[INF][58.122285][457][scenario.node[13].appl:146] Veh13 received: 12 from: 11
+[INF][58.122285][333][scenario.node[9].appl:146] Veh09 received: 12 from: 11
+[INF][58.122285][488][scenario.node[14].appl:146] Veh14 received: 12 from: 11
+[INF][58.122285][302][scenario.node[8].appl:146] Veh08 received: 12 from: 11
+[INF][58.122286][519][scenario.node[15].appl:146] Veh15 received: 12 from: 11
+[INF][58.122286][271][scenario.node[7].appl:146] Veh07 received: 12 from: 11
+[INF][58.122286][550][scenario.node[16].appl:146] Veh16 received: 12 from: 11
+[INF][58.122286][240][scenario.node[6].appl:146] Veh06 received: 12 from: 11
+[INF][58.122286][581][scenario.node[17].appl:146] Veh17 received: 12 from: 11
+[INF][58.122286][612][scenario.node[18].appl:146] Veh18 received: 12 from: 11
+[INF][58.122286][643][scenario.node[19].appl:146] Veh19 received: 12 from: 11
+[INF][58.122286][209][scenario.node[5].appl:146] Veh05 received: 12 from: 11
+[INF][58.122286][178][scenario.node[4].appl:146] Veh04 received: 12 from: 11
+[INF][58.16977][519][scenario.node[15].appl:146] Veh15 received: 15 from: 14
+[INF][58.16977][457][scenario.node[13].appl:146] Veh13 received: 15 from: 14
+[INF][58.16977][550][scenario.node[16].appl:146] Veh16 received: 15 from: 14
+[INF][58.16977][426][scenario.node[12].appl:146] Veh12 received: 15 from: 14
+[INF][58.16977][581][scenario.node[17].appl:146] Veh17 received: 15 from: 14
+[INF][58.16977][612][scenario.node[18].appl:146] Veh18 received: 15 from: 14
+[INF][58.16977][643][scenario.node[19].appl:146] Veh19 received: 15 from: 14
+[INF][58.16977][395][scenario.node[11].appl:146] Veh11 received: 15 from: 14
+[INF][58.16977][364][scenario.node[10].appl:146] Veh10 received: 15 from: 14
+[INF][58.169771][333][scenario.node[9].appl:146] Veh09 received: 15 from: 14
+[INF][58.169771][302][scenario.node[8].appl:146] Veh08 received: 15 from: 14
+[INF][58.169771][271][scenario.node[7].appl:146] Veh07 received: 15 from: 14
+[INF][58.173905][147][scenario.node[3].appl:146] Veh03 received: 5 from: 04
+[INF][58.173905][209][scenario.node[5].appl:146] Veh05 received: 5 from: 04
+[INF][58.173905][116][scenario.node[2].appl:146] Veh02 received: 5 from: 04
+[INF][58.173905][240][scenario.node[6].appl:146] Veh06 received: 5 from: 04
+[INF][58.173905][85][scenario.node[1].appl:146] Veh01 received: 5 from: 04
+[INF][58.173905][271][scenario.node[7].appl:146] Veh07 received: 5 from: 04
+[INF][58.173905][54][scenario.node[0].appl:146] Veh00 received: 5 from: 04
+[INF][58.173905][302][scenario.node[8].appl:146] Veh08 received: 5 from: 04
+[INF][58.173905][333][scenario.node[9].appl:146] Veh09 received: 5 from: 04
+[INF][58.173906][364][scenario.node[10].appl:146] Veh10 received: 5 from: 04
+[INF][58.173906][395][scenario.node[11].appl:146] Veh11 received: 5 from: 04
+[INF][58.187329][85][scenario.node[1].appl:146] Veh01 received: 3 from: 02
+[INF][58.187329][147][scenario.node[3].appl:146] Veh03 received: 3 from: 02
+[INF][58.187329][178][scenario.node[4].appl:146] Veh04 received: 3 from: 02
+[INF][58.187329][54][scenario.node[0].appl:146] Veh00 received: 3 from: 02
+[INF][58.187329][209][scenario.node[5].appl:146] Veh05 received: 3 from: 02
+[INF][58.18733][240][scenario.node[6].appl:146] Veh06 received: 3 from: 02
+[INF][58.18733][271][scenario.node[7].appl:146] Veh07 received: 3 from: 02
+[INF][58.18733][302][scenario.node[8].appl:146] Veh08 received: 3 from: 02
+[INF][58.18733][333][scenario.node[9].appl:146] Veh09 received: 3 from: 02
+[INF][58.239325][333][scenario.node[9].appl:146] Veh09 received: 9 from: 08
+[INF][58.239325][271][scenario.node[7].appl:146] Veh07 received: 9 from: 08
+[INF][58.239326][364][scenario.node[10].appl:146] Veh10 received: 9 from: 08
+[INF][58.239326][240][scenario.node[6].appl:146] Veh06 received: 9 from: 08
+[INF][58.239326][209][scenario.node[5].appl:146] Veh05 received: 9 from: 08
+[INF][58.239326][395][scenario.node[11].appl:146] Veh11 received: 9 from: 08
+[INF][58.239326][426][scenario.node[12].appl:146] Veh12 received: 9 from: 08
+[INF][58.239326][178][scenario.node[4].appl:146] Veh04 received: 9 from: 08
+[INF][58.239326][147][scenario.node[3].appl:146] Veh03 received: 9 from: 08
+[INF][58.239326][457][scenario.node[13].appl:146] Veh13 received: 9 from: 08
+[INF][58.239327][116][scenario.node[2].appl:146] Veh02 received: 9 from: 08
+[INF][58.239327][488][scenario.node[14].appl:146] Veh14 received: 9 from: 08
+[INF][58.239327][85][scenario.node[1].appl:146] Veh01 received: 9 from: 08
+[INF][58.239327][519][scenario.node[15].appl:146] Veh15 received: 9 from: 08
+[INF][58.27927][178][scenario.node[4].appl:146] Veh04 received: 4 from: 03
+[INF][58.279271][116][scenario.node[2].appl:146] Veh02 received: 4 from: 03
+[INF][58.279271][209][scenario.node[5].appl:146] Veh05 received: 4 from: 03
+[INF][58.279271][85][scenario.node[1].appl:146] Veh01 received: 4 from: 03
+[INF][58.279271][240][scenario.node[6].appl:146] Veh06 received: 4 from: 03
+[INF][58.279271][54][scenario.node[0].appl:146] Veh00 received: 4 from: 03
+[INF][58.279271][271][scenario.node[7].appl:146] Veh07 received: 4 from: 03
+[INF][58.279271][302][scenario.node[8].appl:146] Veh08 received: 4 from: 03
+[INF][58.280902][612][scenario.node[18].appl:146] Veh18 received: 18 from: 17
+[INF][58.280902][643][scenario.node[19].appl:146] Veh19 received: 18 from: 17
+[INF][58.280902][550][scenario.node[16].appl:146] Veh16 received: 18 from: 17
+[INF][58.280902][519][scenario.node[15].appl:146] Veh15 received: 18 from: 17
+[INF][58.280902][488][scenario.node[14].appl:146] Veh14 received: 18 from: 17
+[INF][58.280903][457][scenario.node[13].appl:146] Veh13 received: 18 from: 17
+[INF][58.280903][426][scenario.node[12].appl:146] Veh12 received: 18 from: 17
+[INF][58.280903][395][scenario.node[11].appl:146] Veh11 received: 18 from: 17
+[INF][58.303082][116][scenario.node[2].appl:146] Veh02 received: 2 from: 01
+[INF][58.303082][54][scenario.node[0].appl:146] Veh00 received: 2 from: 01
+[INF][58.303082][147][scenario.node[3].appl:146] Veh03 received: 2 from: 01
+[INF][58.303082][178][scenario.node[4].appl:146] Veh04 received: 2 from: 01
+[INF][58.303083][209][scenario.node[5].appl:146] Veh05 received: 2 from: 01
+[INF][58.303083][240][scenario.node[6].appl:146] Veh06 received: 2 from: 01
+[INF][58.303083][271][scenario.node[7].appl:146] Veh07 received: 2 from: 01
+[INF][58.303083][302][scenario.node[8].appl:146] Veh08 received: 2 from: 01
+[INF][58.369974][395][scenario.node[11].appl:146] Veh11 received: 13 from: 12
+[INF][58.369974][457][scenario.node[13].appl:146] Veh13 received: 13 from: 12
+[INF][58.369974][488][scenario.node[14].appl:146] Veh14 received: 13 from: 12
+[INF][58.369974][364][scenario.node[10].appl:146] Veh10 received: 13 from: 12
+[INF][58.369975][519][scenario.node[15].appl:146] Veh15 received: 13 from: 12
+[INF][58.369975][333][scenario.node[9].appl:146] Veh09 received: 13 from: 12
+[INF][58.369975][550][scenario.node[16].appl:146] Veh16 received: 13 from: 12
+[INF][58.369975][302][scenario.node[8].appl:146] Veh08 received: 13 from: 12
+[INF][58.369975][581][scenario.node[17].appl:146] Veh17 received: 13 from: 12
+[INF][58.369975][612][scenario.node[18].appl:146] Veh18 received: 13 from: 12
+[INF][58.369975][643][scenario.node[19].appl:146] Veh19 received: 13 from: 12
+[INF][58.369975][271][scenario.node[7].appl:146] Veh07 received: 13 from: 12
+[INF][58.369975][240][scenario.node[6].appl:146] Veh06 received: 13 from: 12
+[INF][58.369975][209][scenario.node[5].appl:146] Veh05 received: 13 from: 12
+[INF][58.390615][240][scenario.node[6].appl:146] Veh06 received: 6 from: 05
+[INF][58.390615][178][scenario.node[4].appl:146] Veh04 received: 6 from: 05
+[INF][58.390615][147][scenario.node[3].appl:146] Veh03 received: 6 from: 05
+[INF][58.390615][271][scenario.node[7].appl:146] Veh07 received: 6 from: 05
+[INF][58.390615][302][scenario.node[8].appl:146] Veh08 received: 6 from: 05
+[INF][58.390615][116][scenario.node[2].appl:146] Veh02 received: 6 from: 05
+[INF][58.390615][333][scenario.node[9].appl:146] Veh09 received: 6 from: 05
+[INF][58.390615][85][scenario.node[1].appl:146] Veh01 received: 6 from: 05
+[INF][58.390616][364][scenario.node[10].appl:146] Veh10 received: 6 from: 05
+[INF][58.390616][54][scenario.node[0].appl:146] Veh00 received: 6 from: 05
+[INF][58.390616][395][scenario.node[11].appl:146] Veh11 received: 6 from: 05
+[INF][58.390616][426][scenario.node[12].appl:146] Veh12 received: 6 from: 05
+[INF][58.510237][85][scenario.node[1].appl:146] Veh01 received: 1 from: 00
+[INF][58.510237][116][scenario.node[2].appl:146] Veh02 received: 1 from: 00
+[INF][58.510237][147][scenario.node[3].appl:146] Veh03 received: 1 from: 00
+[INF][58.510238][178][scenario.node[4].appl:146] Veh04 received: 1 from: 00
+[INF][58.510238][209][scenario.node[5].appl:146] Veh05 received: 1 from: 00
+[INF][58.510238][240][scenario.node[6].appl:146] Veh06 received: 1 from: 00
+[INF][58.510238][271][scenario.node[7].appl:146] Veh07 received: 1 from: 00
+[INF][58.550943][612][scenario.node[18].appl:146] Veh18 received: 20 from: 19
+[INF][58.550943][581][scenario.node[17].appl:146] Veh17 received: 20 from: 19
+[INF][58.550943][550][scenario.node[16].appl:146] Veh16 received: 20 from: 19
+[INF][58.550943][519][scenario.node[15].appl:146] Veh15 received: 20 from: 19
+[INF][58.550944][488][scenario.node[14].appl:146] Veh14 received: 20 from: 19
+[INF][58.550944][457][scenario.node[13].appl:146] Veh13 received: 20 from: 19
+[INF][58.550944][426][scenario.node[12].appl:146] Veh12 received: 20 from: 19
+[INF][58.550944][395][scenario.node[11].appl:146] Veh11 received: 20 from: 19
+[INF][58.550945][364][scenario.node[10].appl:146] Veh10 received: 20 from: 19
+[INF][58.632175][643][scenario.node[19].appl:146] Veh19 received: 19 from: 18
+[INF][58.632175][581][scenario.node[17].appl:146] Veh17 received: 19 from: 18
+[INF][58.632175][550][scenario.node[16].appl:146] Veh16 received: 19 from: 18
+[INF][58.632175][519][scenario.node[15].appl:146] Veh15 received: 19 from: 18
+[INF][58.632176][488][scenario.node[14].appl:146] Veh14 received: 19 from: 18
+[INF][58.632176][457][scenario.node[13].appl:146] Veh13 received: 19 from: 18
+[INF][58.632176][426][scenario.node[12].appl:146] Veh12 received: 19 from: 18
+[INF][58.632176][395][scenario.node[11].appl:146] Veh11 received: 19 from: 18
+[INF][58.632177][364][scenario.node[10].appl:146] Veh10 received: 19 from: 18
+[INF][58.697431][488][scenario.node[14].appl:146] Veh14 received: 14 from: 13
+[INF][58.697431][426][scenario.node[12].appl:146] Veh12 received: 14 from: 13
+[INF][58.697431][519][scenario.node[15].appl:146] Veh15 received: 14 from: 13
+[INF][58.697431][395][scenario.node[11].appl:146] Veh11 received: 14 from: 13
+[INF][58.697431][550][scenario.node[16].appl:146] Veh16 received: 14 from: 13
+[INF][58.697432][364][scenario.node[10].appl:146] Veh10 received: 14 from: 13
+[INF][58.697432][581][scenario.node[17].appl:146] Veh17 received: 14 from: 13
+[INF][58.697432][612][scenario.node[18].appl:146] Veh18 received: 14 from: 13
+[INF][58.697432][643][scenario.node[19].appl:146] Veh19 received: 14 from: 13
+[INF][58.697432][333][scenario.node[9].appl:146] Veh09 received: 14 from: 13
+[INF][58.697432][302][scenario.node[8].appl:146] Veh08 received: 14 from: 13
+[INF][58.697432][271][scenario.node[7].appl:146] Veh07 received: 14 from: 13
+[INF][58.697432][240][scenario.node[6].appl:146] Veh06 received: 14 from: 13
+[INF][58.700625][302][scenario.node[8].appl:146] Veh08 received: 8 from: 07
+[INF][58.700625][240][scenario.node[6].appl:146] Veh06 received: 8 from: 07
+[INF][58.700626][333][scenario.node[9].appl:146] Veh09 received: 8 from: 07
+[INF][58.700626][209][scenario.node[5].appl:146] Veh05 received: 8 from: 07
+[INF][58.700626][364][scenario.node[10].appl:146] Veh10 received: 8 from: 07
+[INF][58.700626][178][scenario.node[4].appl:146] Veh04 received: 8 from: 07
+[INF][58.700626][147][scenario.node[3].appl:146] Veh03 received: 8 from: 07
+[INF][58.700626][395][scenario.node[11].appl:146] Veh11 received: 8 from: 07
+[INF][58.700626][116][scenario.node[2].appl:146] Veh02 received: 8 from: 07
+[INF][58.700626][426][scenario.node[12].appl:146] Veh12 received: 8 from: 07
+[INF][58.700627][85][scenario.node[1].appl:146] Veh01 received: 8 from: 07
+[INF][58.700627][457][scenario.node[13].appl:146] Veh13 received: 8 from: 07
+[INF][58.700627][54][scenario.node[0].appl:146] Veh00 received: 8 from: 07
+[INF][58.700627][488][scenario.node[14].appl:146] Veh14 received: 8 from: 07
+[INF][58.70677][333][scenario.node[9].appl:146] Veh09 received: 11 from: 10
+[INF][58.70677][395][scenario.node[11].appl:146] Veh11 received: 11 from: 10
+[INF][58.70677][302][scenario.node[8].appl:146] Veh08 received: 11 from: 10
+[INF][58.70677][426][scenario.node[12].appl:146] Veh12 received: 11 from: 10
+[INF][58.706771][271][scenario.node[7].appl:146] Veh07 received: 11 from: 10
+[INF][58.706771][457][scenario.node[13].appl:146] Veh13 received: 11 from: 10
+[INF][58.706771][240][scenario.node[6].appl:146] Veh06 received: 11 from: 10
+[INF][58.706771][488][scenario.node[14].appl:146] Veh14 received: 11 from: 10
+[INF][58.706771][209][scenario.node[5].appl:146] Veh05 received: 11 from: 10
+[INF][58.706771][519][scenario.node[15].appl:146] Veh15 received: 11 from: 10
+[INF][58.706771][550][scenario.node[16].appl:146] Veh16 received: 11 from: 10
+[INF][58.706771][178][scenario.node[4].appl:146] Veh04 received: 11 from: 10
+[INF][58.706771][581][scenario.node[17].appl:146] Veh17 received: 11 from: 10
+[INF][58.706771][612][scenario.node[18].appl:146] Veh18 received: 11 from: 10
+[INF][58.706771][147][scenario.node[3].appl:146] Veh03 received: 11 from: 10
+[INF][58.706771][643][scenario.node[19].appl:146] Veh19 received: 11 from: 10
+[INF][58.750914][209][scenario.node[5].appl:146] Veh05 received: 7 from: 06
+[INF][58.750914][271][scenario.node[7].appl:146] Veh07 received: 7 from: 06
+[INF][58.750914][178][scenario.node[4].appl:146] Veh04 received: 7 from: 06
+[INF][58.750914][302][scenario.node[8].appl:146] Veh08 received: 7 from: 06
+[INF][58.750914][147][scenario.node[3].appl:146] Veh03 received: 7 from: 06
+[INF][58.750914][333][scenario.node[9].appl:146] Veh09 received: 7 from: 06
+[INF][58.750915][116][scenario.node[2].appl:146] Veh02 received: 7 from: 06
+[INF][58.750915][364][scenario.node[10].appl:146] Veh10 received: 7 from: 06
+[INF][58.750915][85][scenario.node[1].appl:146] Veh01 received: 7 from: 06
+[INF][58.750915][395][scenario.node[11].appl:146] Veh11 received: 7 from: 06
+[INF][58.750915][54][scenario.node[0].appl:146] Veh00 received: 7 from: 06
+[INF][58.750915][426][scenario.node[12].appl:146] Veh12 received: 7 from: 06
+[INF][58.750915][457][scenario.node[13].appl:146] Veh13 received: 7 from: 06
+[INF][58.89264][581][scenario.node[17].appl:146] Veh17 received: 17 from: 16
+[INF][58.89264][519][scenario.node[15].appl:146] Veh15 received: 17 from: 16
+[INF][58.89264][612][scenario.node[18].appl:146] Veh18 received: 17 from: 16
+[INF][58.89264][643][scenario.node[19].appl:146] Veh19 received: 17 from: 16
+[INF][58.892641][488][scenario.node[14].appl:146] Veh14 received: 17 from: 16
+[INF][58.892641][457][scenario.node[13].appl:146] Veh13 received: 17 from: 16
+[INF][58.892641][426][scenario.node[12].appl:146] Veh12 received: 17 from: 16
+[INF][58.892641][395][scenario.node[11].appl:146] Veh11 received: 17 from: 16
+[INF][58.892642][364][scenario.node[10].appl:146] Veh10 received: 17 from: 16
+[INF][58.892642][333][scenario.node[9].appl:146] Veh09 received: 17 from: 16
+[INF][59.070585][333][scenario.node[9].appl:230] Veh09 requesting chunks: 1;2;4;18;19;20;
+[INF][59.070649][302][scenario.node[8].appl:55] Veh08 Received REQ from 09
+[INF][59.070649][364][scenario.node[10].appl:55] Veh10 Received REQ from 09
+[INF][59.070649][271][scenario.node[7].appl:55] Veh07 Received REQ from 09
+[INF][59.070649][395][scenario.node[11].appl:55] Veh11 Received REQ from 09
+[INF][59.070649][240][scenario.node[6].appl:55] Veh06 Received REQ from 09
+[INF][59.070649][426][scenario.node[12].appl:55] Veh12 Received REQ from 09
+[INF][59.07065][209][scenario.node[5].appl:55] Veh05 Received REQ from 09
+[INF][59.07065][457][scenario.node[13].appl:55] Veh13 Received REQ from 09
+[INF][59.07065][178][scenario.node[4].appl:55] Veh04 Received REQ from 09
+[INF][59.07065][488][scenario.node[14].appl:55] Veh14 Received REQ from 09
+[INF][59.07065][147][scenario.node[3].appl:55] Veh03 Received REQ from 09
+[INF][59.07065][519][scenario.node[15].appl:55] Veh15 Received REQ from 09
+[INF][59.07065][550][scenario.node[16].appl:55] Veh16 Received REQ from 09
+[INF][59.07065][116][scenario.node[2].appl:55] Veh02 Received REQ from 09
+[INF][59.07065][581][scenario.node[17].appl:55] Veh17 Received REQ from 09
+[INF][59.100742][519][scenario.node[15].appl:230] Veh15 requesting chunks: 1;2;3;4;5;6;7;8;
+[INF][59.100808][550][scenario.node[16].appl:55] Veh16 Received REQ from 15
+[INF][59.100808][488][scenario.node[14].appl:55] Veh14 Received REQ from 15
+[INF][59.100808][581][scenario.node[17].appl:55] Veh17 Received REQ from 15
+[INF][59.100809][612][scenario.node[18].appl:55] Veh18 Received REQ from 15
+[INF][59.100809][457][scenario.node[13].appl:55] Veh13 Received REQ from 15
+[INF][59.100809][643][scenario.node[19].appl:55] Veh19 Received REQ from 15
+[INF][59.100809][426][scenario.node[12].appl:55] Veh12 Received REQ from 15
+[INF][59.100809][395][scenario.node[11].appl:55] Veh11 Received REQ from 15
+[INF][59.100809][364][scenario.node[10].appl:55] Veh10 Received REQ from 15
+[INF][59.10081][333][scenario.node[9].appl:55] Veh09 Received REQ from 15
+[INF][59.10081][302][scenario.node[8].appl:55] Veh08 Received REQ from 15
+[INF][59.119952][395][scenario.node[11].appl:230] Veh11 requesting chunks: 1;2;3;4;
+[INF][59.120021][426][scenario.node[12].appl:55] Veh12 Received REQ from 11
+[INF][59.120021][364][scenario.node[10].appl:55] Veh10 Received REQ from 11
+[INF][59.120022][457][scenario.node[13].appl:55] Veh13 Received REQ from 11
+[INF][59.120022][333][scenario.node[9].appl:55] Veh09 Received REQ from 11
+[INF][59.120022][488][scenario.node[14].appl:55] Veh14 Received REQ from 11
+[INF][59.120022][302][scenario.node[8].appl:55] Veh08 Received REQ from 11
+[INF][59.120022][519][scenario.node[15].appl:55] Veh15 Received REQ from 11
+[INF][59.120022][271][scenario.node[7].appl:55] Veh07 Received REQ from 11
+[INF][59.120022][550][scenario.node[16].appl:55] Veh16 Received REQ from 11
+[INF][59.120022][240][scenario.node[6].appl:55] Veh06 Received REQ from 11
+[INF][59.120022][581][scenario.node[17].appl:55] Veh17 Received REQ from 11
+[INF][59.120022][612][scenario.node[18].appl:55] Veh18 Received REQ from 11
+[INF][59.120022][643][scenario.node[19].appl:55] Veh19 Received REQ from 11
+[INF][59.120022][209][scenario.node[5].appl:55] Veh05 Received REQ from 11
+[INF][59.120023][178][scenario.node[4].appl:55] Veh04 Received REQ from 11
+[INF][59.167432][488][scenario.node[14].appl:230] Veh14 requesting chunks: 1;2;3;4;5;6;7;
+[INF][59.167496][457][scenario.node[13].appl:55] Veh13 Received REQ from 14
+[INF][59.167496][519][scenario.node[15].appl:55] Veh15 Received REQ from 14
+[INF][59.167496][550][scenario.node[16].appl:55] Veh16 Received REQ from 14
+[INF][59.167496][426][scenario.node[12].appl:55] Veh12 Received REQ from 14
+[INF][59.167496][581][scenario.node[17].appl:55] Veh17 Received REQ from 14
+[INF][59.167496][612][scenario.node[18].appl:55] Veh18 Received REQ from 14
+[INF][59.167496][395][scenario.node[11].appl:55] Veh11 Received REQ from 14
+[INF][59.167496][643][scenario.node[19].appl:55] Veh19 Received REQ from 14
+[INF][59.167497][364][scenario.node[10].appl:55] Veh10 Received REQ from 14
+[INF][59.167497][333][scenario.node[9].appl:55] Veh09 Received REQ from 14
+[INF][59.167497][302][scenario.node[8].appl:55] Veh08 Received REQ from 14
+[INF][59.167497][271][scenario.node[7].appl:55] Veh07 Received REQ from 14
+[INF][59.171565][178][scenario.node[4].appl:230] Veh04 requesting chunks: 13;14;15;16;17;18;19;20;
+[INF][59.171631][147][scenario.node[3].appl:55] Veh03 Received REQ from 04
+[INF][59.171631][209][scenario.node[5].appl:55] Veh05 Received REQ from 04
+[INF][59.171631][116][scenario.node[2].appl:55] Veh02 Received REQ from 04
+[INF][59.171631][240][scenario.node[6].appl:55] Veh06 Received REQ from 04
+[INF][59.171631][85][scenario.node[1].appl:55] Veh01 Received REQ from 04
+[INF][59.171631][271][scenario.node[7].appl:55] Veh07 Received REQ from 04
+[INF][59.171632][54][scenario.node[0].appl:55] Veh00 Received REQ from 04
+[INF][59.171632][302][scenario.node[8].appl:55] Veh08 Received REQ from 04
+[INF][59.171632][333][scenario.node[9].appl:55] Veh09 Received REQ from 04
+[INF][59.171632][364][scenario.node[10].appl:55] Veh10 Received REQ from 04
+[INF][59.171632][395][scenario.node[11].appl:55] Veh11 Received REQ from 04
+[INF][59.184993][116][scenario.node[2].appl:230] Veh02 requesting chunks: 11;12;13;14;15;16;17;18;19;20;
+[INF][59.185058][85][scenario.node[1].appl:55] Veh01 Received REQ from 02
+[INF][59.185058][147][scenario.node[3].appl:55] Veh03 Received REQ from 02
+[INF][59.185059][178][scenario.node[4].appl:55] Veh04 Received REQ from 02
+[INF][59.185059][54][scenario.node[0].appl:55] Veh00 Received REQ from 02
+[INF][59.185059][209][scenario.node[5].appl:55] Veh05 Received REQ from 02
+[INF][59.185059][240][scenario.node[6].appl:55] Veh06 Received REQ from 02
+[INF][59.185059][271][scenario.node[7].appl:55] Veh07 Received REQ from 02
+[INF][59.185059][302][scenario.node[8].appl:55] Veh08 Received REQ from 02
+[INF][59.18506][333][scenario.node[9].appl:55] Veh09 Received REQ from 02
+[INF][59.236996][302][scenario.node[8].appl:230] Veh08 requesting chunks: 1;17;18;19;20;
+[INF][59.237058][333][scenario.node[9].appl:55] Veh09 Received REQ from 08
+[INF][59.237058][271][scenario.node[7].appl:55] Veh07 Received REQ from 08
+[INF][59.237058][364][scenario.node[10].appl:55] Veh10 Received REQ from 08
+[INF][59.237058][240][scenario.node[6].appl:55] Veh06 Received REQ from 08
+[INF][59.237058][209][scenario.node[5].appl:55] Veh05 Received REQ from 08
+[INF][59.237058][395][scenario.node[11].appl:55] Veh11 Received REQ from 08
+[INF][59.237058][426][scenario.node[12].appl:55] Veh12 Received REQ from 08
+[INF][59.237058][178][scenario.node[4].appl:55] Veh04 Received REQ from 08
+[INF][59.237059][147][scenario.node[3].appl:55] Veh03 Received REQ from 08
+[INF][59.237059][457][scenario.node[13].appl:55] Veh13 Received REQ from 08
+[INF][59.237059][116][scenario.node[2].appl:55] Veh02 Received REQ from 08
+[INF][59.237059][488][scenario.node[14].appl:55] Veh14 Received REQ from 08
+[INF][59.237059][85][scenario.node[1].appl:55] Veh01 Received REQ from 08
+[INF][59.237059][519][scenario.node[15].appl:55] Veh15 Received REQ from 08
+[INF][59.276941][147][scenario.node[3].appl:230] Veh03 requesting chunks: 12;13;14;15;16;17;18;19;20;
+[INF][59.277006][178][scenario.node[4].appl:55] Veh04 Received REQ from 03
+[INF][59.277006][116][scenario.node[2].appl:55] Veh02 Received REQ from 03
+[INF][59.277006][209][scenario.node[5].appl:55] Veh05 Received REQ from 03
+[INF][59.277006][85][scenario.node[1].appl:55] Veh01 Received REQ from 03
+[INF][59.277006][240][scenario.node[6].appl:55] Veh06 Received REQ from 03
+[INF][59.277006][54][scenario.node[0].appl:55] Veh00 Received REQ from 03
+[INF][59.277006][271][scenario.node[7].appl:55] Veh07 Received REQ from 03
+[INF][59.277007][302][scenario.node[8].appl:55] Veh08 Received REQ from 03
+[INF][59.277007][333][scenario.node[9].appl:55] Veh09 Received REQ from 03
+[INF][59.277007][364][scenario.node[10].appl:55] Veh10 Received REQ from 03
+[INF][59.278568][581][scenario.node[17].appl:230] Veh17 requesting chunks: 1;2;3;4;5;6;7;8;9;
+[INF][59.278631][612][scenario.node[18].appl:55] Veh18 Received REQ from 17
+[INF][59.278631][550][scenario.node[16].appl:55] Veh16 Received REQ from 17
+[INF][59.278631][643][scenario.node[19].appl:55] Veh19 Received REQ from 17
+[INF][59.278632][519][scenario.node[15].appl:55] Veh15 Received REQ from 17
+[INF][59.278632][488][scenario.node[14].appl:55] Veh14 Received REQ from 17
+[INF][59.278632][457][scenario.node[13].appl:55] Veh13 Received REQ from 17
+[INF][59.278632][426][scenario.node[12].appl:55] Veh12 Received REQ from 17
+[INF][59.278632][395][scenario.node[11].appl:55] Veh11 Received REQ from 17
+[INF][59.278633][364][scenario.node[10].appl:55] Veh10 Received REQ from 17
+[INF][59.278633][333][scenario.node[9].appl:55] Veh09 Received REQ from 17
+[INF][59.300743][85][scenario.node[1].appl:230] Veh01 requesting chunks: 10;11;12;13;14;15;16;17;18;19;20;
+[INF][59.300807][116][scenario.node[2].appl:55] Veh02 Received REQ from 01
+[INF][59.300807][54][scenario.node[0].appl:55] Veh00 Received REQ from 01
+[INF][59.300807][147][scenario.node[3].appl:55] Veh03 Received REQ from 01
+[INF][59.300808][178][scenario.node[4].appl:55] Veh04 Received REQ from 01
+[INF][59.300808][209][scenario.node[5].appl:55] Veh05 Received REQ from 01
+[INF][59.300808][240][scenario.node[6].appl:55] Veh06 Received REQ from 01
+[INF][59.300808][271][scenario.node[7].appl:55] Veh07 Received REQ from 01
+[INF][59.300809][302][scenario.node[8].appl:55] Veh08 Received REQ from 01
+[INF][59.30135][364][scenario.node[10].appl:283] Veh10 sending chunks: 5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.313978][333][scenario.node[9].appl:283] Veh09 sending chunks: 3;5;6;7;8;9;11;12;13;14;15;16;17;
+[INF][59.325476][240][scenario.node[6].appl:283] Veh06 sending chunks: 1;2;3;4;10;11;12;13;14;
+[INF][59.330996][333][scenario.node[9].appl:146] Veh09 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330996][395][scenario.node[11].appl:146] Veh11 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330996][302][scenario.node[8].appl:146] Veh08 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330996][426][scenario.node[12].appl:146] Veh12 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330996][271][scenario.node[7].appl:146] Veh07 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330996][457][scenario.node[13].appl:146] Veh13 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][240][scenario.node[6].appl:146] Veh06 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][488][scenario.node[14].appl:146] Veh14 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][209][scenario.node[5].appl:146] Veh05 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][519][scenario.node[15].appl:146] Veh15 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][550][scenario.node[16].appl:146] Veh16 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][178][scenario.node[4].appl:146] Veh04 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][581][scenario.node[17].appl:146] Veh17 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][147][scenario.node[3].appl:146] Veh03 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][612][scenario.node[18].appl:146] Veh18 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.330997][643][scenario.node[19].appl:146] Veh19 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.351585][85][scenario.node[1].appl:146] Veh01 received: 1;2;3;4;10;11;12;13;14; from: 06
+[INF][59.351585][54][scenario.node[0].appl:146] Veh00 received: 1;2;3;4;10;11;12;13;14; from: 06
+[INF][59.359315][426][scenario.node[12].appl:283] Veh12 sending chunks: 18;
+[INF][59.360688][488][scenario.node[14].appl:146] Veh14 received: 3;5;6;7;8;9;11;12;13;14;15;16;17; from: 09
+[INF][59.360688][519][scenario.node[15].appl:146] Veh15 received: 3;5;6;7;8;9;11;12;13;14;15;16;17; from: 09
+[INF][59.360689][550][scenario.node[16].appl:146] Veh16 received: 3;5;6;7;8;9;11;12;13;14;15;16;17; from: 09
+[INF][59.360689][581][scenario.node[17].appl:146] Veh17 received: 3;5;6;7;8;9;11;12;13;14;15;16;17; from: 09
+[INF][59.363088][395][scenario.node[11].appl:146] Veh11 received: 18; from: 12
+[INF][59.363088][457][scenario.node[13].appl:146] Veh13 received: 18; from: 12
+[INF][59.363088][488][scenario.node[14].appl:146] Veh14 received: 18; from: 12
+[INF][59.363088][364][scenario.node[10].appl:146] Veh10 received: 18; from: 12
+[INF][59.363088][519][scenario.node[15].appl:146] Veh15 received: 18; from: 12
+[INF][59.363088][333][scenario.node[9].appl:146] Veh09 received: 18; from: 12
+[INF][59.363089][550][scenario.node[16].appl:146] Veh16 received: 18; from: 12
+[INF][59.363089][302][scenario.node[8].appl:146] Veh08 received: 18; from: 12
+[INF][59.363089][581][scenario.node[17].appl:146] Veh17 received: 18; from: 12
+[INF][59.363089][612][scenario.node[18].appl:146] Veh18 received: 18; from: 12
+[INF][59.363089][271][scenario.node[7].appl:146] Veh07 received: 18; from: 12
+[INF][59.363089][643][scenario.node[19].appl:146] Veh19 received: 18; from: 12
+[INF][59.363089][240][scenario.node[6].appl:146] Veh06 received: 18; from: 12
+[INF][59.363089][209][scenario.node[5].appl:146] Veh05 received: 18; from: 12
+[INF][59.367641][426][scenario.node[12].appl:230] Veh12 requesting chunks: 1;2;3;4;
+[INF][59.367701][395][scenario.node[11].appl:55] Veh11 Received REQ from 12
+[INF][59.367701][457][scenario.node[13].appl:55] Veh13 Received REQ from 12
+[INF][59.367701][488][scenario.node[14].appl:55] Veh14 Received REQ from 12
+[INF][59.367701][364][scenario.node[10].appl:55] Veh10 Received REQ from 12
+[INF][59.367701][519][scenario.node[15].appl:55] Veh15 Received REQ from 12
+[INF][59.367701][333][scenario.node[9].appl:55] Veh09 Received REQ from 12
+[INF][59.367702][550][scenario.node[16].appl:55] Veh16 Received REQ from 12
+[INF][59.367702][302][scenario.node[8].appl:55] Veh08 Received REQ from 12
+[INF][59.367702][581][scenario.node[17].appl:55] Veh17 Received REQ from 12
+[INF][59.367702][612][scenario.node[18].appl:55] Veh18 Received REQ from 12
+[INF][59.367702][271][scenario.node[7].appl:55] Veh07 Received REQ from 12
+[INF][59.367702][643][scenario.node[19].appl:55] Veh19 Received REQ from 12
+[INF][59.367702][240][scenario.node[6].appl:55] Veh06 Received REQ from 12
+[INF][59.367702][209][scenario.node[5].appl:55] Veh05 Received REQ from 12
+[INF][59.375762][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.387193][333][scenario.node[9].appl:146] Veh09 received: 2;3;4;10;11; from: 08
+[INF][59.387193][364][scenario.node[10].appl:146] Veh10 received: 2;3;4;10;11; from: 08
+[INF][59.387193][395][scenario.node[11].appl:146] Veh11 received: 2;3;4;10;11; from: 08
+[INF][59.387193][426][scenario.node[12].appl:146] Veh12 received: 2;3;4;10;11; from: 08
+[INF][59.387193][178][scenario.node[4].appl:146] Veh04 received: 2;3;4;10;11; from: 08
+[INF][59.387194][147][scenario.node[3].appl:146] Veh03 received: 2;3;4;10;11; from: 08
+[INF][59.387194][457][scenario.node[13].appl:146] Veh13 received: 2;3;4;10;11; from: 08
+[INF][59.387194][116][scenario.node[2].appl:146] Veh02 received: 2;3;4;10;11; from: 08
+[INF][59.387194][488][scenario.node[14].appl:146] Veh14 received: 2;3;4;10;11; from: 08
+[INF][59.387194][85][scenario.node[1].appl:146] Veh01 received: 2;3;4;10;11; from: 08
+[INF][59.387194][519][scenario.node[15].appl:146] Veh15 received: 2;3;4;10;11; from: 08
+[INF][59.413092][426][scenario.node[12].appl:283] Veh12 sending chunks: 18;
+[INF][59.415425][395][scenario.node[11].appl:146] Veh11 received: 18; from: 12
+[INF][59.415425][457][scenario.node[13].appl:146] Veh13 received: 18; from: 12
+[INF][59.415425][488][scenario.node[14].appl:146] Veh14 received: 18; from: 12
+[INF][59.415425][364][scenario.node[10].appl:146] Veh10 received: 18; from: 12
+[INF][59.415425][519][scenario.node[15].appl:146] Veh15 received: 18; from: 12
+[INF][59.415425][333][scenario.node[9].appl:146] Veh09 received: 18; from: 12
+[INF][59.415425][550][scenario.node[16].appl:146] Veh16 received: 18; from: 12
+[INF][59.415425][302][scenario.node[8].appl:146] Veh08 received: 18; from: 12
+[INF][59.415425][581][scenario.node[17].appl:146] Veh17 received: 18; from: 12
+[INF][59.415426][612][scenario.node[18].appl:146] Veh18 received: 18; from: 12
+[INF][59.415426][643][scenario.node[19].appl:146] Veh19 received: 18; from: 12
+[INF][59.422146][240][scenario.node[6].appl:283] Veh06 sending chunks: 1;
+[INF][59.424482][178][scenario.node[4].appl:146] Veh04 received: 1; from: 06
+[INF][59.424482][302][scenario.node[8].appl:146] Veh08 received: 1; from: 06
+[INF][59.424482][147][scenario.node[3].appl:146] Veh03 received: 1; from: 06
+[INF][59.424483][333][scenario.node[9].appl:146] Veh09 received: 1; from: 06
+[INF][59.424483][116][scenario.node[2].appl:146] Veh02 received: 1; from: 06
+[INF][59.424483][364][scenario.node[10].appl:146] Veh10 received: 1; from: 06
+[INF][59.424483][85][scenario.node[1].appl:146] Veh01 received: 1; from: 06
+[INF][59.424483][395][scenario.node[11].appl:146] Veh11 received: 1; from: 06
+[INF][59.424483][54][scenario.node[0].appl:146] Veh00 received: 1; from: 06
+[INF][59.424483][426][scenario.node[12].appl:146] Veh12 received: 1; from: 06
+[INF][59.424483][457][scenario.node[13].appl:146] Veh13 received: 1; from: 06
+[INF][59.447773][240][scenario.node[6].appl:283] Veh06 sending chunks: 1;
+[INF][59.450113][178][scenario.node[4].appl:146] Veh04 received: 1; from: 06
+[INF][59.450113][147][scenario.node[3].appl:146] Veh03 received: 1; from: 06
+[INF][59.450114][116][scenario.node[2].appl:146] Veh02 received: 1; from: 06
+[INF][59.450114][85][scenario.node[1].appl:146] Veh01 received: 1; from: 06
+[INF][59.450114][54][scenario.node[0].appl:146] Veh00 received: 1; from: 06
+[INF][59.480569][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.492004][178][scenario.node[4].appl:146] Veh04 received: 2;3;4;10;11; from: 08
+[INF][59.492004][147][scenario.node[3].appl:146] Veh03 received: 2;3;4;10;11; from: 08
+[INF][59.492005][116][scenario.node[2].appl:146] Veh02 received: 2;3;4;10;11; from: 08
+[INF][59.492005][488][scenario.node[14].appl:146] Veh14 received: 2;3;4;10;11; from: 08
+[INF][59.492005][85][scenario.node[1].appl:146] Veh01 received: 2;3;4;10;11; from: 08
+[INF][59.492005][519][scenario.node[15].appl:146] Veh15 received: 2;3;4;10;11; from: 08
+[INF][59.499967][426][scenario.node[12].appl:283] Veh12 sending chunks: 18;
+[INF][59.500212][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.502309][488][scenario.node[14].appl:146] Veh14 received: 18; from: 12
+[INF][59.502309][519][scenario.node[15].appl:146] Veh15 received: 18; from: 12
+[INF][59.502309][550][scenario.node[16].appl:146] Veh16 received: 18; from: 12
+[INF][59.502309][581][scenario.node[17].appl:146] Veh17 received: 18; from: 12
+[INF][59.502309][612][scenario.node[18].appl:146] Veh18 received: 18; from: 12
+[INF][59.502309][643][scenario.node[19].appl:146] Veh19 received: 18; from: 12
+[INF][59.507896][54][scenario.node[0].appl:230] Veh00 requesting chunks: 9;15;16;17;18;19;20;
+[INF][59.513793][488][scenario.node[14].appl:146] Veh14 received: 2;3;4;10;11; from: 08
+[INF][59.513794][519][scenario.node[15].appl:146] Veh15 received: 2;3;4;10;11; from: 08
+[INF][59.51628][364][scenario.node[10].appl:283] Veh10 sending chunks: 5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.528348][364][scenario.node[10].appl:283] Veh10 sending chunks: 5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.530811][426][scenario.node[12].appl:283] Veh12 sending chunks: 18;
+[INF][59.5431][364][scenario.node[10].appl:283] Veh10 sending chunks: 5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.545915][488][scenario.node[14].appl:146] Veh14 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.545916][519][scenario.node[15].appl:146] Veh15 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.545916][550][scenario.node[16].appl:146] Veh16 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.545916][178][scenario.node[4].appl:146] Veh04 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.545916][581][scenario.node[17].appl:146] Veh17 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.545916][147][scenario.node[3].appl:146] Veh03 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.545916][612][scenario.node[18].appl:146] Veh18 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.545916][643][scenario.node[19].appl:146] Veh19 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.547276][364][scenario.node[10].appl:283] Veh10 sending chunks: 5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.54861][643][scenario.node[19].appl:230] Veh19 requesting chunks: 1;2;3;4;10;
+[INF][59.558559][240][scenario.node[6].appl:283] Veh06 sending chunks: 1;
+[INF][59.57353][240][scenario.node[6].appl:283] Veh06 sending chunks: 1;
+[INF][59.575606][488][scenario.node[14].appl:146] Veh14 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.575607][519][scenario.node[15].appl:146] Veh15 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.575607][550][scenario.node[16].appl:146] Veh16 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.575607][178][scenario.node[4].appl:146] Veh04 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.575607][581][scenario.node[17].appl:146] Veh17 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.575607][147][scenario.node[3].appl:146] Veh03 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.575607][612][scenario.node[18].appl:146] Veh18 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.575607][643][scenario.node[19].appl:146] Veh19 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.576417][240][scenario.node[6].appl:283] Veh06 sending chunks: 1;
+[INF][59.57802][116][scenario.node[2].appl:146] Veh02 received: 1; from: 06
+[INF][59.578021][85][scenario.node[1].appl:146] Veh01 received: 1; from: 06
+[INF][59.578021][54][scenario.node[0].appl:146] Veh00 received: 1; from: 06
+[INF][59.579613][364][scenario.node[10].appl:283] Veh10 sending chunks: 5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.580433][116][scenario.node[2].appl:146] Veh02 received: 1; from: 06
+[INF][59.580434][85][scenario.node[1].appl:146] Veh01 received: 1; from: 06
+[INF][59.580434][54][scenario.node[0].appl:146] Veh00 received: 1; from: 06
+[INF][59.58282][116][scenario.node[2].appl:146] Veh02 received: 1; from: 06
+[INF][59.582821][85][scenario.node[1].appl:146] Veh01 received: 1; from: 06
+[INF][59.582821][54][scenario.node[0].appl:146] Veh00 received: 1; from: 06
+[INF][59.584164][426][scenario.node[12].appl:283] Veh12 sending chunks: 18;
+[INF][59.605439][612][scenario.node[18].appl:55] Veh18 Received REQ from 19
+[INF][59.605439][581][scenario.node[17].appl:55] Veh17 Received REQ from 19
+[INF][59.605439][550][scenario.node[16].appl:55] Veh16 Received REQ from 19
+[INF][59.60544][519][scenario.node[15].appl:55] Veh15 Received REQ from 19
+[INF][59.60544][488][scenario.node[14].appl:55] Veh14 Received REQ from 19
+[INF][59.60544][457][scenario.node[13].appl:55] Veh13 Received REQ from 19
+[INF][59.60544][426][scenario.node[12].appl:55] Veh12 Received REQ from 19
+[INF][59.605441][395][scenario.node[11].appl:55] Veh11 Received REQ from 19
+[INF][59.605441][364][scenario.node[10].appl:55] Veh10 Received REQ from 19
+[INF][59.607728][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.615032][426][scenario.node[12].appl:283] Veh12 sending chunks: 1;2;3;4;10;18;
+[INF][59.629843][612][scenario.node[18].appl:230] Veh18 requesting chunks: 1;2;3;4;10;
+[INF][59.635133][488][scenario.node[14].appl:146] Veh14 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.635133][519][scenario.node[15].appl:146] Veh15 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.635133][550][scenario.node[16].appl:146] Veh16 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.635133][178][scenario.node[4].appl:146] Veh04 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.635133][581][scenario.node[17].appl:146] Veh17 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.635133][147][scenario.node[3].appl:146] Veh03 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.635133][612][scenario.node[18].appl:146] Veh18 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.635133][643][scenario.node[19].appl:146] Veh19 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.639948][550][scenario.node[16].appl:283] Veh16 sending chunks: 3;10;
+[INF][59.646629][178][scenario.node[4].appl:146] Veh04 received: 2;3;4;10;11; from: 08
+[INF][59.646629][147][scenario.node[3].appl:146] Veh03 received: 2;3;4;10;11; from: 08
+[INF][59.64663][116][scenario.node[2].appl:146] Veh02 received: 2;3;4;10;11; from: 08
+[INF][59.64663][85][scenario.node[1].appl:146] Veh01 received: 2;3;4;10;11; from: 08
+[INF][59.646801][457][scenario.node[13].appl:283] Veh13 sending chunks: 1;2;3;4;10;
+[INF][59.646966][488][scenario.node[14].appl:283] Veh14 sending chunks: 2;3;4;10;
+[INF][59.652038][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.652906][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.653558][519][scenario.node[15].appl:283] Veh15 sending chunks: 2;3;4;10;
+[INF][59.653606][581][scenario.node[17].appl:283] Veh17 sending chunks: 3;10;
+[INF][59.662475][550][scenario.node[16].appl:283] Veh16 sending chunks: 3;10;
+[INF][59.667709][581][scenario.node[17].appl:283] Veh17 sending chunks: 3;10;
+[INF][59.670495][395][scenario.node[11].appl:283] Veh11 sending chunks: 1;2;3;4;10;
+[INF][59.676321][147][scenario.node[3].appl:146] Veh03 received: 5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.676676][612][scenario.node[18].appl:146] Veh18 received: 3;10; from: 17
+[INF][59.681335][581][scenario.node[17].appl:146] Veh17 received: 3;10; from: 16
+[INF][59.686007][612][scenario.node[18].appl:146] Veh18 received: 3;10; from: 17
+[INF][59.686007][550][scenario.node[16].appl:146] Veh16 received: 3;10; from: 17
+[INF][59.686007][643][scenario.node[19].appl:146] Veh19 received: 3;10; from: 17
+[INF][59.687817][147][scenario.node[3].appl:146] Veh03 received: 2;3;4;10;11; from: 08
+[INF][59.687818][116][scenario.node[2].appl:146] Veh02 received: 2;3;4;10;11; from: 08
+[INF][59.687818][85][scenario.node[1].appl:146] Veh01 received: 2;3;4;10;11; from: 08
+[INF][59.699339][178][scenario.node[4].appl:146] Veh04 received: 2;3;4;10;11; from: 08
+[INF][59.699339][147][scenario.node[3].appl:146] Veh03 received: 2;3;4;10;11; from: 08
+[INF][59.69934][116][scenario.node[2].appl:146] Veh02 received: 2;3;4;10;11; from: 08
+[INF][59.69934][488][scenario.node[14].appl:146] Veh14 received: 2;3;4;10;11; from: 08
+[INF][59.69934][85][scenario.node[1].appl:146] Veh01 received: 2;3;4;10;11; from: 08
+[INF][59.69934][519][scenario.node[15].appl:146] Veh15 received: 2;3;4;10;11; from: 08
+[INF][59.70177][364][scenario.node[10].appl:283] Veh10 sending chunks: 1;5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.713454][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.733682][488][scenario.node[14].appl:146] Veh14 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.733682][519][scenario.node[15].appl:146] Veh15 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.733682][550][scenario.node[16].appl:146] Veh16 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.733682][178][scenario.node[4].appl:146] Veh04 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.733682][581][scenario.node[17].appl:146] Veh17 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.733682][147][scenario.node[3].appl:146] Veh03 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.733682][612][scenario.node[18].appl:146] Veh18 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.733682][643][scenario.node[19].appl:146] Veh19 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.745165][178][scenario.node[4].appl:146] Veh04 received: 2;3;4;10;11; from: 08
+[INF][59.745165][147][scenario.node[3].appl:146] Veh03 received: 2;3;4;10;11; from: 08
+[INF][59.745165][116][scenario.node[2].appl:146] Veh02 received: 2;3;4;10;11; from: 08
+[INF][59.745166][85][scenario.node[1].appl:146] Veh01 received: 2;3;4;10;11; from: 08
+[INF][59.749949][364][scenario.node[10].appl:283] Veh10 sending chunks: 1;5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.781861][550][scenario.node[16].appl:146] Veh16 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.781861][178][scenario.node[4].appl:146] Veh04 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.781861][581][scenario.node[17].appl:146] Veh17 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.781861][147][scenario.node[3].appl:146] Veh03 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.781861][612][scenario.node[18].appl:146] Veh18 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.781861][643][scenario.node[19].appl:146] Veh19 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.801564][302][scenario.node[8].appl:283] Veh08 sending chunks: 2;3;4;10;11;
+[INF][59.804237][426][scenario.node[12].appl:283] Veh12 sending chunks: 18;
+[INF][59.813][178][scenario.node[4].appl:146] Veh04 received: 2;3;4;10;11; from: 08
+[INF][59.813][147][scenario.node[3].appl:146] Veh03 received: 2;3;4;10;11; from: 08
+[INF][59.813][116][scenario.node[2].appl:146] Veh02 received: 2;3;4;10;11; from: 08
+[INF][59.813001][85][scenario.node[1].appl:146] Veh01 received: 2;3;4;10;11; from: 08
+[INF][59.815427][550][scenario.node[16].appl:146] Veh16 received: 18; from: 12
+[INF][59.815427][581][scenario.node[17].appl:146] Veh17 received: 18; from: 12
+[INF][59.815427][612][scenario.node[18].appl:146] Veh18 received: 18; from: 12
+[INF][59.815427][643][scenario.node[19].appl:146] Veh19 received: 18; from: 12
+[INF][59.890298][550][scenario.node[16].appl:230] Veh16 requesting chunks: 2;4;
+[INF][59.890357][581][scenario.node[17].appl:55] Veh17 Received REQ from 16
+[INF][59.890357][519][scenario.node[15].appl:55] Veh15 Received REQ from 16
+[INF][59.890357][612][scenario.node[18].appl:55] Veh18 Received REQ from 16
+[INF][59.890357][643][scenario.node[19].appl:55] Veh19 Received REQ from 16
+[INF][59.890357][488][scenario.node[14].appl:55] Veh14 Received REQ from 16
+[INF][59.890357][457][scenario.node[13].appl:55] Veh13 Received REQ from 16
+[INF][59.890358][426][scenario.node[12].appl:55] Veh12 Received REQ from 16
+[INF][59.890358][395][scenario.node[11].appl:55] Veh11 Received REQ from 16
+[INF][59.890358][364][scenario.node[10].appl:55] Veh10 Received REQ from 16
+[INF][59.890358][333][scenario.node[9].appl:55] Veh09 Received REQ from 16
+[INF][59.894057][364][scenario.node[10].appl:283] Veh10 sending chunks: 1;2;4;5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][59.897153][519][scenario.node[15].appl:283] Veh15 sending chunks: 2;4;
+[INF][59.930527][550][scenario.node[16].appl:146] Veh16 received: 1;2;4;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.930527][178][scenario.node[4].appl:146] Veh04 received: 1;2;4;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.930528][581][scenario.node[17].appl:146] Veh17 received: 1;2;4;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.930528][147][scenario.node[3].appl:146] Veh03 received: 1;2;4;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.930528][612][scenario.node[18].appl:146] Veh18 received: 1;2;4;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][59.930528][643][scenario.node[19].appl:146] Veh19 received: 1;2;4;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][60.046493][302][scenario.node[8].appl:283] Veh08 sending chunks: 3;10;11;
+[INF][60.053382][178][scenario.node[4].appl:146] Veh04 received: 3;10;11; from: 08
+[INF][60.053382][147][scenario.node[3].appl:146] Veh03 received: 3;10;11; from: 08
+[INF][60.053382][116][scenario.node[2].appl:146] Veh02 received: 3;10;11; from: 08
+[INF][60.053382][85][scenario.node[1].appl:146] Veh01 received: 3;10;11; from: 08
+[INF][60.096252][364][scenario.node[10].appl:283] Veh10 sending chunks: 1;5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][60.128168][178][scenario.node[4].appl:146] Veh04 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][60.128168][147][scenario.node[3].appl:146] Veh03 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][60.448435][426][scenario.node[12].appl:283] Veh12 sending chunks: 18;
+[INF][60.45098][364][scenario.node[10].appl:283] Veh10 sending chunks: 1;5;6;7;8;9;12;13;14;15;16;17;19;20;
+[INF][60.482891][178][scenario.node[4].appl:146] Veh04 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+[INF][60.482891][147][scenario.node[3].appl:146] Veh03 received: 1;5;6;7;8;9;12;13;14;15;16;17;19;20; from: 10
+S, vehicles TOT 19 ACT 19)                          Step #57.10 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #57.20 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #57.30 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #57.40 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #57.50 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                          Step #57.60 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #57.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #57.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #57.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #58.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #59.90 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #60.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.70 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #60.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #60.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #61.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.20 (1** Event #1202944   T=62.405   Elapsed: 40.030s (0m 40s)  62% completed
+     Speed:     ev/sec=23170.5   simsec/sec=0.616106   ev/simsec=37608
+     Messages:  created: 457033   present: 1106   in FES: 51
+ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #62.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #62.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #63.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.50 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #64.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #64.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #65.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.30 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #66.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #66.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          St** Event #1419520   T=68.712   Elapsed: 50.040s (0m 50s)  68% completed
+     Speed:     ev/sec=21638.1   simsec/sec=0.630133   ev/simsec=34339
+     Messages:  created: 541115   present: 1107   in FES: 52
+ep #67.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #67.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #68.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #68.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.30 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #69.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #69.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #70.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #71.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.40 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #72.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                 ** Event #1646848   T=75.331   Elapsed: 60.040s (1m 00s)  75% completed
+     Speed:     ev/sec=22732.8   simsec/sec=0.6619   ev/simsec=34344.8
+     Messages:  created: 629385   present: 1114   in FES: 59
+         Step #72.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #72.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #73.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.60 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #74.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #74.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #75.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.30 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #76.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #76.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #76.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.00 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #77.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)     ** Event #1872384   T=81.898   Elapsed: 70.050s (1m 10s)  81% completed
+     Speed:     ev/sec=22533.3   simsec/sec=0.65611   ev/simsec=34343.8
+     Messages:  created: 716945   present: 1110   in FES: 55
+                     Step #77.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #77.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.00 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #78.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #78.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #79.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #79.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.70 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #80.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #80.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #81.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.60 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #82.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #82.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.40 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #83.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #83.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.30 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #84.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #84.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #85.90 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #86.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #86.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #86.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #87.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.10 (0ms ?*RT. ?UPS, vehi** Event #2097152   T=88.442   Elapsed: 80.056s (1m 20s)  88% completed
+     Speed:     ev/sec=22465.6   simsec/sec=0.654073   ev/simsec=34347.2
+     Messages:  created: 804209   present: 1117   in FES: 59
+cles TOT 20 ACT 20)                          Step #88.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.60 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #88.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #88.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #89.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #90.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #91.70 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #91.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #91.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.30 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #92.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #92.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #92.90 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #93.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #93.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #93.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #93.30 (0ms ?*RT** Event #2320896   T=94.957   Elapsed: 90.063s (1m 30s)  94% completed
+     Speed:     ev/sec=22361   simsec/sec=0.651109   ev/simsec=34342.9
+     Messages:  created: 891081   present: 1122   in FES: 59
+. ?UPS, vehicles TOT 20 ACT 20)                          Step #93.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #93.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #93.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #93.70 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #93.80 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #93.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #94.90 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #95.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.20 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #95.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #95.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #96.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.60 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #97.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #97.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.30 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #98.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.** Event #2494064   T=100   Elapsed: 97.825s (1m 37s)  100% completed
+     Speed:     ev/sec=22309.6   simsec/sec=0.649704   ev/simsec=34338.1
+     Messages:  created: 958297   present: 1106   in FES: 51
+
+<!> Simulation time limit reached -- simulation stopped at event #2494064, t=100.
+
+
+Calling finish() at end of Run #0...
+Writing TraCI message of 2 bytes
+Reading TraCI message of 7 bytes
+connectionManager:  unregistering nic #55
+connectionManager: Update cons in [(5,1,0)]
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #86 and #55
+NicEntry: disconnecting nic #55 and #86
+NicEntry: disconnecting nic #117 and #55
+NicEntry: disconnecting nic #55 and #117
+NicEntry: disconnecting nic #148 and #55
+NicEntry: disconnecting nic #55 and #148
+NicEntry: disconnecting nic #179 and #55
+NicEntry: disconnecting nic #55 and #179
+NicEntry: disconnecting nic #210 and #55
+NicEntry: disconnecting nic #55 and #210
+NicEntry: disconnecting nic #241 and #55
+NicEntry: disconnecting nic #55 and #241
+NicEntry: disconnecting nic #272 and #55
+NicEntry: disconnecting nic #55 and #272
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(5,0,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #98.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.00 (1ms ~= 1000.00*RT, ~20000.00UPS, vehicles TOT 20 ACT 20)         Step #99.10 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.20 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.30 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.40 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #99.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                          Step #100.00 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                         Clear all sockets
+connectionManager:  unregistering nic #86
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #117 and #86
+NicEntry: disconnecting nic #86 and #117
+NicEntry: disconnecting nic #148 and #86
+NicEntry: disconnecting nic #86 and #148
+NicEntry: disconnecting nic #179 and #86
+NicEntry: disconnecting nic #86 and #179
+NicEntry: disconnecting nic #210 and #86
+NicEntry: disconnecting nic #86 and #210
+NicEntry: disconnecting nic #241 and #86
+NicEntry: disconnecting nic #86 and #241
+NicEntry: disconnecting nic #272 and #86
+NicEntry: disconnecting nic #86 and #272
+NicEntry: disconnecting nic #303 and #86
+NicEntry: disconnecting nic #86 and #303
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #117
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #334 and #117
+NicEntry: disconnecting nic #117 and #334
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #148 and #117
+NicEntry: disconnecting nic #117 and #148
+NicEntry: disconnecting nic #179 and #117
+NicEntry: disconnecting nic #117 and #179
+NicEntry: disconnecting nic #210 and #117
+NicEntry: disconnecting nic #117 and #210
+NicEntry: disconnecting nic #241 and #117
+NicEntry: disconnecting nic #117 and #241
+NicEntry: disconnecting nic #272 and #117
+NicEntry: disconnecting nic #117 and #272
+NicEntry: disconnecting nic #303 and #117
+NicEntry: disconnecting nic #117 and #303
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #148
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #334 and #148
+NicEntry: disconnecting nic #148 and #334
+NicEntry: disconnecting nic #365 and #148
+NicEntry: disconnecting nic #148 and #365
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #179 and #148
+NicEntry: disconnecting nic #148 and #179
+NicEntry: disconnecting nic #210 and #148
+NicEntry: disconnecting nic #148 and #210
+NicEntry: disconnecting nic #241 and #148
+NicEntry: disconnecting nic #148 and #241
+NicEntry: disconnecting nic #272 and #148
+NicEntry: disconnecting nic #148 and #272
+NicEntry: disconnecting nic #303 and #148
+NicEntry: disconnecting nic #148 and #303
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #179
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #334 and #179
+NicEntry: disconnecting nic #179 and #334
+NicEntry: disconnecting nic #365 and #179
+NicEntry: disconnecting nic #179 and #365
+NicEntry: disconnecting nic #396 and #179
+NicEntry: disconnecting nic #179 and #396
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #210 and #179
+NicEntry: disconnecting nic #179 and #210
+NicEntry: disconnecting nic #241 and #179
+NicEntry: disconnecting nic #179 and #241
+NicEntry: disconnecting nic #272 and #179
+NicEntry: disconnecting nic #179 and #272
+NicEntry: disconnecting nic #303 and #179
+NicEntry: disconnecting nic #179 and #303
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #210
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #334 and #210
+NicEntry: disconnecting nic #210 and #334
+NicEntry: disconnecting nic #365 and #210
+NicEntry: disconnecting nic #210 and #365
+NicEntry: disconnecting nic #396 and #210
+NicEntry: disconnecting nic #210 and #396
+NicEntry: disconnecting nic #427 and #210
+NicEntry: disconnecting nic #210 and #427
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #241 and #210
+NicEntry: disconnecting nic #210 and #241
+NicEntry: disconnecting nic #272 and #210
+NicEntry: disconnecting nic #210 and #272
+NicEntry: disconnecting nic #303 and #210
+NicEntry: disconnecting nic #210 and #303
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #241
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #334 and #241
+NicEntry: disconnecting nic #241 and #334
+NicEntry: disconnecting nic #365 and #241
+NicEntry: disconnecting nic #241 and #365
+NicEntry: disconnecting nic #396 and #241
+NicEntry: disconnecting nic #241 and #396
+NicEntry: disconnecting nic #427 and #241
+NicEntry: disconnecting nic #241 and #427
+NicEntry: disconnecting nic #458 and #241
+NicEntry: disconnecting nic #241 and #458
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #272 and #241
+NicEntry: disconnecting nic #241 and #272
+NicEntry: disconnecting nic #303 and #241
+NicEntry: disconnecting nic #241 and #303
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #272
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #334 and #272
+NicEntry: disconnecting nic #272 and #334
+NicEntry: disconnecting nic #365 and #272
+NicEntry: disconnecting nic #272 and #365
+NicEntry: disconnecting nic #396 and #272
+NicEntry: disconnecting nic #272 and #396
+NicEntry: disconnecting nic #427 and #272
+NicEntry: disconnecting nic #272 and #427
+NicEntry: disconnecting nic #458 and #272
+NicEntry: disconnecting nic #272 and #458
+NicEntry: disconnecting nic #489 and #272
+NicEntry: disconnecting nic #272 and #489
+connectionManager: Update cons in [(3,0,0)]
+NicEntry: disconnecting nic #303 and #272
+NicEntry: disconnecting nic #272 and #303
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #303
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #334 and #303
+NicEntry: disconnecting nic #303 and #334
+NicEntry: disconnecting nic #365 and #303
+NicEntry: disconnecting nic #303 and #365
+NicEntry: disconnecting nic #396 and #303
+NicEntry: disconnecting nic #303 and #396
+NicEntry: disconnecting nic #427 and #303
+NicEntry: disconnecting nic #303 and #427
+NicEntry: disconnecting nic #458 and #303
+NicEntry: disconnecting nic #303 and #458
+NicEntry: disconnecting nic #489 and #303
+NicEntry: disconnecting nic #303 and #489
+NicEntry: disconnecting nic #520 and #303
+NicEntry: disconnecting nic #303 and #520
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(4,0,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+connectionManager: Update cons in [(4,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #334
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #551 and #334
+NicEntry: disconnecting nic #334 and #551
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #365 and #334
+NicEntry: disconnecting nic #334 and #365
+NicEntry: disconnecting nic #396 and #334
+NicEntry: disconnecting nic #334 and #396
+NicEntry: disconnecting nic #427 and #334
+NicEntry: disconnecting nic #334 and #427
+NicEntry: disconnecting nic #458 and #334
+NicEntry: disconnecting nic #334 and #458
+NicEntry: disconnecting nic #489 and #334
+NicEntry: disconnecting nic #334 and #489
+NicEntry: disconnecting nic #520 and #334
+NicEntry: disconnecting nic #334 and #520
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #365
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #551 and #365
+NicEntry: disconnecting nic #365 and #551
+NicEntry: disconnecting nic #582 and #365
+NicEntry: disconnecting nic #365 and #582
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #396 and #365
+NicEntry: disconnecting nic #365 and #396
+NicEntry: disconnecting nic #427 and #365
+NicEntry: disconnecting nic #365 and #427
+NicEntry: disconnecting nic #458 and #365
+NicEntry: disconnecting nic #365 and #458
+NicEntry: disconnecting nic #489 and #365
+NicEntry: disconnecting nic #365 and #489
+NicEntry: disconnecting nic #520 and #365
+NicEntry: disconnecting nic #365 and #520
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #396
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #551 and #396
+NicEntry: disconnecting nic #396 and #551
+NicEntry: disconnecting nic #582 and #396
+NicEntry: disconnecting nic #396 and #582
+NicEntry: disconnecting nic #613 and #396
+NicEntry: disconnecting nic #396 and #613
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #427 and #396
+NicEntry: disconnecting nic #396 and #427
+NicEntry: disconnecting nic #458 and #396
+NicEntry: disconnecting nic #396 and #458
+NicEntry: disconnecting nic #489 and #396
+NicEntry: disconnecting nic #396 and #489
+NicEntry: disconnecting nic #520 and #396
+NicEntry: disconnecting nic #396 and #520
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #427
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #551 and #427
+NicEntry: disconnecting nic #427 and #551
+NicEntry: disconnecting nic #582 and #427
+NicEntry: disconnecting nic #427 and #582
+NicEntry: disconnecting nic #613 and #427
+NicEntry: disconnecting nic #427 and #613
+NicEntry: disconnecting nic #644 and #427
+NicEntry: disconnecting nic #427 and #644
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #458 and #427
+NicEntry: disconnecting nic #427 and #458
+NicEntry: disconnecting nic #489 and #427
+NicEntry: disconnecting nic #427 and #489
+NicEntry: disconnecting nic #520 and #427
+NicEntry: disconnecting nic #427 and #520
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #458
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #551 and #458
+NicEntry: disconnecting nic #458 and #551
+NicEntry: disconnecting nic #582 and #458
+NicEntry: disconnecting nic #458 and #582
+NicEntry: disconnecting nic #613 and #458
+NicEntry: disconnecting nic #458 and #613
+NicEntry: disconnecting nic #644 and #458
+NicEntry: disconnecting nic #458 and #644
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #489 and #458
+NicEntry: disconnecting nic #458 and #489
+NicEntry: disconnecting nic #520 and #458
+NicEntry: disconnecting nic #458 and #520
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #489
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #551 and #489
+NicEntry: disconnecting nic #489 and #551
+NicEntry: disconnecting nic #582 and #489
+NicEntry: disconnecting nic #489 and #582
+NicEntry: disconnecting nic #613 and #489
+NicEntry: disconnecting nic #489 and #613
+NicEntry: disconnecting nic #644 and #489
+NicEntry: disconnecting nic #489 and #644
+connectionManager: Update cons in [(2,0,0)]
+NicEntry: disconnecting nic #520 and #489
+NicEntry: disconnecting nic #489 and #520
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #520
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #551 and #520
+NicEntry: disconnecting nic #520 and #551
+NicEntry: disconnecting nic #582 and #520
+NicEntry: disconnecting nic #520 and #582
+NicEntry: disconnecting nic #613 and #520
+NicEntry: disconnecting nic #520 and #613
+NicEntry: disconnecting nic #644 and #520
+NicEntry: disconnecting nic #520 and #644
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(3,0,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(3,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #551
+connectionManager: Update cons in [(0,0,0)]
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #582 and #551
+NicEntry: disconnecting nic #551 and #582
+NicEntry: disconnecting nic #613 and #551
+NicEntry: disconnecting nic #551 and #613
+NicEntry: disconnecting nic #644 and #551
+NicEntry: disconnecting nic #551 and #644
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #582
+connectionManager: Update cons in [(0,0,0)]
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #613 and #582
+NicEntry: disconnecting nic #582 and #613
+NicEntry: disconnecting nic #644 and #582
+NicEntry: disconnecting nic #582 and #644
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #613
+connectionManager: Update cons in [(0,0,0)]
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #644 and #613
+NicEntry: disconnecting nic #613 and #644
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #644
+connectionManager: Update cons in [(0,0,0)]
+connectionManager: Update cons in [(1,0,0)]
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+[INF][100][38][scenario.server.udpApp[0]:49] Received 0 messages via LTE
+Clear all sockets
+
+End.

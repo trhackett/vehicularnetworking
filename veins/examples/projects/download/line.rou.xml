@@ -1,0 +1,31 @@
+<routes>
+	<vType id="type1" accel="2.0" decel="4.5" length="5" minGap="2.5" maxSpeed="45">
+    <carFollowing-Krauss timeHeadWay="1.8" speedFactor="1" speedDev="0.1" sigma="0.5" impatience="1.0" />
+  </vType>
+
+  <route id='route0' edges='edg0 edg1'/>
+
+   <vehicle id="00" type="type1" route="route0" depart="0"/>
+   <vehicle id="01" type="type1" route="route0" depart="0"/>
+   <vehicle id="02" type="type1" route="route0" depart="0"/>
+   <vehicle id="03" type="type1" route="route0" depart="0"/>
+   <vehicle id="04" type="type1" route="route0" depart="0"/>
+   <vehicle id="05" type="type1" route="route0" depart="0"/>
+   <vehicle id="06" type="type1" route="route0" depart="0"/>
+   <vehicle id="07" type="type1" route="route0" depart="0"/>
+   <vehicle id="08" type="type1" route="route0" depart="0"/>
+   <vehicle id="09" type="type1" route="route0" depart="0"/>
+
+	 <vehicle id="10" type="type1" route="route0" depart="0"/>
+   <vehicle id="11" type="type1" route="route0" depart="0"/>
+   <vehicle id="12" type="type1" route="route0" depart="0"/>
+   <vehicle id="13" type="type1" route="route0" depart="0"/>
+   <vehicle id="14" type="type1" route="route0" depart="0"/>
+   <vehicle id="15" type="type1" route="route0" depart="0"/>
+   <vehicle id="16" type="type1" route="route0" depart="0"/>
+   <vehicle id="17" type="type1" route="route0" depart="0"/>
+   <vehicle id="18" type="type1" route="route0" depart="0"/>
+   <vehicle id="19" type="type1" route="route0" depart="0"/>
+
+
+</routes>

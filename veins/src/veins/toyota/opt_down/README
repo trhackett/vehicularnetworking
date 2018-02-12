@@ -1,0 +1,8 @@
+Vehicle App
+* Done
+	- Vehicles periodically broadcasat beacons with local info (ID,position,speed,angle,timestamp,content sequ #)
+	- Vehicles use beacons to construct Local Dynamic Map of neighbor vehicle info
+	 
+* TODO
+	- Request chunks from server (Need to define strategy)
+	- Send chunks V2V (Need to define strategy)

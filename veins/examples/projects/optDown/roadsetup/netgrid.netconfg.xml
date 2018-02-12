@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netconfig>
+	<grid value='true' />
+	<grid.x-number value='4'/>
+	<grid.y-number value='4'/>
+	<grid.x-length value='200' />
+	<grid.y-length value='200' />
+	<no-turnarounds value='true'/>
+</netconfig>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flows>
+<!--
+	impatience="0.0" 
+    speedFactor="1" speedDev="0.1" 
+    <carFollowing-IDM timeHeadWay="1.8" minGap="2.5" speedFactor="1" speedDev="0.1" impatience=1.0 />
+    carFollowing-IDM timeHeadWay="1.8"
+    2.0,4.5,55, 0.9
+-->
+  <vType id="type1" accel="2.0" decel="4.5" length="5" minGap="2.5" maxSpeed="45">
+    <carFollowing-Krauss timeHeadWay="1.8" speedFactor="1" speedDev="0.1" sigma="0.5" impatience="1.0" />
+  </vType>
+ 
+	<!-- 1000 vh/h/l 0-2hrs -->
+ <interval begin="0" end="7200">
+    <flow id="0000" from="edg0" to="edg1" number="1000" departLane="0" type="type1" departSpeed="30.0" /> 
+ </interval> 
+
+</flows>

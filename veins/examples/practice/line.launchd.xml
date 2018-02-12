@@ -1,0 +1,6 @@
+<launch>
+  <copy file="line.net.xml"/>
+  <copy file="line.rou.xml"/>
+  <copy file="line.sumo.cfg" type="config"/>
+  <copy file="gui-settings.xml"/>
+</launch>

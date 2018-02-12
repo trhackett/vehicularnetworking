@@ -1,0 +1,29 @@
+DownServerApp
+
+DownVehApp
+	# HandleServerMessage
+		* Check if server chunk has been received
+			> If server chunk has been previously received return (nothing to do)
+			> Else
+				- Set flag for reception of server chunk
+				- Use chunk map to construct bit vector of chunks recieved 
+				- transmit chunk
+				- schedule timer to check pieces missing to request from other vehicles
+	# HandleVehMessage
+		* Check if all chunks are received
+			> If all chunks received return
+			> Else
+				- Update msgBitVec w/ 
+		* Determine if vehMsg has 1 or more data items
+			> for each data item add to vector
+			> add elements from vector into msgBitVec
+	# RequestChunks
+		* After timer expires
+		* Check msgBitVec for all missing chunks
+			- Make string w/ values of missing chunks
+		* Broadcast to neighbors
+	# Receive chunk request
+		* Check if data requested is in requestSet
+			> Remove elements that are in request set
+		* set timer to respond to chunk request
+			> 1/(Set size) - Nodes with more chunks will respond sooner
