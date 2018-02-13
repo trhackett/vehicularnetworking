@@ -13,7 +13,9 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-#include <opt_down/apps/ServerOpDownApp.h>
+#include "ServerOpDownApp.h"
+
+Define_Module(ServerOpDownApp);
 
 ServerOpDownApp::ServerOpDownApp() {
     // TODO Auto-generated constructor stub
