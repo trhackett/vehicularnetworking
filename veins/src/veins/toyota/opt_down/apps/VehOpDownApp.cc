@@ -19,11 +19,13 @@ Define_Module(VehOpDownApp);
 
 
 VehOpDownApp::VehOpDownApp() {
-    beaconTimer = NULL;
+    beaconTimer = requestChunksFromServerMsg = requestChunksFromCarsMsg = NULL;
 }
 
 VehOpDownApp::~VehOpDownApp() {
     cancelAndDelete(beaconTimer);
+    cancelAndDelete(requestChunksFromServerMsg);
+    cancelAndDelete(requestChunksFromCarsMsg);
 }
 
 void VehOpDownApp::initialize(int stage) {
@@ -36,6 +38,7 @@ void VehOpDownApp::initialize(int stage) {
         startTime = par("startTime");
         stopTime = par("stopTime");
         beaconInterval = par("beaconInterval").doubleValue();
+        firstServerRequestTime = par("firstServerRequestTime").doubleValue();
 
         if (stopTime >= SIMTIME_ZERO && stopTime < startTime)
             error("Invalid startTime/stopTime parameters");
@@ -53,15 +56,23 @@ void VehOpDownApp::initialize(int stage) {
         beaconSentCount = beaconReceivedCount = 0;
 
         // references
-        beaconTimer = new cMessage("sendBeacon");
+        beaconTimer = new cMessage(SEND_BEACON);
+        requestChunksFromServerMsg = new cMessage(REQUEST_SERVER_CHUNKS);
 
         scheduleAt(simTime() + startTime + uniform(0,1), beaconTimer);
+        scheduleAt(simTime() + firstServerRequestTime + uniform(0,2), requestChunksFromServerMsg);
     }
 }
 void VehOpDownApp::handleMessage(cMessage *msg) {
 
     if (msg == beaconTimer) {
         sendBeacon();
+    }
+    else if (msg == requestChunksFromServerMsg) {
+        requestChunksFromServer();
+    }
+    else if (msg == requestChunksFromCarsMsg) {
+        requestChunksFromCars();
     }
     else if (msg->getKind() == CAM_TYPE) {
        onBeacon(msg);
@@ -145,5 +156,17 @@ void VehOpDownApp::handlePositionUpdate() {
             iter++;
         }
     }
+}
+
+void VehOpDownApp::requestChunksFromServer() {
+    //TODO: Vehicles Attempt to request unique chunks from server
+    //      All vehicles know the size of the contents use to request
+    //      chunks (vehicle's ID and modulous)
+    //      May try mor sophisticated technique
+
+}
+
+void VehOpDownApp::requestChunksFromCars() {
+    // TODO: Define how vehicles will coordinate the exchange of contents
 }
 

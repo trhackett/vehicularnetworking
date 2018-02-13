@@ -25,6 +25,7 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        double startTime @unit("s") = default(uniform(0s,this.beaconInterval)); // Send first beacon at start time
        double stopTime @unit("s") = default(-1s); // time to finish sending, negative values mean forever
        double contentInterestRate = default(1);
+       double firstSeverRequestTime @unit("s");
        // Add statistics data
        
    	gates:

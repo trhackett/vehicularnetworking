@@ -32,6 +32,10 @@ using Veins::TraCIScenarioManager;
 using Veins::TraCIScenarioManagerAccess;
 using namespace OpDown;
 
+// Message Strings
+#define SEND_BEACON "sendBeacon"
+#define REQUEST_SERVER_CHUNKS "requestSever"
+
 class VehOpDownApp : public cSimpleModule{
 public:
     VehOpDownApp();
@@ -48,6 +52,8 @@ protected:
     virtual void processNeighbors(HeterogeneousMessage *hMsg);
     virtual chunkVecType getChunkIds();
     virtual void handlePositionUpdate();
+    virtual void requestChunksFromServer();
+    virtual void requestChunksFromCars();
 
 protected:
     //configuration
@@ -58,13 +64,17 @@ protected:
 
     // state
     cMessage *beaconTimer;
-    simtime_t lastStart; // Do I need?
+    cMessage *requestChunksFromServerMsg;
+    cMessage *requestChunksFromCarsMsg;
+    simtime_t firstChunkTime;
+    simtime_t lasatChunkTime;
     int toDecisionMaker;
     int fromDecisionMaker;
     std::string sumoId;
     bool contentInterest;
     Veins::TraCIMobility* mobility;
     double beaconInterval;
+    double firstServerRequestTime;
     // May move to independent file
     typedef std::pair<double,chunkVecType> peerDetailType;
     typedef std::map<std::string,peerDetailType> peerMapType;

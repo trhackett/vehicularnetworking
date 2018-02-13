@@ -24,8 +24,8 @@ Veins LTE adds LTE support to the vehicular network simulation framework [Veins]
 Further information can be found on the [Veins LTE Website](http://veins-lte.car2x.org/).
 
 ## My Modifications 
-* Project is OptDown
-* Added directory in veins/toyota
+* Project is OptDown (Optimal Download)
+* Working directory in src/veins/toyota/opt_down
 * Run simulation from examples/projects
 
 Vehicle App
