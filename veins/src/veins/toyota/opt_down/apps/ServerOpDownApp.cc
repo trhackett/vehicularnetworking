@@ -13,14 +13,14 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-#include "ServOpDownApp.h"
+#include <opt_down/apps/ServerOpDownApp.h>
 
-ServOpDownApp::ServOpDownApp() {
+ServerOpDownApp::ServerOpDownApp() {
     // TODO Auto-generated constructor stub
 
 }
 
-ServOpDownApp::~ServOpDownApp() {
+ServerOpDownApp::~ServerOpDownApp() {
     // TODO Auto-generated destructor stub
 }
 

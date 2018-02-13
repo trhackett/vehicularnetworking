@@ -14,3 +14,18 @@
 // 
 
 package org.car2x.veins.toyota.opt_down.apps;
+
+import inet.applications.IUDPApp;
+
+simple ServerOpDownApp like IUDPApp {
+	parameters:
+		int localPort = default(4242);
+		bool debug = default(false);
+		bool infoLogging = default(true);
+		double msgLength @unit(byte) = default(10KiB);//default(1GiB);
+		int totalFileChunks;
+		
+	gates:
+		input udpIn @labels(UDPControlInfo/up);
+		output udpOut @labels(UDPControlInfo/down);
+}

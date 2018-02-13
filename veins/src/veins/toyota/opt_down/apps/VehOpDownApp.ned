@@ -26,6 +26,7 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        double stopTime @unit("s") = default(-1s); // time to finish sending, negative values mean forever
        double contentInterestRate = default(1);
        double firstSeverRequestTime @unit("s");
+       int totalFileChunks;
        // Add statistics data
        
    	gates:

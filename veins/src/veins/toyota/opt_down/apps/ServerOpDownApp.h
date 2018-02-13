@@ -13,13 +13,13 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 // 
 
-#ifndef SERVOPDOWNAPP_H_
-#define SERVOPDOWNAPP_H_
+#ifndef SERVEROPDOWNAPP_H_
+#define SERVEROPDOWNAPP_H_
 
-class ServOpDownApp {
+class ServerOpDownApp {
 public:
-    ServOpDownApp();
-    virtual ~ServOpDownApp();
+    ServerOpDownApp();
+    virtual ~ServerOpDownApp();
 };
 
-#endif /* SERVOPDOWNAPP_H_ */
+#endif /* SERVEROPDOWNAPP_H_ */
