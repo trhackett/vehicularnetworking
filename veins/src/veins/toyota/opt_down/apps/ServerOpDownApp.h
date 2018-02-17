@@ -16,10 +16,53 @@
 #ifndef SERVEROPDOWNAPP_H_
 #define SERVEROPDOWNAPP_H_
 
-class ServerOpDownApp {
+#include <omnetpp.h>
+#include "ApplicationBase.h"
+#include "INETDefs.h"
+#include "UDPSocket.h"
+#include "IPv4Address.h"
+#include "veins/modules/heterogeneous/messages/HeterogeneousMessage_m.h"
+#include "veins/modules/mobility/traci/TraCIScenarioManager.h"
+#include "veins/base/utils/SimpleLogger.h"
+#include "veins/toyota/opt_down/utils/ChunkMsgData.h"
+
+using Veins::TraCIScenarioManager;
+using Veins::TraCIScenarioManagerAccess;
+
+class ServerOpDownApp : public ApplicationBase {
+protected:
+    // Configuration
+    bool debug;
+    bool infoLogging;
+
+    // state
+    UDPSocket socket;
+    int localPort;
+    TraCIScenarioManager* manager;
+    int totalFileChunks;
+    double msgLength;
+
+    //statistics
+    long receivedMessages;
+    long sentMessages;
+
 public:
     ServerOpDownApp();
     virtual ~ServerOpDownApp();
+
+    virtual int numInitStages() const {
+        return 4;
+    }
+    virtual void initialize(int stage);
+    virtual void finish();
+    virtual void handleMessageWhenUp(cMessage *msg);
+
+    virtual bool handleNodeStart(IDoneCallback *doneCallback);
+    virtual bool handleNodeShutdown(IDoneCallback *doneCallback);
+    virtual void handleNodeCrash();
+
+    virtual void sendChunk(std::string sourceAddress, int seqnoRequest);
+
 };
 
 #endif /* SERVEROPDOWNAPP_H_ */

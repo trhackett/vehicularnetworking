@@ -17,11 +17,6 @@
 
 using namespace OpDown;
 
-BeaconData::BeaconData() {
-    // TODO Auto-generated constructor stub
-
-}
-
 BeaconData::~BeaconData() {
     // TODO Auto-generated destructor stub
 }
@@ -82,7 +77,7 @@ void BeaconData::fromString(std::string msgString) {
     TTL = atoi((*iter).c_str());
 
     //std::stringstream sstream;
-    std::cout << "Created: " << vehicleId << "," << position << "," << speed << "," << angle << "," << currentRoad << "," << timestamp << "," << TTL <<std::endl;
+    //std::cout << "Created: " << vehicleId << "," << position << "," << speed << "," << angle << "," << currentRoad << "," << timestamp << "," << TTL <<std::endl;
     //DEBUG_ID("Created: " << vehicleId << "," << position << "," << speed << "," << angle << "," << currentRoad << "," << timestamp << "," << TTL);
 }
 

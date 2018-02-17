@@ -16,29 +16,40 @@
 #ifndef CHUNKMSGDATA_H_
 #define CHUNKMSGDATA_H_
 
-#include <omnetpp.h>
-#include <vector>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <boost/algorithm/string.hpp>
 
-// <chunkId,chunkValue>
-typedef std::vector<int> chunkVecType;
-#define CMD_MSG_VEC "CHUNK_ID_VEC"
+#define CMD_MSGTYPE_REQUEST     100
+#define CMD_MSGTYPE_DATA        101
 
-class ChunkMsgData : public cOwnedObject {
+#define CMD_SENDERTYPE_SERVER   200
+#define CMD_SENDERTYPE_CAR      201
+
+class ChunkMsgData {
 public:
-    ChunkMsgData(const char *name=CMD_MSG_VEC);
-    ChunkMsgData(std::vector<int> chunkIds,const char *name=CMD_MSG_VEC);
-    ChunkMsgData(const ChunkMsgData& other);
+    ChunkMsgData(int msgTypeIn, int senderTypeIn, int seqnoIn, std::string dataIn="");
+    ChunkMsgData(std::string msgString);
     virtual ~ChunkMsgData();
-    virtual void insertElement(int chunkId);
-    virtual chunkVecType getchunkVec() const;
-    virtual int getChunkVecSize() const;
-    virtual ChunkMsgData* dup()const {return new ChunkMsgData(*this);}
+    std::string toString();
+    void fromString(std::string msgString);
+
+    int getMsgType();
+    int getSenderType();
+    int getSeqno();
+    std::string getData();
+
+    void setMsgType(int msgTypeIn);
+    void setSenderType(int senderTypeIn);
+    void setSeqno(int seqnoIn);
+    void setData(std::string dataIn);
 
 private:
-    void copy (const ChunkMsgData& other);
-
-private:
-    chunkVecType chunkVec;
+    int msgType;
+    int senderType;
+    int seqno;
+    std::string data;
 };
 
 #endif /* CHUNKMSGDATA_H_ */

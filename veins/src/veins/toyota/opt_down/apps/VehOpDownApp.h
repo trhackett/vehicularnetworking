@@ -23,6 +23,7 @@
 #include "veins/base/utils/SimpleLogger.h"
 #include "veins/toyota/opt_down/utils/BeaconData.h"
 #include "veins/toyota/opt_down/utils/OpDownMsgUtil.h"
+#include "veins/toyota/opt_down/utils/ChunkHistory.h"
 #include "veins/toyota/opt_down/utils/ChunkMsgData.h"
 #include <map>
 #include <vector>
@@ -49,11 +50,14 @@ protected:
 protected:
     virtual void sendBeacon();
     virtual void onBeacon(cMessage *msg);
-    virtual void processNeighbors(HeterogeneousMessage *hMsg);
+    virtual bool processNeighbors(HeterogeneousMessage *hMsg);
     virtual chunkVecType getChunkIds();
     virtual void handlePositionUpdate();
     virtual void requestChunksFromServer();
     virtual void requestChunksFromCars();
+    virtual void initializeChunksNeeded();
+    virtual void chunkReceived(HeterogeneousMessage *hMsg);
+    virtual void findNeighborChunks();
 
 protected:
     //configuration
@@ -79,10 +83,18 @@ protected:
     typedef std::pair<double,chunkVecType> peerDetailType;
     typedef std::map<std::string,peerDetailType> peerMapType;
     peerMapType localDynamicMap;
+    int totalFileChunks;
+    std::vector<int> chunksNeeded;
+    std::vector<int> chunksReceived;
+    bool allChunksReceived;
 
     // statistics
     long beaconSentCount;
     long beaconReceivedCount;
+    long chunkRequestServer;
+    long chunkRequestCar;
+    long chunkReceivedServer;
+    long chunkReceivedCar;
 };
 
 #endif /* VEHOPDOWNAPP_H_ */

@@ -15,38 +15,75 @@
 
 #include "ChunkMsgData.h"
 
-ChunkMsgData::ChunkMsgData(const char* name) {
-    setName(name);
-}
-
-ChunkMsgData::ChunkMsgData(std::vector<int> chunkIds, const char* name) {
-    setName(name);
-    chunkVec = chunkIds;
-}
-
-ChunkMsgData::ChunkMsgData(const ChunkMsgData& other)
-{
-    copy(other);
-}
-
-void ChunkMsgData::copy(const ChunkMsgData& other){
-    setName(other.getName());
-    this->chunkVec = other.getchunkVec();
-}
-
 ChunkMsgData::~ChunkMsgData() {
+    // TODO Auto-generated destructor stub
 }
 
-void ChunkMsgData::insertElement(int chunkId)
-{
-    chunkVec.push_back(chunkId);
+ChunkMsgData::ChunkMsgData(int msgTypeIn, int senderTypeIn, int seqnoIn, std::string dataIn) :
+        msgType(msgTypeIn),
+        senderType(senderTypeIn),
+        seqno(seqnoIn),
+        data(dataIn)
+{}
+
+ChunkMsgData::ChunkMsgData(std::string msgString) {
+    std::vector<std::string> words;
+    boost::split(words, msgString, boost::is_any_of(" "), boost::token_compress_on);
+
+    std::vector<std::string>::iterator iter = words.begin();
+
+    msgType = atoi((*iter++).c_str());
+    senderType = atoi((*iter++).c_str());
+    seqno = atoi((*iter++).c_str());
+    data = *iter;
 }
 
-chunkVecType ChunkMsgData::getchunkVec() const {
-    return chunkVec;
+std::string ChunkMsgData::toString() {
+    std::stringstream sstream;
+    sstream << msgType << " " << senderType << " " << seqno << " " << data;
+    return sstream.str();
 }
 
-int ChunkMsgData::getChunkVecSize() const {
-    return chunkVec.size();
+void ChunkMsgData::fromString(std::string msgString) {
+    std::vector<std::string> words;
+    boost::split(words, msgString, boost::is_any_of(" "), boost::token_compress_on);
+
+    std::vector<std::string>::iterator iter = words.begin();
+
+    msgType = atoi((*iter++).c_str());
+    senderType = atoi((*iter++).c_str());
+    seqno = atoi((*iter++).c_str());
+    data = *iter;
 }
 
+int ChunkMsgData::getMsgType() {
+    return msgType;
+}
+
+int ChunkMsgData::getSenderType() {
+    return senderType;
+}
+
+int ChunkMsgData::getSeqno() {
+    return seqno;
+}
+
+std::string ChunkMsgData::getData() {
+    return data;
+}
+
+void ChunkMsgData::setMsgType(int msgTypeIn) {
+    msgType = msgTypeIn;
+}
+
+void ChunkMsgData::setSenderType(int senderTypeIn) {
+    senderType = senderTypeIn;
+}
+
+void ChunkMsgData::setSeqno(int seqnoIn) {
+    seqno = seqnoIn;
+}
+
+void ChunkMsgData::setData(std::string dataIn) {
+    data = dataIn;
+}

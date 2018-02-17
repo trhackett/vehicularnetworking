@@ -1,0 +1,25 @@
+* ServerOpDownApp
+	> Functionality
+		- Content sized fixed at server
+			+ data of chunk is the chunks seqno
+		- Nodes request chunks from server
+		- Server replies w/ requested chunks
+	> Statistics
+		- Number of request from nodes
+		- Number of chunks sent to nodes
+	
+* VehOpDown
+	> Functionality
+		- Beacons
+			+ Vehicles send beacons w/ vehicle info and cached content
+			+ Vehciles receiving beacons form Local Dynamic Map (LDM) to track neighbors and content
+		- Request Chunks
+			+ Vehicles initially request chunk from server based on initial timer
+			+ When vehicle receives beacon from neighbor w/ chunk not cached vehicle request chunk
+			+ If timeperiod elaspe w/ out receiving a chunk vehicle request chunk from server
+			+ Once all chunks received vehicles stop requesting
+		
+	> Data Structures
+		- LDM - Stores info of neighbors - ID, time of last contact, content neighbor has
+			+ Neigbor is removed from LDM after missing 3 beacons
+		

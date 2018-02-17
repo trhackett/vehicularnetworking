@@ -21,13 +21,11 @@
 #include <sstream>
 #include <string>
 #include <boost/algorithm/string.hpp>
-#include "veins/base/utils/SimpleLogger.h"
 
 namespace OpDown {
 
 class BeaconData {
 public:
-    BeaconData();
     BeaconData(std::string vehicleIdIn,Coord positionIn,double speedIn,double angleIn, std::string currentRoadIn,double timestampIn,int TTLIn=1);
     BeaconData(std::string msgString);
     virtual ~BeaconData();
