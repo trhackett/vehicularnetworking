@@ -40,7 +40,7 @@ protected:
     int localPort;
     TraCIScenarioManager* manager;
     int totalFileChunks;
-    double msgLength;
+    double chunkDataLength;
 
     //statistics
     long receivedMessages;

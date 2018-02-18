@@ -15,14 +15,13 @@
 
 #include "OpDownMsgUtil.h"
 
-HeterogeneousMessage* OpDownMsgUtil::prepareHM(std::string name, std::string sourceAddress, std::string destinationAddress, int networkType,int dataLengthBits, int msgType, int serial) {
+HeterogeneousMessage* OpDownMsgUtil::prepareHM(std::string name, std::string sourceAddress, std::string destinationAddress, int networkType,int dataLengthBits, int serial) {
     HeterogeneousMessage *hm = new HeterogeneousMessage(name.c_str());
     hm->addBitLength(dataLengthBits);
     hm->setSourceAddress(sourceAddress.c_str());
     hm->setDestinationAddress(destinationAddress.c_str());
     hm->setNetworkType(networkType);
     hm->setSendingTime(simTime());
-    hm->setKind(msgType);
     hm->setSerial(serial);
     return hm;
 }

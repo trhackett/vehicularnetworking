@@ -21,7 +21,7 @@
 class OpDownMsgUtil {
 
 public:
-    static HeterogeneousMessage* prepareHM(std::string name, std::string sourceAddress, std::string destinationAddress, int networkType,int dataLengthBits,int msgType=0, int serial=0);
+    static HeterogeneousMessage* prepareHM(std::string name, std::string sourceAddress, std::string destinationAddress, int networkType,int dataLengthBits, int serial=0);
 };
 
 #endif /* OPDOWNMSGUTIL_H_ */

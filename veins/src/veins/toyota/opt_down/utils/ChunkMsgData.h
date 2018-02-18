@@ -27,6 +27,9 @@
 #define CMD_SENDERTYPE_SERVER   200
 #define CMD_SENDERTYPE_CAR      201
 
+#define CMD_NAME_DATA "Chunk Data"
+#define CMD_NAME_REQU "Chunk Request"
+
 class ChunkMsgData {
 public:
     ChunkMsgData(int msgTypeIn, int senderTypeIn, int seqnoIn, std::string dataIn="");

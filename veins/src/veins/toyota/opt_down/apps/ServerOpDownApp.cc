@@ -35,20 +35,21 @@ void ServerOpDownApp::initialize(int stage) {
         manager = TraCIScenarioManagerAccess().get();
         ASSERT(manager);
 
-        msgLength = par("msgLength");
+        chunkDataLength = par("chunkDataLength");
         localPort = par("localPort").longValue();
         totalFileChunks = par("totalFileChunks").longValue();
     }
 }
 
 void ServerOpDownApp::handleMessageWhenUp(cMessage *msg){
+    // Only messages sent to server are chunk request
     HeterogeneousMessage* hMsg = dynamic_cast<HeterogeneousMessage*>(msg);
     if(hMsg){
         receivedMessages++;
         std::string sourceAddress = hMsg->getSourceAddress();
-        INFO_ID("Received Heterogeneous Message from " << sourceAddress);
 
         ChunkMsgData *cmd = new ChunkMsgData(hMsg->getWsmData());
+        INFO_ID("Server received chunk request from " << sourceAddress << " for chunk " << cmd->getSeqno());
 
         if (cmd->getMsgType() == CMD_MSGTYPE_REQUEST) {
             sendChunk(sourceAddress, cmd->getSeqno());
@@ -56,7 +57,7 @@ void ServerOpDownApp::handleMessageWhenUp(cMessage *msg){
 
 
     }
-    delete msg;
+    //delete msg;
 }
 
 bool ServerOpDownApp::handleNodeStart(IDoneCallback *doneCallback){
@@ -81,10 +82,10 @@ void ServerOpDownApp::sendChunk(std::string destAddress, int seqnoRequest) {
     ChunkMsgData payload = ChunkMsgData(CMD_MSGTYPE_DATA,CMD_SENDERTYPE_SERVER,
             seqnoRequest,std::to_string(seqnoRequest));
     reply->setWsmData(payload.toString().c_str());
+    reply->setKind(CMD_MSGTYPE_DATA);
+    reply->setByteLength(chunkDataLength);
 
-    reply->setByteLength(msgLength);
-
-    INFO_ID("Sending Message back to " << address << " data " << seqnoRequest);
+    INFO_ID("Server sending Message back to " << destAddress << " chunk " << seqnoRequest);
     socket.sendTo(reply, address, localPort);
 }
 

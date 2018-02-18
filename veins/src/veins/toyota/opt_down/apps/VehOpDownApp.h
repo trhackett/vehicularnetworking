@@ -49,15 +49,16 @@ protected:
 
 protected:
     virtual void sendBeacon();
+    virtual void sendChunk(int chunkId);
     virtual void onBeacon(cMessage *msg);
+    virtual void onChunkRequest(cMessage *msg);
     virtual bool processNeighbors(HeterogeneousMessage *hMsg);
-    virtual chunkVecType getChunkIds();
+    virtual chunkVecType getPeerChunkIds(std::string peer);
     virtual void handlePositionUpdate();
     virtual void requestChunksFromServer();
-    virtual void requestChunksFromCars();
+    virtual void requestChunksFromCars(std::vector<int> peerChunks);
     virtual void initializeChunksNeeded();
-    virtual void chunkReceived(HeterogeneousMessage *hMsg);
-    virtual void findNeighborChunks();
+    virtual void chunkReceived(cMessage *msg);
 
 protected:
     //configuration
@@ -78,6 +79,9 @@ protected:
     bool contentInterest;
     Veins::TraCIMobility* mobility;
     double beaconInterval;
+    double beaconLength;
+    double chunkRequestLength;
+    double chunkDataLength;
     double firstServerRequestTime;
     // May move to independent file
     typedef std::pair<double,chunkVecType> peerDetailType;
@@ -91,10 +95,13 @@ protected:
     // statistics
     long beaconSentCount;
     long beaconReceivedCount;
-    long chunkRequestServer;
-    long chunkRequestCar;
-    long chunkReceivedServer;
-    long chunkReceivedCar;
+    long chunkRequestServerCount;
+    long chunkRequestCarCount;
+    long chunkReceivedServerCount;
+    long chunkReceivedCarCount;
+    long chunkSentCount;
+    long chunkRequReceiveCount;
+    //TODO: Add statistic for average number of peers
 };
 
 #endif /* VEHOPDOWNAPP_H_ */

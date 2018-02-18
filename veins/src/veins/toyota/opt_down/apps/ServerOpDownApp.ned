@@ -22,7 +22,7 @@ simple ServerOpDownApp like IUDPApp {
 		int localPort = default(4242);
 		bool debug = default(false);
 		bool infoLogging = default(true);
-		double msgLength @unit(byte) = default(10KiB);//default(1GiB);
+		double chunkDataLength @unit("bit");//default(1GiB);
 		int totalFileChunks;
 		
 	gates:

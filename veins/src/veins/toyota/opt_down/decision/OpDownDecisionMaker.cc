@@ -27,7 +27,6 @@ void OpDownDecisionMaker::sendLteMessage(HeterogeneousMessage* msg) {
 }
 
 void OpDownDecisionMaker::sendDSRCMessage(HeterogeneousMessage* msg) {
-    msg->addBitLength(headerLength);
 	sendWSM(msg);
 }
 
