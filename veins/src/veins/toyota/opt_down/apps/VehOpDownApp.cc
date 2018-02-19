@@ -89,12 +89,15 @@ void VehOpDownApp::handleMessage(cMessage *msg) {
     }
     else if (strcmp(msg->getName(),BEACON_NAME) == 0) {
        onBeacon(msg);
+       delete msg;
     }
     else if (strcmp(msg->getName(),CMD_NAME_DATA) == 0) {
         chunkReceived(msg);
+        delete msg;
     }
     else if (strcmp(msg->getName(),CMD_NAME_REQU) == 0) {
         onChunkRequest(msg);
+        delete msg;
     }
     else if (strcmp(msg->getName(),"positionUpdate") == 0) {
         handlePositionUpdate();
@@ -130,7 +133,6 @@ void VehOpDownApp::onBeacon(cMessage *msg) {
        }
     }
     DEBUG_ID("Veh: " << sumoId << " received beacon from Veh " << hMsg->getSourceAddress());
-    delete msg;
 }
 
 bool VehOpDownApp::processNeighbors(HeterogeneousMessage *hMsg) {
@@ -268,8 +270,8 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
 
     allChunksReceived = int(chunksReceived.size()) == totalFileChunks;
 
-    INFO_ID("Veh: " << sumoId << " chunk: " << cm->getSeqno() << " received from " << hMsg->getSourceAddress()
-            << (chunksReceived.size()/totalFileChunks)*100 << "% chunks received");
+    INFO_ID("Veh: " << sumoId << " chunk: " << cm->getSeqno() << " received from " << hMsg->getSourceAddress() << " "
+            << (double(chunksReceived.size())/totalFileChunks)*100 << "% chunks received");
 }
 
 void VehOpDownApp::onChunkRequest(cMessage *msg) {

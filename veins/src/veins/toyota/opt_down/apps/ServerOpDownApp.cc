@@ -57,7 +57,7 @@ void ServerOpDownApp::handleMessageWhenUp(cMessage *msg){
 
 
     }
-    //delete msg;
+    delete msg;
 }
 
 bool ServerOpDownApp::handleNodeStart(IDoneCallback *doneCallback){
