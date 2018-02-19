@@ -30,7 +30,10 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        double contentInterestRate = default(1);
        double firstServerRequestTime @unit("s");
        int totalFileChunks;
-       // Add statistics data
+       
+       // statistics
+       @signal[peerCounter](type="long");
+       @statistic[peerCount](title="Number of Peers"; source=peerCounter; record=vector,stats; interpolationmode=none);
        
    	gates:
         output toDecisionMaker;

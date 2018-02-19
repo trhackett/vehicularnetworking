@@ -65,6 +65,7 @@ void VehOpDownApp::initialize(int stage) {
         beaconSentCount = beaconReceivedCount = 0;
         chunkRequestServerCount = chunkRequestCarCount = chunkRequReceiveCount = 0;
         chunkReceivedServerCount = chunkReceivedCarCount = chunkSentCount= 0;
+        peerSignal = registerSignal("peerCounter");
 
         // references
         beaconTimer = new cMessage(SEND_BEACON);
@@ -72,6 +73,8 @@ void VehOpDownApp::initialize(int stage) {
 
         scheduleAt(simTime() + startTime + uniform(0,1), beaconTimer);
         scheduleAt(simTime() + firstServerRequestTime + uniform(0,2), requestChunksFromServerMsg);
+
+        tmp = 0;
     }
 }
 
@@ -80,6 +83,7 @@ void VehOpDownApp::handleMessage(cMessage *msg) {
 
     if (msg == beaconTimer) {
         sendBeacon();
+        computePeers(); // Since cars send beacons periodically this is called here
     }
     else if (msg == requestChunksFromServerMsg) {
         requestChunksFromServer();
@@ -298,6 +302,17 @@ void VehOpDownApp::sendChunk(int chunkId) {
     HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_DATA,sumoId,"-1",DSRC, chunkRequestLength);
     msg->setWsmData(cm->toString().c_str());
     send(msg, toDecisionMaker);
+}
+
+void VehOpDownApp::computePeers() {
+    int peerCount = localDynamicMap.size();
+    emit(peerSignal,peerCount);
+
+    //$$$ Testing
+    if (tmp++ >= 5) {
+        tmp = 0;
+        INFO_ID("Veh: " << sumoId << " # of peers: " << peerCount);
+    }
 }
 
 void VehOpDownApp::finish() {

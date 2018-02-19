@@ -59,6 +59,7 @@ protected:
     virtual void requestChunksFromCars(std::vector<int> peerChunks);
     virtual void initializeChunksNeeded();
     virtual void chunkReceived(cMessage *msg);
+    virtual void computePeers();
 
 protected:
     //configuration
@@ -101,7 +102,10 @@ protected:
     long chunkReceivedCarCount;
     long chunkSentCount;
     long chunkRequReceiveCount;
-    //TODO: Add statistic for average number of peers
+
+    simsignal_t peerSignal;
+
+    int tmp; // $$$
 };
 
 #endif /* VEHOPDOWNAPP_H_ */
