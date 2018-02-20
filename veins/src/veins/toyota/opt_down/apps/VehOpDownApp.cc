@@ -73,8 +73,6 @@ void VehOpDownApp::initialize(int stage) {
 
         scheduleAt(simTime() + startTime + uniform(0,1), beaconTimer);
         scheduleAt(simTime() + firstServerRequestTime + uniform(0,2), requestChunksFromServerMsg);
-
-        tmp = 0;
     }
 }
 
@@ -307,12 +305,6 @@ void VehOpDownApp::sendChunk(int chunkId) {
 void VehOpDownApp::computePeers() {
     int peerCount = localDynamicMap.size();
     emit(peerSignal,peerCount);
-
-    //$$$ Testing
-    if (tmp++ >= 5) {
-        tmp = 0;
-        INFO_ID("Veh: " << sumoId << " # of peers: " << peerCount);
-    }
 }
 
 void VehOpDownApp::finish() {

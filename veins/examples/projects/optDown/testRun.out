@@ -1,0 +1,609 @@
+OMNeT++ Discrete Event Simulation  (C) 1992-2014 Andras Varga, OpenSim Ltd.
+Version: 4.6, build: 141202-f785492, edition: Academic Public License -- NOT FOR COMMERCIAL USE
+See the license for distribution terms and warranty disclaimer
+Setting up Cmdenv...
+Loading NED files from ../../../../simulte/src: 30
+Loading NED files from ../../../../inet/src: 271
+Loading NED files from ../../../src/veins: 47
+Loading NED files from .: 2
+Loading NED files from /home/vince/Dropbox/vmDropbox/workspace/veins-lte/veins/examples/projects/optDown: 2
+
+Preparing for running configuration nodebug, run #0...
+Scenario: $chunkDataLen=1024 bit, $fileChunks=5, $queue=2MiB, $maxBytesPerTti=3MiB, $scheduler="MAXCI", $RB=100, $numUEs=1000, $repetition=0
+Assigned runID=nodebug-0-20180219-15:16:33-5465
+Setting up network `scenario'...
+Initializing...
+
+Running simulation...
+** Event #1   T=0   Elapsed: 0.000s (0m 00s)  0% completed
+     Speed:     ev/sec=0   simsec/sec=0   ev/simsec=0
+     Messages:  created: 11   present: 11   in FES: 7
+Loading configuration... done.
+Step #0.00 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.10 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.20 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.30 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.40 (0ms ?*RT. ?UPS, vehicles TOT 1 ACT 1)                             Step #0.50 (16ms ~= 62.50*RT, ~125.00UPS, vehicles TOT 2 ACT 2)               Step #0.60 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #0.70 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #0.80 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #0.90 (0ms ?*RT. ?UPS, vehicles TOT 2 ACT 2)                             Step #1.00 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #1.10 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #1.20 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #1.30 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #1.40 (0ms ?*RT. ?UPS, vehicles TOT 3 ACT 3)                             Step #1.50 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #1.60 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #1.70 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #1.80 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #1.90 (1ms ~= 1000.00*RT, ~4000.00UPS, vehicles TOT 4 ACT 4)             Step #2.00 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #2.10 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #2.20 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #2.30 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #2.40 (0ms ?*RT. ?UPS, vehicles TOT 4 ACT 4)                             Step #2.50 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                             Step #2.60 (0ms ?*RT. ?UPS, vehicles TOT 5 ACT 5)                             Step #2.70 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #2.80 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #2.90 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #3.00 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #3.10 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #3.20 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #3.30 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #3.40 (0ms ?*RT. ?UPS, vehicles TOT 6 ACT 6)                             Step #3.50 (0ms ?*RT. ?UPS, vehicles TOT 7 ACT 7)                             Step #3.60 (1ms ~= 1000.00*RT, ~8000.00UPS, vehicles TOT 8 ACT 8)             Step #3.70 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                             Step #3.80 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                             Step #3.90 (0ms ?*RT. ?UPS, vehicles TOT 8 ACT 8)                             Step #4.00 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.10 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.20 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.30 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.40 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.50 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.60 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.70 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.80 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #4.90 (0ms ?*RT. ?UPS, vehicles TOT 9 ACT 9)                             Step #5.00 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.10 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.20 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.30 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.40 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.50 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.60 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.70 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.80 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #5.90 (0ms ?*RT. ?UPS, vehicles TOT 10 ACT 10)                           Step #6.00 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                           Step #6.10 (0ms ?*RT. ?UPS, vehicles TOT 11 ACT 11)                           Step #6.20 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                           Step #6.30 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                           Step #6.40 (0ms ?*RT. ?UPS, vehicles TOT 12 ACT 12)                           Step #6.50 (0ms ?*RT. ?UPS, vehicles TOT 13 ACT 13)                           Step #6.60 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                           Step #6.70 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                           Step #6.80 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                           Step #6.90 (0ms ?*RT. ?UPS, vehicles TOT 14 ACT 14)                           Step #7.00 (1ms ~= 1000.00*RT, ~15000.00UPS, vehicles TOT 15 ACT 15)          Step #7.10 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                           Step #7.20 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                           Step #7.30 (1ms ~= 1000.00*RT, ~15000.00UPS, vehicles TOT 15 ACT 15)          Step #7.40 (0ms ?*RT. ?UPS, vehicles TOT 15 ACT 15)                           Step #7.50 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #7.60 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #7.70 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #7.80 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #7.90 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #8.00 (1ms ~= 1000.00*RT, ~16000.00UPS, vehicles TOT 16 ACT 16)          Step #8.10 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #8.20 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #8.30 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #8.40 (0ms ?*RT. ?UPS, vehicles TOT 16 ACT 16)                           Step #8.50 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                           Step #8.60 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                           Step #8.70 (1ms ~= 1000.00*RT, ~17000.00UPS, vehicles TOT 17 ACT 17)          Step #8.80 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                           Step #8.90 (0ms ?*RT. ?UPS, vehicles TOT 17 ACT 17)                           Step #9.00 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                           Step #9.10 (0ms ?*RT. ?UPS, vehicles TOT 18 ACT 18)                           Step #9.20 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                           Step #9.30 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                           Step #9.40 (0ms ?*RT. ?UPS, vehicles TOT 19 ACT 19)                           Step #9.50 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                           Step #9.60 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                           Step #9.70 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                           Step #9.80 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                           Step #9.90 (0ms ?*RT. ?UPS, vehicles TOT 20 ACT 20)                           Step #10.00 (0ms ?*RT. ?UPS, vehicles TOT 21 ACT 21)                          Step #10.10 (0ms ?*RT. ?UPS, vehicles TOT 21 ACT 21)                          Step #10.20 (1ms ~= 1000.00*RT, ~21000.00UPS, vehicles TOT 21 ACT 21)         Step #10.30 (0ms ?*RT. ?UPS, vehicles TOT 21 ACT 21)   ** Event #258048   T=11.672   Elapsed: 10.005s (0m 10s)  11% completed
+     Speed:     ev/sec=25791.9   simsec/sec=1.16662   ev/simsec=22108.3
+     Messages:  created: 106588   present: 1964   in FES: 480
+** Event #260966   T=11.728   Elapsed: 10.126s (0m 10s)  11% completed
+     Speed:     ev/sec=24107.4   simsec/sec=0.46281   ev/simsec=52089.3
+     Messages:  created: 107936   present: 1998   in FES: 495
+
+<!> SIGINT or SIGTERM received, exiting at event #260966, t=11.728.
+
+
+Calling finish() at end of Run #0...
+Writing TraCI message of 2 bytes
+                       Step #10.40 (0ms ?*RT. ?UPS, vehicles TOT 21 ACT 21)                          Step #10.50 (0ms ?*RT. ?UPS, vehicles TOT 22 ACT 22)                          Step #10.60 (0ms ?*RT. ?UPS, vehicles TOT 22 ACT 22)                          Step #10.70 (0ms ?*RT. ?UPS, vehicles TOT 22 ACT 22)                          Step #10.80 (0ms ?*RT. ?UPS, vehicles TOT 22 ACT 22)                          Step #10.90 (1ms ~= 1000.00*RT, ~22000.00UPS, vehicles TOT 22 ACT 22)         Step #11.00 (0ms ?*RT. ?UPS, vehicles TOT 23 ACT 23)                          Step #11.10 (0ms ?*RT. ?UPS, vehicles TOT 23 ACT 23)                          Step #11.20 (0ms ?*RT. ?UPS, vehicles TOT 23 ACT 23)                          Step #11.30 (0ms ?*RT. ?UPS, vehicles TOT 23 ACT 23)                          Step #11.40 (0ms ?*RT. ?UPS, vehicles TOT 23 ACT 23)                          Step #11.50 (0ms ?*RT. ?UPS, vehicles TOT 24 ACT 24)                          Step #11.60 (0ms ?*RT. ?UPS, vehicles TOT 24 ACT 24)                          Step #11.70 (0ms ?*RT. ?UPS, vehicles TOT 24 ACT 24)                          Reading TraCI message of 7 bytes
+connectionManager:  unregistering nic #55
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #55
+NicEntry: disconnecting nic #55 and #179
+NicEntry: disconnecting nic #551 and #55
+NicEntry: disconnecting nic #55 and #551
+NicEntry: disconnecting nic #582 and #55
+NicEntry: disconnecting nic #55 and #582
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #55
+NicEntry: disconnecting nic #55 and #241
+NicEntry: disconnecting nic #396 and #55
+NicEntry: disconnecting nic #55 and #396
+NicEntry: disconnecting nic #520 and #55
+NicEntry: disconnecting nic #55 and #520
+NicEntry: disconnecting nic #644 and #55
+NicEntry: disconnecting nic #55 and #644
+NicEntry: disconnecting nic #706 and #55
+NicEntry: disconnecting nic #55 and #706
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #86 and #55
+NicEntry: disconnecting nic #55 and #86
+NicEntry: disconnecting nic #365 and #55
+NicEntry: disconnecting nic #55 and #365
+NicEntry: disconnecting nic #768 and #55
+NicEntry: disconnecting nic #55 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #55
+NicEntry: disconnecting nic #55 and #148
+NicEntry: disconnecting nic #210 and #55
+NicEntry: disconnecting nic #55 and #210
+NicEntry: disconnecting nic #427 and #55
+NicEntry: disconnecting nic #55 and #427
+NicEntry: disconnecting nic #489 and #55
+NicEntry: disconnecting nic #55 and #489
+NicEntry: disconnecting nic #613 and #55
+NicEntry: disconnecting nic #55 and #613
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+connectionManager: Update cons in [(2,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #86
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #86
+NicEntry: disconnecting nic #86 and #179
+NicEntry: disconnecting nic #303 and #86
+NicEntry: disconnecting nic #86 and #303
+NicEntry: disconnecting nic #458 and #86
+NicEntry: disconnecting nic #86 and #458
+NicEntry: disconnecting nic #551 and #86
+NicEntry: disconnecting nic #86 and #551
+NicEntry: disconnecting nic #582 and #86
+NicEntry: disconnecting nic #86 and #582
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #86
+NicEntry: disconnecting nic #86 and #241
+NicEntry: disconnecting nic #396 and #86
+NicEntry: disconnecting nic #86 and #396
+NicEntry: disconnecting nic #644 and #86
+NicEntry: disconnecting nic #86 and #644
+NicEntry: disconnecting nic #706 and #86
+NicEntry: disconnecting nic #86 and #706
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #365 and #86
+NicEntry: disconnecting nic #86 and #365
+NicEntry: disconnecting nic #768 and #86
+NicEntry: disconnecting nic #86 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #86
+NicEntry: disconnecting nic #86 and #148
+NicEntry: disconnecting nic #210 and #86
+NicEntry: disconnecting nic #86 and #210
+NicEntry: disconnecting nic #427 and #86
+NicEntry: disconnecting nic #86 and #427
+NicEntry: disconnecting nic #489 and #86
+NicEntry: disconnecting nic #86 and #489
+NicEntry: disconnecting nic #613 and #86
+NicEntry: disconnecting nic #86 and #613
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #334
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #117 and #334
+NicEntry: disconnecting nic #334 and #117
+NicEntry: disconnecting nic #179 and #334
+NicEntry: disconnecting nic #334 and #179
+NicEntry: disconnecting nic #272 and #334
+NicEntry: disconnecting nic #334 and #272
+NicEntry: disconnecting nic #303 and #334
+NicEntry: disconnecting nic #334 and #303
+NicEntry: disconnecting nic #458 and #334
+NicEntry: disconnecting nic #334 and #458
+NicEntry: disconnecting nic #551 and #334
+NicEntry: disconnecting nic #334 and #551
+NicEntry: disconnecting nic #582 and #334
+NicEntry: disconnecting nic #334 and #582
+NicEntry: disconnecting nic #675 and #334
+NicEntry: disconnecting nic #334 and #675
+NicEntry: disconnecting nic #737 and #334
+NicEntry: disconnecting nic #334 and #737
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #396 and #334
+NicEntry: disconnecting nic #334 and #396
+NicEntry: disconnecting nic #520 and #334
+NicEntry: disconnecting nic #334 and #520
+NicEntry: disconnecting nic #644 and #334
+NicEntry: disconnecting nic #334 and #644
+NicEntry: disconnecting nic #706 and #334
+NicEntry: disconnecting nic #334 and #706
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #458
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #117 and #458
+NicEntry: disconnecting nic #458 and #117
+NicEntry: disconnecting nic #179 and #458
+NicEntry: disconnecting nic #458 and #179
+NicEntry: disconnecting nic #272 and #458
+NicEntry: disconnecting nic #458 and #272
+NicEntry: disconnecting nic #303 and #458
+NicEntry: disconnecting nic #458 and #303
+NicEntry: disconnecting nic #551 and #458
+NicEntry: disconnecting nic #458 and #551
+NicEntry: disconnecting nic #582 and #458
+NicEntry: disconnecting nic #458 and #582
+NicEntry: disconnecting nic #675 and #458
+NicEntry: disconnecting nic #458 and #675
+NicEntry: disconnecting nic #737 and #458
+NicEntry: disconnecting nic #458 and #737
+connectionManager: Update cons in [(1,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #365 and #458
+NicEntry: disconnecting nic #458 and #365
+NicEntry: disconnecting nic #768 and #458
+NicEntry: disconnecting nic #458 and #768
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #365
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #365
+NicEntry: disconnecting nic #365 and #179
+NicEntry: disconnecting nic #303 and #365
+NicEntry: disconnecting nic #365 and #303
+NicEntry: disconnecting nic #551 and #365
+NicEntry: disconnecting nic #365 and #551
+NicEntry: disconnecting nic #582 and #365
+NicEntry: disconnecting nic #365 and #582
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #365
+NicEntry: disconnecting nic #365 and #241
+NicEntry: disconnecting nic #396 and #365
+NicEntry: disconnecting nic #365 and #396
+NicEntry: disconnecting nic #644 and #365
+NicEntry: disconnecting nic #365 and #644
+NicEntry: disconnecting nic #706 and #365
+NicEntry: disconnecting nic #365 and #706
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #365
+NicEntry: disconnecting nic #365 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #365
+NicEntry: disconnecting nic #365 and #148
+NicEntry: disconnecting nic #210 and #365
+NicEntry: disconnecting nic #365 and #210
+NicEntry: disconnecting nic #427 and #365
+NicEntry: disconnecting nic #365 and #427
+NicEntry: disconnecting nic #489 and #365
+NicEntry: disconnecting nic #365 and #489
+NicEntry: disconnecting nic #613 and #365
+NicEntry: disconnecting nic #365 and #613
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #427
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #427
+NicEntry: disconnecting nic #427 and #179
+NicEntry: disconnecting nic #551 and #427
+NicEntry: disconnecting nic #427 and #551
+NicEntry: disconnecting nic #582 and #427
+NicEntry: disconnecting nic #427 and #582
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #427
+NicEntry: disconnecting nic #427 and #241
+NicEntry: disconnecting nic #396 and #427
+NicEntry: disconnecting nic #427 and #396
+NicEntry: disconnecting nic #644 and #427
+NicEntry: disconnecting nic #427 and #644
+NicEntry: disconnecting nic #706 and #427
+NicEntry: disconnecting nic #427 and #706
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #427
+NicEntry: disconnecting nic #427 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #427
+NicEntry: disconnecting nic #427 and #148
+NicEntry: disconnecting nic #210 and #427
+NicEntry: disconnecting nic #427 and #210
+NicEntry: disconnecting nic #489 and #427
+NicEntry: disconnecting nic #427 and #489
+NicEntry: disconnecting nic #613 and #427
+NicEntry: disconnecting nic #427 and #613
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+connectionManager: Update cons in [(2,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #489
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #489
+NicEntry: disconnecting nic #489 and #179
+NicEntry: disconnecting nic #551 and #489
+NicEntry: disconnecting nic #489 and #551
+NicEntry: disconnecting nic #582 and #489
+NicEntry: disconnecting nic #489 and #582
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #489
+NicEntry: disconnecting nic #489 and #241
+NicEntry: disconnecting nic #396 and #489
+NicEntry: disconnecting nic #489 and #396
+NicEntry: disconnecting nic #644 and #489
+NicEntry: disconnecting nic #489 and #644
+NicEntry: disconnecting nic #706 and #489
+NicEntry: disconnecting nic #489 and #706
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #489
+NicEntry: disconnecting nic #489 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #489
+NicEntry: disconnecting nic #489 and #148
+NicEntry: disconnecting nic #210 and #489
+NicEntry: disconnecting nic #489 and #210
+NicEntry: disconnecting nic #613 and #489
+NicEntry: disconnecting nic #489 and #613
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+connectionManager: Update cons in [(2,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #520
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #520
+NicEntry: disconnecting nic #520 and #179
+NicEntry: disconnecting nic #551 and #520
+NicEntry: disconnecting nic #520 and #551
+NicEntry: disconnecting nic #582 and #520
+NicEntry: disconnecting nic #520 and #582
+NicEntry: disconnecting nic #675 and #520
+NicEntry: disconnecting nic #520 and #675
+NicEntry: disconnecting nic #737 and #520
+NicEntry: disconnecting nic #520 and #737
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #520
+NicEntry: disconnecting nic #520 and #241
+NicEntry: disconnecting nic #396 and #520
+NicEntry: disconnecting nic #520 and #396
+NicEntry: disconnecting nic #644 and #520
+NicEntry: disconnecting nic #520 and #644
+NicEntry: disconnecting nic #706 and #520
+NicEntry: disconnecting nic #520 and #706
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #613
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #613
+NicEntry: disconnecting nic #613 and #179
+NicEntry: disconnecting nic #551 and #613
+NicEntry: disconnecting nic #613 and #551
+NicEntry: disconnecting nic #582 and #613
+NicEntry: disconnecting nic #613 and #582
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #613
+NicEntry: disconnecting nic #613 and #241
+NicEntry: disconnecting nic #396 and #613
+NicEntry: disconnecting nic #613 and #396
+NicEntry: disconnecting nic #644 and #613
+NicEntry: disconnecting nic #613 and #644
+NicEntry: disconnecting nic #706 and #613
+NicEntry: disconnecting nic #613 and #706
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #613
+NicEntry: disconnecting nic #613 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #613
+NicEntry: disconnecting nic #613 and #148
+NicEntry: disconnecting nic #210 and #613
+NicEntry: disconnecting nic #613 and #210
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+connectionManager: Update cons in [(2,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #551
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #117 and #551
+NicEntry: disconnecting nic #551 and #117
+NicEntry: disconnecting nic #179 and #551
+NicEntry: disconnecting nic #551 and #179
+NicEntry: disconnecting nic #272 and #551
+NicEntry: disconnecting nic #551 and #272
+NicEntry: disconnecting nic #303 and #551
+NicEntry: disconnecting nic #551 and #303
+NicEntry: disconnecting nic #582 and #551
+NicEntry: disconnecting nic #551 and #582
+NicEntry: disconnecting nic #675 and #551
+NicEntry: disconnecting nic #551 and #675
+NicEntry: disconnecting nic #737 and #551
+NicEntry: disconnecting nic #551 and #737
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #551
+NicEntry: disconnecting nic #551 and #241
+NicEntry: disconnecting nic #396 and #551
+NicEntry: disconnecting nic #551 and #396
+NicEntry: disconnecting nic #644 and #551
+NicEntry: disconnecting nic #551 and #644
+NicEntry: disconnecting nic #706 and #551
+NicEntry: disconnecting nic #551 and #706
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #551
+NicEntry: disconnecting nic #551 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #551
+NicEntry: disconnecting nic #551 and #148
+NicEntry: disconnecting nic #210 and #551
+NicEntry: disconnecting nic #551 and #210
+Clear all sockets
+connectionManager:  unregistering nic #582
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #117 and #582
+NicEntry: disconnecting nic #582 and #117
+NicEntry: disconnecting nic #179 and #582
+NicEntry: disconnecting nic #582 and #179
+NicEntry: disconnecting nic #272 and #582
+NicEntry: disconnecting nic #582 and #272
+NicEntry: disconnecting nic #303 and #582
+NicEntry: disconnecting nic #582 and #303
+NicEntry: disconnecting nic #675 and #582
+NicEntry: disconnecting nic #582 and #675
+NicEntry: disconnecting nic #737 and #582
+NicEntry: disconnecting nic #582 and #737
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #582
+NicEntry: disconnecting nic #582 and #241
+NicEntry: disconnecting nic #396 and #582
+NicEntry: disconnecting nic #582 and #396
+NicEntry: disconnecting nic #644 and #582
+NicEntry: disconnecting nic #582 and #644
+NicEntry: disconnecting nic #706 and #582
+NicEntry: disconnecting nic #582 and #706
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #582
+NicEntry: disconnecting nic #582 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #582
+NicEntry: disconnecting nic #582 and #148
+NicEntry: disconnecting nic #210 and #582
+NicEntry: disconnecting nic #582 and #210
+Clear all sockets
+connectionManager:  unregistering nic #644
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #644
+NicEntry: disconnecting nic #644 and #179
+NicEntry: disconnecting nic #675 and #644
+NicEntry: disconnecting nic #644 and #675
+NicEntry: disconnecting nic #737 and #644
+NicEntry: disconnecting nic #644 and #737
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #644
+NicEntry: disconnecting nic #644 and #241
+NicEntry: disconnecting nic #396 and #644
+NicEntry: disconnecting nic #644 and #396
+NicEntry: disconnecting nic #706 and #644
+NicEntry: disconnecting nic #644 and #706
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #644
+NicEntry: disconnecting nic #644 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #644
+NicEntry: disconnecting nic #644 and #148
+NicEntry: disconnecting nic #210 and #644
+NicEntry: disconnecting nic #644 and #210
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #117
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #117
+NicEntry: disconnecting nic #117 and #179
+NicEntry: disconnecting nic #272 and #117
+NicEntry: disconnecting nic #117 and #272
+NicEntry: disconnecting nic #303 and #117
+NicEntry: disconnecting nic #117 and #303
+NicEntry: disconnecting nic #675 and #117
+NicEntry: disconnecting nic #117 and #675
+NicEntry: disconnecting nic #737 and #117
+NicEntry: disconnecting nic #117 and #737
+connectionManager: Update cons in [(1,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #675
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #675
+NicEntry: disconnecting nic #675 and #179
+NicEntry: disconnecting nic #272 and #675
+NicEntry: disconnecting nic #675 and #272
+NicEntry: disconnecting nic #303 and #675
+NicEntry: disconnecting nic #675 and #303
+NicEntry: disconnecting nic #737 and #675
+NicEntry: disconnecting nic #675 and #737
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #675
+NicEntry: disconnecting nic #675 and #241
+NicEntry: disconnecting nic #396 and #675
+NicEntry: disconnecting nic #675 and #396
+NicEntry: disconnecting nic #706 and #675
+NicEntry: disconnecting nic #675 and #706
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #706
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #706
+NicEntry: disconnecting nic #706 and #179
+NicEntry: disconnecting nic #737 and #706
+NicEntry: disconnecting nic #706 and #737
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #706
+NicEntry: disconnecting nic #706 and #241
+NicEntry: disconnecting nic #396 and #706
+NicEntry: disconnecting nic #706 and #396
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+NicEntry: disconnecting nic #768 and #706
+NicEntry: disconnecting nic #706 and #768
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #706
+NicEntry: disconnecting nic #706 and #148
+NicEntry: disconnecting nic #210 and #706
+NicEntry: disconnecting nic #706 and #210
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #737
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #737
+NicEntry: disconnecting nic #737 and #179
+NicEntry: disconnecting nic #272 and #737
+NicEntry: disconnecting nic #737 and #272
+NicEntry: disconnecting nic #303 and #737
+NicEntry: disconnecting nic #737 and #303
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #737
+NicEntry: disconnecting nic #737 and #241
+NicEntry: disconnecting nic #396 and #737
+NicEntry: disconnecting nic #737 and #396
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #768
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #768
+NicEntry: disconnecting nic #768 and #179
+NicEntry: disconnecting nic #303 and #768
+NicEntry: disconnecting nic #768 and #303
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #768
+NicEntry: disconnecting nic #768 and #241
+NicEntry: disconnecting nic #396 and #768
+NicEntry: disconnecting nic #768 and #396
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #148 and #768
+NicEntry: disconnecting nic #768 and #148
+NicEntry: disconnecting nic #210 and #768
+NicEntry: disconnecting nic #768 and #210
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #148
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #148
+NicEntry: disconnecting nic #148 and #179
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #148
+NicEntry: disconnecting nic #148 and #241
+NicEntry: disconnecting nic #396 and #148
+NicEntry: disconnecting nic #148 and #396
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+NicEntry: disconnecting nic #210 and #148
+NicEntry: disconnecting nic #148 and #210
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+connectionManager: Update cons in [(2,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #210
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #179 and #210
+NicEntry: disconnecting nic #210 and #179
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #210
+NicEntry: disconnecting nic #210 and #241
+NicEntry: disconnecting nic #396 and #210
+NicEntry: disconnecting nic #210 and #396
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+connectionManager: Update cons in [(0,2,0)]
+connectionManager: Update cons in [(1,2,0)]
+connectionManager: Update cons in [(2,2,0)]
+Clear all sockets
+connectionManager:  unregistering nic #179
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #272 and #179
+NicEntry: disconnecting nic #179 and #272
+NicEntry: disconnecting nic #303 and #179
+NicEntry: disconnecting nic #179 and #303
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #241 and #179
+NicEntry: disconnecting nic #179 and #241
+NicEntry: disconnecting nic #396 and #179
+NicEntry: disconnecting nic #179 and #396
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #272
+connectionManager: Update cons in [(0,0,0)]
+NicEntry: disconnecting nic #303 and #272
+NicEntry: disconnecting nic #272 and #303
+connectionManager: Update cons in [(1,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #241
+connectionManager: Update cons in [(0,0,0)]
+connectionManager: Update cons in [(1,0,0)]
+NicEntry: disconnecting nic #396 and #241
+NicEntry: disconnecting nic #241 and #396
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #303
+connectionManager: Update cons in [(0,0,0)]
+connectionManager: Update cons in [(1,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+Clear all sockets
+connectionManager:  unregistering nic #396
+connectionManager: Update cons in [(0,0,0)]
+connectionManager: Update cons in [(1,0,0)]
+connectionManager: Update cons in [(2,0,0)]
+connectionManager: Update cons in [(0,1,0)]
+connectionManager: Update cons in [(1,1,0)]
+connectionManager: Update cons in [(2,1,0)]
+Clear all sockets
+[INF][11.728][38][scenario.server.udpApp[0]:96] Received 0 messages via LTE.
+[INF][11.728][38][scenario.server.udpApp[0]:97] Sent 0 messages via LTE.
+Clear all sockets
+
+End.

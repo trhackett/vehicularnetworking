@@ -104,8 +104,6 @@ protected:
     long chunkRequReceiveCount;
 
     simsignal_t peerSignal;
-
-    int tmp; // $$$
 };
 
 #endif /* VEHOPDOWNAPP_H_ */
