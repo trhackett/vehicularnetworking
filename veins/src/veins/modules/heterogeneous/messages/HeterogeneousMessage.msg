@@ -9,6 +9,7 @@ cplusplus {{
 #define CAM_TYPE 42
 #define CAM_ERROR_TYPE 43
 #define BEACON_TYPE 44
+#define BEACON_NAME "beacon"
 }}
 
 class WaveShortMessage;

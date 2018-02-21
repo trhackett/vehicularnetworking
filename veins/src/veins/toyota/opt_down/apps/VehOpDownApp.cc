@@ -44,7 +44,9 @@ void VehOpDownApp::initialize(int stage) {
         chunkDataLength = par("chunkDataLength").doubleValue();
         firstServerRequestTime = par("firstServerRequestTime").doubleValue();
         totalFileChunks = par("totalFileChunks").longValue();
+        cooperativeDownload = par("cooperativeDownload").boolValue();
 
+        received1stChunk = false;
         if (stopTime >= SIMTIME_ZERO && stopTime < startTime)
             error("Invalid startTime/stopTime parameters");
 
@@ -66,6 +68,7 @@ void VehOpDownApp::initialize(int stage) {
         chunkRequestServerCount = chunkRequestCarCount = chunkRequReceiveCount = 0;
         chunkReceivedServerCount = chunkReceivedCarCount = chunkSentCount= 0;
         peerSignal = registerSignal("peerCounter");
+        lastChunkTime = firstChunkTime = -1;
 
         // references
         beaconTimer = new cMessage(SEND_BEACON);
@@ -80,11 +83,25 @@ void VehOpDownApp::initialize(int stage) {
 void VehOpDownApp::handleMessage(cMessage *msg) {
 
     if (msg == beaconTimer) {
-        sendBeacon();
-        computePeers(); // Since cars send beacons periodically this is called here
+        if (cooperativeDownload) {
+            sendBeacon();
+            computePeers(); // Since cars send beacons periodically this is called here
+        }
     }
     else if (msg == requestChunksFromServerMsg) {
-        requestChunksFromServer();
+        if (cooperativeDownload) {
+            if (requestHashing) {
+                // Request random chunks from server
+                requestChunksFromServerRand();
+            }
+            else {
+                // Use consistent hashing to request chunks
+                requestChunksFromServerHash();
+            }
+        }
+        else {
+            requestChunksFromServerNonCoop();
+        }
     }
     else if (msg == requestChunksFromCarsMsg) {
         // requestChunksFromCars();
@@ -126,6 +143,10 @@ void VehOpDownApp::sendBeacon() {
 void VehOpDownApp::onBeacon(cMessage *msg) {
     HeterogeneousMessage *hMsg = dynamic_cast<HeterogeneousMessage *>(msg);
     ++beaconReceivedCount;
+
+    if (!cooperativeDownload) {
+        return;
+    }
 
     if (processNeighbors(hMsg)) {
         // If neighbor check if any chunks needed
@@ -194,13 +215,35 @@ void VehOpDownApp::initializeChunksNeeded() {
     for (int i=0; i < totalFileChunks; i++) {
         chunksNeeded.push_back(i);
     }
+
     // Randomly shuffle chunks using vehicle ID as seed
-    int seed = atoi(sumoId.c_str());
-    std::srand(seed);
-    std::random_shuffle(chunksNeeded.begin(),chunksNeeded.end());
+    if (!requestHashing) {
+        int seed = atoi(sumoId.c_str());
+        std::srand(seed);
+        std::random_shuffle(chunksNeeded.begin(),chunksNeeded.end());
+    }
 }
 
-void VehOpDownApp::requestChunksFromServer() {
+void VehOpDownApp::requestChunksFromServerNonCoop() {
+    // Request all chunks from server
+    std::string allChks = "";
+
+    for (auto chk : chunksNeeded) {
+        chunkRequestServerCount++;
+        ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chk);
+        HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
+        msg->setWsmData(cm->toString().c_str());
+        send(msg, toDecisionMaker);
+        allChks += std::to_string(chk) + ", ";
+    }
+    INFO_ID("Veh: " << sumoId << " Requesting from SERVER chunk " << allChks);
+}
+
+void VehOpDownApp::requestChunksFromServerHash() {
+    // TODO:
+}
+
+void VehOpDownApp::requestChunksFromServerRand() {
     //TODO: Vehicles Attempt to request unique chunks from server
     //      All vehicles know the size of the contents use to request
     //      chunks (vehicle's ID and modulous)
@@ -245,6 +288,12 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
     HeterogeneousMessage *hMsg = dynamic_cast<HeterogeneousMessage *>(msg);
     ChunkMsgData *cm = new ChunkMsgData(hMsg->getWsmData());
 
+    if (!received1stChunk) {
+        // First chunk of content received
+        received1stChunk = true;
+        firstChunkTime = simTime();
+    }
+
     // Update statistics for chunk
     if (cm->getSenderType() == CMD_SENDERTYPE_SERVER) {
         chunkReceivedServerCount++;
@@ -270,7 +319,13 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
     // Add chunk to received list
     chunksReceived.push_back(cm->getSeqno());
 
-    allChunksReceived = int(chunksReceived.size()) == totalFileChunks;
+    if (!allChunksReceived && chunksNeeded.size() == 0) {
+        // Last chunk received
+        allChunksReceived = true;
+        lastChunkTime = simTime();
+    }
+
+    //allChunksReceived = int(chunksReceived.size()) == totalFileChunks;
 
     INFO_ID("Veh: " << sumoId << " chunk: " << cm->getSeqno() << " received from " << hMsg->getSourceAddress() << " "
             << (double(chunksReceived.size())/totalFileChunks)*100 << "% chunks received");
@@ -316,4 +371,8 @@ void VehOpDownApp::finish() {
     recordScalar("chunkReceivedCarCount",chunkReceivedCarCount);
     recordScalar("chunkSentCount",chunkSentCount);
     recordScalar("chunkRequReceiveCount",chunkRequReceiveCount);
+    recordScalar("downloadTime",lastChunkTime.dbl() - firstChunkTime.dbl());
+    recordScalar("firstChunkReceived",firstChunkTime);
+    recordScalar("lastChunkReceived",lastChunkTime);
+
 }

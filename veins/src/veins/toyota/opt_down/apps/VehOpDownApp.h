@@ -55,11 +55,14 @@ protected:
     virtual bool processNeighbors(HeterogeneousMessage *hMsg);
     virtual chunkVecType getPeerChunkIds(std::string peer);
     virtual void handlePositionUpdate();
-    virtual void requestChunksFromServer();
+    virtual void requestChunksFromServerHash();
+    virtual void requestChunksFromServerRand();
+    virtual void requestChunksFromServerNonCoop();
     virtual void requestChunksFromCars(std::vector<int> peerChunks);
     virtual void initializeChunksNeeded();
     virtual void chunkReceived(cMessage *msg);
     virtual void computePeers();
+
 
 protected:
     //configuration
@@ -73,7 +76,7 @@ protected:
     cMessage *requestChunksFromServerMsg;
     cMessage *requestChunksFromCarsMsg;
     simtime_t firstChunkTime;
-    simtime_t lasatChunkTime;
+    simtime_t lastChunkTime;
     int toDecisionMaker;
     int fromDecisionMaker;
     std::string sumoId;
@@ -92,6 +95,9 @@ protected:
     std::vector<int> chunksNeeded;
     std::vector<int> chunksReceived;
     bool allChunksReceived;
+    bool cooperativeDownload;
+    bool received1stChunk;
+    bool requestHashing;
 
     // statistics
     long beaconSentCount;

@@ -29,6 +29,8 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        double stopTime @unit("s") = default(-1s); // time to finish sending, negative values mean forever
        double contentInterestRate = default(1);
        double firstServerRequestTime @unit("s");
+       bool cooperativeDownload = default(true);
+       bool requestHashing = default(true);
        int totalFileChunks;
        
        // statistics
