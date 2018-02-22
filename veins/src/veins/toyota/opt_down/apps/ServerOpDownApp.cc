@@ -14,6 +14,7 @@
 // 
 
 #include "ServerOpDownApp.h"
+#include "Coord.h"
 
 Define_Module(ServerOpDownApp);
 
@@ -79,8 +80,11 @@ void ServerOpDownApp::sendChunk(std::string destAddress, int seqnoRequest) {
     IPv4Address address = manager->getIPAddressForID(destAddress);
     reply->setSourceAddress("server");
 
+    Coord pos;
+    pos.x = -1;
+    pos.y = -1;
     ChunkMsgData payload = ChunkMsgData(CMD_MSGTYPE_DATA,CMD_SENDERTYPE_SERVER,
-            seqnoRequest,std::to_string(seqnoRequest));
+            seqnoRequest,pos,std::to_string(seqnoRequest));
     reply->setWsmData(payload.toString().c_str());
     reply->setKind(CMD_MSGTYPE_DATA);
     reply->setByteLength(chunkDataLength);

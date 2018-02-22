@@ -15,6 +15,8 @@
 
 #include "VehOpDownApp.h"
 #include <algorithm>
+#include <math.h>
+#include <cassert>
 
 Define_Module(VehOpDownApp);
 
@@ -69,6 +71,7 @@ void VehOpDownApp::initialize(int stage) {
         chunkReceivedServerCount = chunkReceivedCarCount = chunkSentCount= 0;
         peerSignal = registerSignal("peerCounter");
         lastChunkTime = firstChunkTime = lastServerRequest = -1;
+        chunksSuppressed = 0;
 
         // references
         beaconTimer = new cMessage(SEND_BEACON);
@@ -120,6 +123,9 @@ void VehOpDownApp::handleMessage(cMessage *msg) {
     }
     else if (strcmp(msg->getName(),"positionUpdate") == 0) {
         handlePositionUpdate();
+    }
+    else if (strcmp(msg->getName(),"sendChunk") == 0) {
+        sendChunk(msg);
     }
 }
 
@@ -240,7 +246,7 @@ void VehOpDownApp::requestChunksFromServerNonCoop() {
     for (auto chk : chunksNeeded) {
         lastServerRequest = simTime();
         chunkRequestServerCount++;
-        ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chk);
+        ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chk,mobility->getCurrentPosition());
         HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
         msg->setWsmData(cm->toString().c_str());
         send(msg, toDecisionMaker);
@@ -268,7 +274,7 @@ void VehOpDownApp::requestChunksFromServerRand() {
     lastServerRequest = simTime();
     chunkRequestServerCount++;
     int chunkNum = chunksNeeded.at(0);
-    ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum);
+    ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum,mobility->getCurrentPosition());
 
     HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
     msg->setWsmData(cm->toString().c_str());
@@ -288,7 +294,7 @@ void VehOpDownApp::requestChunksFromCars(std::vector<int> peerChunks) {
         }
 
         chunkRequestCarCount++;
-        ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chk);
+        ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chk, mobility->getCurrentPosition());
 
         HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"-1",DSRC, chunkRequestLength);
         msg->setWsmData(cm->toString().c_str());
@@ -298,14 +304,16 @@ void VehOpDownApp::requestChunksFromCars(std::vector<int> peerChunks) {
 }
 
 void VehOpDownApp::chunkReceived(cMessage *msg) {
+    HeterogeneousMessage *hMsg = dynamic_cast<HeterogeneousMessage *>(msg);
+    ChunkMsgData *cm = new ChunkMsgData(hMsg->getWsmData());
+
+    // Check if waiting to send message
+    checkSendQueue(cm->getSeqno());
 
     // Nothing to do if all chunks received
     if (allChunksReceived) {
         return;
     }
-
-    HeterogeneousMessage *hMsg = dynamic_cast<HeterogeneousMessage *>(msg);
-    ChunkMsgData *cm = new ChunkMsgData(hMsg->getWsmData());
 
     if (!received1stChunk) {
         // First chunk of content received
@@ -345,6 +353,25 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
             << (double(chunksReceived.size())/totalFileChunks)*100 << "% chunks received");
 }
 
+void VehOpDownApp::checkSendQueue(int chunkNum) {
+    // Check queue for value
+    std::map<int,cMessage*>::iterator it;
+    it = chunksToSendQueue.find(chunkNum);
+
+    if (it == chunksToSendQueue.end()) {
+        // Chunk not present at node
+        return;
+    }
+
+    INFO_ID("Veh " << sumoId << " suppressed chunk: " << chunkNum);
+    // Cancel and delete scheduled message
+    cancelAndDelete(it->second);
+    // Remove from Map
+    chunksToSendQueue.erase(it);
+    chunksSuppressed++;
+
+}
+
 void VehOpDownApp::onChunkRequest(cMessage *msg) {
     chunkRequReceiveCount++;
     HeterogeneousMessage *hMsg = dynamic_cast<HeterogeneousMessage *>(msg);
@@ -359,16 +386,57 @@ void VehOpDownApp::onChunkRequest(cMessage *msg) {
         return;
     }
 
-    sendChunk(cm->getSeqno());
+    scheduleChunkSend(cm);
+
+    // sendChunk(cm->getSeqno());
 }
 
-void VehOpDownApp::sendChunk(int chunkId) {
-    //TODO: Send chunk based on distance to requester
+void VehOpDownApp::scheduleChunkSend(ChunkMsgData* chunkMsg) {
+    // Check queue for value
+    std::map<int,cMessage*>::iterator it;
+    it = chunksToSendQueue.find(chunkMsg->getSeqno());
+
+    if (it != chunksToSendQueue.end()) {
+        // Chunk scheduled for transmission
+        return;
+    }
+
+    double distance = sqrt(pow(mobility->getCurrentPosition().x - chunkMsg->getPosition().x, 2.0)
+            + pow(mobility->getCurrentPosition().y - chunkMsg->getPosition().y, 2.0));
+
+    double timeOffset = 1.0 / distance;
+
+    cMessage *msg = new cMessage("sendChunk");
+
+    INFO_ID("Veh " << sumoId << " scheduled chunk: " << chunkMsg->getSeqno() << " in " << timeOffset << "s");
+
+    chunksToSendQueue[chunkMsg->getSeqno()] = msg;
+    scheduleAt(simTime() + timeOffset, msg);
+}
+
+void VehOpDownApp::sendChunk(cMessage *msg) {
     chunkSentCount++;
-    ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_DATA,CMD_SENDERTYPE_CAR,chunkId);
-    HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_DATA,sumoId,"-1",DSRC, chunkRequestLength);
-    msg->setWsmData(cm->toString().c_str());
-    send(msg, toDecisionMaker);
+
+    int chunkId = -1;
+    std::map<int,cMessage*>::iterator it;
+    for (it = chunksToSendQueue.begin(); it != chunksToSendQueue.end(); ++it) {
+        if (msg == it->second) {
+            chunkId = it->first;
+            break;
+        }
+    }
+    assert(chunkId >= 0); // Make sure chunk was scheduled
+    // Delete and remove msg from map
+    delete(msg);
+    chunksToSendQueue.erase(it);
+
+    // Transmit data
+    ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_DATA,CMD_SENDERTYPE_CAR,chunkId, mobility->getCurrentPosition());
+    HeterogeneousMessage *hMsg = OpDownMsgUtil::prepareHM(CMD_NAME_DATA,sumoId,"-1",DSRC, chunkRequestLength);
+    hMsg->setWsmData(cm->toString().c_str());
+    send(hMsg, toDecisionMaker);
+
+    INFO_ID("Veh " << sumoId << " sending chunk " << chunkId);
 }
 
 void VehOpDownApp::computePeerStats() {
@@ -388,5 +456,6 @@ void VehOpDownApp::finish() {
     recordScalar("downloadTime",lastChunkTime.dbl() - firstChunkTime.dbl());
     recordScalar("firstChunkReceived",firstChunkTime);
     recordScalar("lastChunkReceived",lastChunkTime);
+    recordScalar("chunksSuppressed",chunksSuppressed);
 
 }

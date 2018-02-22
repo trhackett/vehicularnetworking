@@ -19,6 +19,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <Coord.h>
 #include <boost/algorithm/string.hpp>
 
 #define CMD_MSGTYPE_REQUEST     100
@@ -32,7 +33,7 @@
 
 class ChunkMsgData {
 public:
-    ChunkMsgData(int msgTypeIn, int senderTypeIn, int seqnoIn, std::string dataIn="");
+    ChunkMsgData(int msgTypeIn, int senderTypeIn, int seqnoIn, Coord positionIn, std::string dataIn="");
     ChunkMsgData(std::string msgString);
     virtual ~ChunkMsgData();
     std::string toString();
@@ -41,17 +42,20 @@ public:
     int getMsgType();
     int getSenderType();
     int getSeqno();
+    Coord getPosition();
     std::string getData();
 
     void setMsgType(int msgTypeIn);
     void setSenderType(int senderTypeIn);
     void setSeqno(int seqnoIn);
+    void setPosition(Coord positionIn);
     void setData(std::string dataIn);
 
 private:
     int msgType;
     int senderType;
     int seqno;
+    Coord position;
     std::string data;
 };
 

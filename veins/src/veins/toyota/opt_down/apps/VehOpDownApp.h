@@ -49,7 +49,7 @@ protected:
 
 protected:
     virtual void sendBeacon();
-    virtual void sendChunk(int chunkId);
+    virtual void sendChunk(cMessage* msg);
     virtual void onBeacon(cMessage *msg);
     virtual void onChunkRequest(cMessage *msg);
     virtual bool processNeighbors(HeterogeneousMessage *hMsg);
@@ -60,9 +60,22 @@ protected:
     virtual void requestChunksFromServerNonCoop();
     virtual void requestChunksFromCars(std::vector<int> peerChunks);
     virtual void initializeChunksNeeded();
+    /*
+     * When a vehicle receives a chunk from the server or other vehicles
+     */
     virtual void chunkReceived(cMessage *msg);
+    /*
+     * Called periodically to update the number of peer statistic
+     */
     virtual void computePeerStats();
 
+    /*
+     * Called when node receives chunk. Check if node has same chunk
+     * in it's send queue. If so node cancels the scheduled transmission
+     */
+    virtual void checkSendQueue(int chunkNum);
+
+    virtual void scheduleChunkSend(ChunkMsgData* chunkMsg);
 
 protected:
     //configuration
@@ -75,6 +88,7 @@ protected:
     cMessage *beaconTimer;
     cMessage *requestChunksFromServerMsg;
     cMessage *requestChunksFromCarsMsg;
+    std::map<int,cMessage*> chunksToSendQueue; // <chunkSeqNo,ScheduledMessage>
     simtime_t firstChunkTime;
     simtime_t lastChunkTime;
     simtime_t lastServerRequest;
@@ -109,6 +123,7 @@ protected:
     long chunkReceivedCarCount;
     long chunkSentCount;
     long chunkRequReceiveCount;
+    long chunksSuppressed;
 
     simsignal_t peerSignal;
 };

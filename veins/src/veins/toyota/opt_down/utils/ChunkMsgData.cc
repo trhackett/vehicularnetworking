@@ -19,10 +19,11 @@ ChunkMsgData::~ChunkMsgData() {
     // TODO Auto-generated destructor stub
 }
 
-ChunkMsgData::ChunkMsgData(int msgTypeIn, int senderTypeIn, int seqnoIn, std::string dataIn) :
+ChunkMsgData::ChunkMsgData(int msgTypeIn, int senderTypeIn, int seqnoIn, Coord positionIn, std::string dataIn) :
         msgType(msgTypeIn),
         senderType(senderTypeIn),
         seqno(seqnoIn),
+        position(positionIn),
         data(dataIn)
 {}
 
@@ -35,12 +36,15 @@ ChunkMsgData::ChunkMsgData(std::string msgString) {
     msgType = atoi((*iter++).c_str());
     senderType = atoi((*iter++).c_str());
     seqno = atoi((*iter++).c_str());
+    double posX = atof((*iter++).c_str());
+    double posY = atof((*iter++).c_str());
+    position = Coord(posX,posY);
     data = *iter;
 }
 
 std::string ChunkMsgData::toString() {
     std::stringstream sstream;
-    sstream << msgType << " " << senderType << " " << seqno << " " << data;
+    sstream << msgType << " " << senderType << " " << seqno << " " << position.x << " " << position.y << " " << data;
     return sstream.str();
 }
 
@@ -53,6 +57,9 @@ void ChunkMsgData::fromString(std::string msgString) {
     msgType = atoi((*iter++).c_str());
     senderType = atoi((*iter++).c_str());
     seqno = atoi((*iter++).c_str());
+    double posX = atof((*iter++).c_str());
+    double posY = atof((*iter++).c_str());
+    position = Coord(posX,posY);
     data = *iter;
 }
 
@@ -66,6 +73,10 @@ int ChunkMsgData::getSenderType() {
 
 int ChunkMsgData::getSeqno() {
     return seqno;
+}
+
+Coord ChunkMsgData::getPosition() {
+    return position;
 }
 
 std::string ChunkMsgData::getData() {
@@ -82,6 +93,10 @@ void ChunkMsgData::setSenderType(int senderTypeIn) {
 
 void ChunkMsgData::setSeqno(int seqnoIn) {
     seqno = seqnoIn;
+}
+
+void ChunkMsgData::setPosition(Coord positionIn) {
+    position = position;
 }
 
 void ChunkMsgData::setData(std::string dataIn) {
