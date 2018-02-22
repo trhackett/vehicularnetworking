@@ -68,7 +68,7 @@ void VehOpDownApp::initialize(int stage) {
         chunkRequestServerCount = chunkRequestCarCount = chunkRequReceiveCount = 0;
         chunkReceivedServerCount = chunkReceivedCarCount = chunkSentCount= 0;
         peerSignal = registerSignal("peerCounter");
-        lastChunkTime = firstChunkTime = -1;
+        lastChunkTime = firstChunkTime = lastServerRequest = -1;
 
         // references
         beaconTimer = new cMessage(SEND_BEACON);
@@ -85,18 +85,18 @@ void VehOpDownApp::handleMessage(cMessage *msg) {
     if (msg == beaconTimer) {
         if (cooperativeDownload) {
             sendBeacon();
-            computePeers(); // Since cars send beacons periodically this is called here
+            computePeerStats(); // Since cars send beacons periodically this is called here
         }
     }
     else if (msg == requestChunksFromServerMsg) {
         if (cooperativeDownload) {
             if (requestHashing) {
-                // Request random chunks from server
-                requestChunksFromServerRand();
-            }
-            else {
                 // Use consistent hashing to request chunks
                 requestChunksFromServerHash();
+            }
+            else {
+                // Request random chunks from server
+                requestChunksFromServerRand();
             }
         }
         else {
@@ -195,6 +195,7 @@ chunkVecType VehOpDownApp::getPeerChunkIds(std::string peer) {
 }
 
 void VehOpDownApp::handlePositionUpdate() {
+    // Handle the removal of peers w/ each position update
     for (peerMapType::iterator iter = localDynamicMap.begin();
             iter != localDynamicMap.end(); ) {
         double msgTime = iter->second.first;
@@ -206,6 +207,14 @@ void VehOpDownApp::handlePositionUpdate() {
         }
         else {
             iter++;
+        }
+    }
+
+    // Handle request from server
+    if (chunksNeeded.size() > 0 && lastServerRequest > 0) {
+        if (simTime() - lastServerRequest - 3 * beaconInterval >= 0.0) {
+            scheduleAt(simTime(),requestChunksFromServerMsg);
+            INFO_ID("Veh " << sumoId << " server request timeout! Peer count: " << localDynamicMap.size());
         }
     }
 }
@@ -229,6 +238,7 @@ void VehOpDownApp::requestChunksFromServerNonCoop() {
     std::string allChks = "";
 
     for (auto chk : chunksNeeded) {
+        lastServerRequest = simTime();
         chunkRequestServerCount++;
         ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chk);
         HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
@@ -241,6 +251,7 @@ void VehOpDownApp::requestChunksFromServerNonCoop() {
 
 void VehOpDownApp::requestChunksFromServerHash() {
     // TODO:
+    lastServerRequest = simTime();
 }
 
 void VehOpDownApp::requestChunksFromServerRand() {
@@ -254,6 +265,7 @@ void VehOpDownApp::requestChunksFromServerRand() {
     if(chunksNeeded.empty()) {
         return;
     }
+    lastServerRequest = simTime();
     chunkRequestServerCount++;
     int chunkNum = chunksNeeded.at(0);
     ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum);
@@ -263,6 +275,7 @@ void VehOpDownApp::requestChunksFromServerRand() {
     send(msg, toDecisionMaker);
     INFO_ID("Veh: " << sumoId << " Requesting from SERVER chunk " << chunkNum);
 }
+
 
 void VehOpDownApp::requestChunksFromCars(std::vector<int> peerChunks) {
     // For now request all chunks from peers
@@ -285,6 +298,12 @@ void VehOpDownApp::requestChunksFromCars(std::vector<int> peerChunks) {
 }
 
 void VehOpDownApp::chunkReceived(cMessage *msg) {
+
+    // Nothing to do if all chunks received
+    if (allChunksReceived) {
+        return;
+    }
+
     HeterogeneousMessage *hMsg = dynamic_cast<HeterogeneousMessage *>(msg);
     ChunkMsgData *cm = new ChunkMsgData(hMsg->getWsmData());
 
@@ -300,11 +319,6 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
     }
     else if (cm->getSenderType() == CMD_SENDERTYPE_CAR) {
         chunkReceivedCarCount++;
-    }
-
-    // Nothing to do if all chunks received
-    if (allChunksReceived) {
-        return;
     }
 
     // Check if chunk received is needed
@@ -357,7 +371,7 @@ void VehOpDownApp::sendChunk(int chunkId) {
     send(msg, toDecisionMaker);
 }
 
-void VehOpDownApp::computePeers() {
+void VehOpDownApp::computePeerStats() {
     int peerCount = localDynamicMap.size();
     emit(peerSignal,peerCount);
 }

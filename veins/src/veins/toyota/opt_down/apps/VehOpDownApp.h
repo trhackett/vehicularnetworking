@@ -61,7 +61,7 @@ protected:
     virtual void requestChunksFromCars(std::vector<int> peerChunks);
     virtual void initializeChunksNeeded();
     virtual void chunkReceived(cMessage *msg);
-    virtual void computePeers();
+    virtual void computePeerStats();
 
 
 protected:
@@ -77,6 +77,7 @@ protected:
     cMessage *requestChunksFromCarsMsg;
     simtime_t firstChunkTime;
     simtime_t lastChunkTime;
+    simtime_t lastServerRequest;
     int toDecisionMaker;
     int fromDecisionMaker;
     std::string sumoId;

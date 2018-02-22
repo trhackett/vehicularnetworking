@@ -36,6 +36,7 @@ module Car
             parameters:
                 @display("p=60,50");
         }
+        
 
         nic: <nicType> like org.car2x.veins.modules.nic.INic80211p {
             parameters:
