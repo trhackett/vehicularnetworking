@@ -113,6 +113,8 @@ protected:
     bool cooperativeDownload;
     bool received1stChunk;
     bool requestHashing;
+    int minNumPeers;
+    int currentNumPeers;
 
     // statistics
     long beaconSentCount;

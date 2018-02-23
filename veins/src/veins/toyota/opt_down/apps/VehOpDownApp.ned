@@ -32,6 +32,7 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        bool cooperativeDownload = default(true);
        bool requestHashing = default(true);
        int totalFileChunks;
+       int minNumPeers;
        
        // statistics
        @signal[peerCounter](type="long");

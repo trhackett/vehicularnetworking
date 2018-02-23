@@ -47,6 +47,8 @@ void VehOpDownApp::initialize(int stage) {
         firstServerRequestTime = par("firstServerRequestTime").doubleValue();
         totalFileChunks = par("totalFileChunks").longValue();
         cooperativeDownload = par("cooperativeDownload").boolValue();
+        minNumPeers = par("minNumPeers").longValue();
+        currentNumPeers = 0;
 
         received1stChunk = false;
         if (stopTime >= SIMTIME_ZERO && stopTime < startTime)
@@ -93,13 +95,20 @@ void VehOpDownApp::handleMessage(cMessage *msg) {
     }
     else if (msg == requestChunksFromServerMsg) {
         if (cooperativeDownload) {
-            if (requestHashing) {
-                // Use consistent hashing to request chunks
-                requestChunksFromServerHash();
+            // Only request from server after getting minNumPeers
+            if (currentNumPeers >= minNumPeers) {
+                if (requestHashing) {
+                    // Use consistent hashing to request chunks
+                    requestChunksFromServerHash();
+                }
+                else {
+                    // Request random chunks from server
+                    requestChunksFromServerRand();
+                }
             }
             else {
-                // Request random chunks from server
-                requestChunksFromServerRand();
+                // Set to current time so another request will be made later
+                lastServerRequest = simTime();
             }
         }
         else {
@@ -190,6 +199,8 @@ bool VehOpDownApp::processNeighbors(HeterogeneousMessage *hMsg) {
         // Add peer data to LDM
         peerDetailType pd = std::make_pair(simTime().dbl(),chIds);
         localDynamicMap[peerId] = pd;
+
+        currentNumPeers = localDynamicMap.size();
     }
     return true;
 }
@@ -216,11 +227,13 @@ void VehOpDownApp::handlePositionUpdate() {
         }
     }
 
+    currentNumPeers = localDynamicMap.size();
+
     // Handle request from server
     if (chunksNeeded.size() > 0 && lastServerRequest > 0) {
         if (simTime() - lastServerRequest - 3 * beaconInterval >= 0.0) {
             scheduleAt(simTime(),requestChunksFromServerMsg);
-            INFO_ID("Veh " << sumoId << " server request timeout! Peer count: " << localDynamicMap.size());
+            INFO_ID("Veh " << sumoId << " server request timeout! Peer count: " << currentNumPeers);
         }
     }
 }
@@ -440,7 +453,9 @@ void VehOpDownApp::sendChunk(cMessage *msg) {
 }
 
 void VehOpDownApp::computePeerStats() {
-    int peerCount = localDynamicMap.size();
+    int peerCount = currentNumPeers;
+    // If localDynamicMap and currentNumPeers not equal there is a problem
+    assert(int(localDynamicMap.size()) == currentNumPeers);
     emit(peerSignal,peerCount);
 }
 
