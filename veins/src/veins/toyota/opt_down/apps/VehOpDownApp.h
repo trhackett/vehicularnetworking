@@ -120,6 +120,7 @@ protected:
     int currentNumPeers;
     std::hash<std::string> hashFunc;
     double serverRequesetInterval;
+    double requestRatio;
 
     // statistics
     long beaconSentCount;

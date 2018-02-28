@@ -35,6 +35,7 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        bool noDownloading = default(false);
        int totalFileChunks;
        int minNumPeers;
+       double requestRatio;
        
        // statistics
        @signal[peerCounter](type="long");

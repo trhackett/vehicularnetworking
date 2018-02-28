@@ -50,6 +50,7 @@ void VehOpDownApp::initialize(int stage) {
         noDownloading = par("noDownloading").boolValue();
         requestHashing = par("requestHashing").boolValue();
         serverRequesetInterval = par("serverRequesetInterval").doubleValue();
+        requestRatio = par("requestRatio").doubleValue();
         currentNumPeers = 0;
 
         received1stChunk = false;
@@ -307,10 +308,13 @@ void VehOpDownApp::requestChunksFromServerHash() {
     }
 
     int numChkReq = ceil(chunksNeeded.size()/double(hashedNods.size()));
+    numChkReq = std::min(numChkReq,int(ceil(requestRatio * totalFileChunks)));
 
 
     int start = c * numChkReq;
     int end = start + numChkReq;
+
+    std::string allChks = "";
 
     for (int i=start; i < end && i < totalFileChunks; i++) {
         chunkRequestServerCount++;
@@ -321,9 +325,10 @@ void VehOpDownApp::requestChunksFromServerHash() {
         msg->setWsmData(cm->toString().c_str());
         lastServerRequest = simTime();
         send(msg, toDecisionMaker);
-        INFO_ID("Veh: " << sumoId << " HAHS requesting from SERVER chunk " << chunkNum);
+        allChks += std::to_string(chunkNum) + ", ";
         lastServerRequest = simTime();
     }
+    INFO_ID("Veh: " << sumoId << " HAHS requesting from SERVER chunk " << allChks);
 }
 
 void VehOpDownApp::requestChunksFromServerRand() {
@@ -336,7 +341,9 @@ void VehOpDownApp::requestChunksFromServerRand() {
     }
 
     int numChkReq = ceil(chunksNeeded.size()/double(localDynamicMap.size())) + 1;
+    numChkReq = std::min(numChkReq, int(ceil(requestRatio * totalFileChunks)));
 
+    std::string allChks = "";
     for (int i=0; i < numChkReq && i < totalFileChunks; i++)
     {
         chunkRequestServerCount++;
@@ -345,10 +352,11 @@ void VehOpDownApp::requestChunksFromServerRand() {
 
         HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
         msg->setWsmData(cm->toString().c_str());
-        lastServerRequest = simTime();
         send(msg, toDecisionMaker);
-        INFO_ID("Veh: " << sumoId << " RAND requesting from SERVER chunk " << chunkNum);
+        allChks += std::to_string(chunkNum) + ", ";
+        lastServerRequest = simTime();
     }
+    INFO_ID("Veh: " << sumoId << " RAND requesting from SERVER chunk " << allChks);
 }
 
 
