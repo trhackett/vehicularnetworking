@@ -119,6 +119,7 @@ protected:
     int minNumPeers;
     int currentNumPeers;
     std::hash<std::string> hashFunc;
+    double serverRequesetInterval;
 
     // statistics
     long beaconSentCount;

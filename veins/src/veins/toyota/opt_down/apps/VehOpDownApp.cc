@@ -49,6 +49,7 @@ void VehOpDownApp::initialize(int stage) {
         minNumPeers = par("minNumPeers").longValue();
         noDownloading = par("noDownloading").boolValue();
         requestHashing = par("requestHashing").boolValue();
+        serverRequesetInterval = par("serverRequesetInterval").doubleValue();
         currentNumPeers = 0;
 
         received1stChunk = false;
@@ -214,11 +215,12 @@ chunkVecType VehOpDownApp::getPeerChunkIds(std::string peer) {
 
 void VehOpDownApp::handlePositionUpdate() {
     // Handle the removal of peers w/ each position update
+    int numMissedBeacons = 6;
     for (peerMapType::iterator iter = localDynamicMap.begin();
             iter != localDynamicMap.end(); ) {
         double msgTime = iter->second.first;
         // Remove peer after three missed beacon intervals
-        if (simTime() - msgTime - 3 * beaconInterval >= 0.0) {
+        if (simTime() - msgTime - numMissedBeacons * beaconInterval >= 0.0) {
             peerMapType::iterator tmp = iter;
             iter++;
             localDynamicMap.erase(tmp);
@@ -232,7 +234,7 @@ void VehOpDownApp::handlePositionUpdate() {
 
     // Handle request from server
     if (!noDownloading && chunksNeeded.size() > 0 && lastServerRequest > 0) {
-        if (simTime() - lastServerRequest - 3 * beaconInterval >= 0.0) {
+        if (simTime() - lastServerRequest - serverRequesetInterval >= 0.0) {
             scheduleAt(simTime(),requestChunksFromServerMsg);
             INFO_ID("Veh " << sumoId << " server request timeout! Peer count: " << currentNumPeers);
         }
@@ -312,7 +314,7 @@ void VehOpDownApp::requestChunksFromServerHash() {
 
     for (int i=start; i < end && i < totalFileChunks; i++) {
         chunkRequestServerCount++;
-        int chunkNum = chunksNeeded.at(0);
+        int chunkNum = chunksNeeded.at(i);
         ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum,mobility->getCurrentPosition());
 
         HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
@@ -333,15 +335,20 @@ void VehOpDownApp::requestChunksFromServerRand() {
         return;
     }
 
-    chunkRequestServerCount++;
-    int chunkNum = chunksNeeded.at(0);
-    ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum,mobility->getCurrentPosition());
+    int numChkReq = ceil(chunksNeeded.size()/double(localDynamicMap.size())) + 1;
 
-    HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
-    msg->setWsmData(cm->toString().c_str());
-    lastServerRequest = simTime();
-    send(msg, toDecisionMaker);
-    INFO_ID("Veh: " << sumoId << " RAND requesting from SERVER chunk " << chunkNum);
+    for (int i=0; i < numChkReq && i < totalFileChunks; i++)
+    {
+        chunkRequestServerCount++;
+        int chunkNum = chunksNeeded.at(i);
+        ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum,mobility->getCurrentPosition());
+
+        HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
+        msg->setWsmData(cm->toString().c_str());
+        lastServerRequest = simTime();
+        send(msg, toDecisionMaker);
+        INFO_ID("Veh: " << sumoId << " RAND requesting from SERVER chunk " << chunkNum);
+    }
 }
 
 

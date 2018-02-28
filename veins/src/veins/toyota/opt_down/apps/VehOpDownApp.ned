@@ -22,6 +22,7 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        bool debug = default(false);
        bool infoLogging = default(true);
        volatile double beaconInterval @unit("s") = default(1s); // Time to wait between beacons
+       double serverRequesetInterval @unit("s") = default(3s);
        double beaconLength @unit("bit");
        double chunkRequestLength @unit("bit");
        double chunkDataLength @unit("bit");
