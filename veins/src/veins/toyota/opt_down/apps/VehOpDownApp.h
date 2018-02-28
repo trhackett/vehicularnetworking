@@ -113,6 +113,7 @@ protected:
     bool cooperativeDownload;
     bool received1stChunk;
     bool requestHashing;
+    bool noDownloading;
     int minNumPeers;
     int currentNumPeers;
 

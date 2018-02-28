@@ -1,4 +1,5 @@
 <additional>
-    <laneData id="0" file="lane.data.out"/>
+    <!-- <laneData id="0" file="lane.data.out"/> -->
+		<edgeData id="0" file="edge.data.out" begin="100"/>
 		<poi id="AP" x='1200' y='1200' type='eNodeB'/>
 </additional>	

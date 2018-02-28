@@ -31,6 +31,7 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        double firstServerRequestTime @unit("s");
        bool cooperativeDownload = default(true);
        bool requestHashing = default(true);
+       bool noDownloading = default(false);
        int totalFileChunks;
        int minNumPeers;
        

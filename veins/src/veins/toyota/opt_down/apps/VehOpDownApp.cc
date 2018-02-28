@@ -48,6 +48,7 @@ void VehOpDownApp::initialize(int stage) {
         totalFileChunks = par("totalFileChunks").longValue();
         cooperativeDownload = par("cooperativeDownload").boolValue();
         minNumPeers = par("minNumPeers").longValue();
+        noDownloading = par("noDownloading").boolValue();
         currentNumPeers = 0;
 
         received1stChunk = false;
@@ -230,7 +231,7 @@ void VehOpDownApp::handlePositionUpdate() {
     currentNumPeers = localDynamicMap.size();
 
     // Handle request from server
-    if (chunksNeeded.size() > 0 && lastServerRequest > 0) {
+    if (!noDownloading && chunksNeeded.size() > 0 && lastServerRequest > 0) {
         if (simTime() - lastServerRequest - 3 * beaconInterval >= 0.0) {
             scheduleAt(simTime(),requestChunksFromServerMsg);
             INFO_ID("Veh " << sumoId << " server request timeout! Peer count: " << currentNumPeers);
@@ -254,6 +255,11 @@ void VehOpDownApp::initializeChunksNeeded() {
 
 void VehOpDownApp::requestChunksFromServerNonCoop() {
     // Request all chunks from server
+
+    // Prevent downloading
+    if (noDownloading)
+        return;
+
     std::string allChks = "";
 
     for (auto chk : chunksNeeded) {
@@ -269,34 +275,41 @@ void VehOpDownApp::requestChunksFromServerNonCoop() {
 }
 
 void VehOpDownApp::requestChunksFromServerHash() {
+    // Prevent downloading
+    if (noDownloading)
+        return;
+
     // TODO:
     lastServerRequest = simTime();
 }
 
 void VehOpDownApp::requestChunksFromServerRand() {
-    //TODO: Vehicles Attempt to request unique chunks from server
-    //      All vehicles know the size of the contents use to request
-    //      chunks (vehicle's ID and modulous)
-    //      May try mor sophisticated technique
-    //FIXME: Temporary solution uses random selection of chunks
-    //      Change to use consitent hashing (CHORD)
+    // Prevent downloading
+    if (noDownloading)
+        return;
 
     if(chunksNeeded.empty()) {
         return;
     }
-    lastServerRequest = simTime();
+
     chunkRequestServerCount++;
     int chunkNum = chunksNeeded.at(0);
     ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum,mobility->getCurrentPosition());
 
     HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
     msg->setWsmData(cm->toString().c_str());
+    lastServerRequest = simTime();
     send(msg, toDecisionMaker);
     INFO_ID("Veh: " << sumoId << " Requesting from SERVER chunk " << chunkNum);
 }
 
 
 void VehOpDownApp::requestChunksFromCars(std::vector<int> peerChunks) {
+
+    // Prevent downloading
+    if (noDownloading)
+        return;
+
     // For now request all chunks from peers
     for (auto chk : peerChunks) {
 
