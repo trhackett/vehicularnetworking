@@ -28,6 +28,8 @@
 #include <map>
 #include <vector>
 #include <utility>
+#include <algorithm>
+#include <functional>
 
 using Veins::TraCIScenarioManager;
 using Veins::TraCIScenarioManagerAccess;
@@ -116,6 +118,7 @@ protected:
     bool noDownloading;
     int minNumPeers;
     int currentNumPeers;
+    std::hash<std::string> hashFunc;
 
     // statistics
     long beaconSentCount;

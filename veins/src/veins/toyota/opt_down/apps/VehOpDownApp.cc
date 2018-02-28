@@ -14,7 +14,6 @@
 // 
 
 #include "VehOpDownApp.h"
-#include <algorithm>
 #include <math.h>
 #include <cassert>
 
@@ -49,6 +48,7 @@ void VehOpDownApp::initialize(int stage) {
         cooperativeDownload = par("cooperativeDownload").boolValue();
         minNumPeers = par("minNumPeers").longValue();
         noDownloading = par("noDownloading").boolValue();
+        requestHashing = par("requestHashing").boolValue();
         currentNumPeers = 0;
 
         received1stChunk = false;
@@ -246,7 +246,10 @@ void VehOpDownApp::initializeChunksNeeded() {
     }
 
     // Randomly shuffle chunks using vehicle ID as seed
-    if (!requestHashing) {
+    if (requestHashing) {
+        // TODO
+    }
+    else {
         int seed = atoi(sumoId.c_str());
         std::srand(seed);
         std::random_shuffle(chunksNeeded.begin(),chunksNeeded.end());
@@ -271,7 +274,7 @@ void VehOpDownApp::requestChunksFromServerNonCoop() {
         send(msg, toDecisionMaker);
         allChks += std::to_string(chk) + ", ";
     }
-    INFO_ID("Veh: " << sumoId << " Requesting from SERVER chunk " << allChks);
+    INFO_ID("Veh: " << sumoId << " Non Coop requesting from SERVER chunk " << allChks);
 }
 
 void VehOpDownApp::requestChunksFromServerHash() {
@@ -279,8 +282,46 @@ void VehOpDownApp::requestChunksFromServerHash() {
     if (noDownloading)
         return;
 
-    // TODO:
-    lastServerRequest = simTime();
+    std::vector< std::pair <double,std::string> > hashedNods;
+
+    peerMapType::iterator pi;
+
+    // Hash peers
+    for (pi=localDynamicMap.begin(); pi != localDynamicMap.end();pi++) {
+        double hs = (hashFunc(pi->first) % 10000) / 10000.0;
+        hashedNods.push_back(std::make_pair(hs,pi->first));
+    }
+
+    // Hash self
+    double hs = (hashFunc(sumoId) % 10000) / 10000.0;
+    hashedNods.push_back(std::make_pair(hs,sumoId));
+
+    std::sort(hashedNods.begin(), hashedNods.end());
+
+    // Find position on ring
+    int c = 0;
+    while (sumoId.compare(hashedNods[c].second)) {
+        c++;
+    }
+
+    int numChkReq = ceil(chunksNeeded.size()/double(hashedNods.size()));
+
+
+    int start = c * numChkReq;
+    int end = start + numChkReq;
+
+    for (int i=start; i < end && i < totalFileChunks; i++) {
+        chunkRequestServerCount++;
+        int chunkNum = chunksNeeded.at(0);
+        ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum,mobility->getCurrentPosition());
+
+        HeterogeneousMessage *msg = OpDownMsgUtil::prepareHM(CMD_NAME_REQU,sumoId,"server",LTE, chunkRequestLength);
+        msg->setWsmData(cm->toString().c_str());
+        lastServerRequest = simTime();
+        send(msg, toDecisionMaker);
+        INFO_ID("Veh: " << sumoId << " HAHS requesting from SERVER chunk " << chunkNum);
+        lastServerRequest = simTime();
+    }
 }
 
 void VehOpDownApp::requestChunksFromServerRand() {
@@ -300,7 +341,7 @@ void VehOpDownApp::requestChunksFromServerRand() {
     msg->setWsmData(cm->toString().c_str());
     lastServerRequest = simTime();
     send(msg, toDecisionMaker);
-    INFO_ID("Veh: " << sumoId << " Requesting from SERVER chunk " << chunkNum);
+    INFO_ID("Veh: " << sumoId << " RAND requesting from SERVER chunk " << chunkNum);
 }
 
 
@@ -341,6 +382,13 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
         return;
     }
 
+    // Check if chunk received is needed
+    std::vector<int>::iterator it = std::find(chunksNeeded.begin(),chunksNeeded.end(), cm->getSeqno());
+    if (it == chunksNeeded.end()) {
+        // Chunk not needed must already have chunk
+        return;
+    }
+
     if (!received1stChunk) {
         // First chunk of content received
         received1stChunk = true;
@@ -353,13 +401,6 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
     }
     else if (cm->getSenderType() == CMD_SENDERTYPE_CAR) {
         chunkReceivedCarCount++;
-    }
-
-    // Check if chunk received is needed
-    std::vector<int>::iterator it = std::find(chunksNeeded.begin(),chunksNeeded.end(), cm->getSeqno());
-    if (it == chunksNeeded.end()) {
-        // Chunk not needed must already have chunk
-        return;
     }
 
     chunksNeeded.erase(it);
