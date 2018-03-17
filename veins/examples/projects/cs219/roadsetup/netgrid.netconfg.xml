@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netconfig>
+	<grid value='true' />
+	<grid.x-number value='4'/>
+	<grid.y-number value='4'/>
+	<grid.x-length value='800' />
+	<grid.y-length value='800' />
+	<no-turnarounds value='true'/>
+	<default.speed value='12'/>
+	<!-- Traffic lights --> 
+	<default.lanenumber value='2'/>
+	<tls.set value='1/1,1/2,2/1,2/2'/>
+</netconfig>

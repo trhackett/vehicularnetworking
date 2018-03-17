@@ -316,7 +316,7 @@ void VehOpDownApp::requestChunksFromServerHash() {
 
     std::string allChks = "";
 
-    for (int i=start; i < end && i < chunksNeeded.size(); i++) {
+    for (int i=start; i < end && i < int(chunksNeeded.size()); i++) {
         chunkRequestServerCount++;
         int chunkNum = chunksNeeded.at(i);
         ChunkMsgData *cm = new ChunkMsgData(CMD_MSGTYPE_REQUEST,CMD_SENDERTYPE_CAR,chunkNum,mobility->getCurrentPosition());
@@ -344,7 +344,7 @@ void VehOpDownApp::requestChunksFromServerRand() {
     numChkReq = std::min(numChkReq, int(ceil(requestRatio * totalFileChunks)));
 
     std::string allChks = "";
-    for (int i=0; i < numChkReq && i < chunksNeeded.size(); i++)
+    for (int i=0; i < numChkReq && i < int(chunksNeeded.size()); i++)
     {
         chunkRequestServerCount++;
         int chunkNum = chunksNeeded.at(i);

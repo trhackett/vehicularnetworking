@@ -28,8 +28,8 @@
 #define CMD_SENDERTYPE_SERVER   200
 #define CMD_SENDERTYPE_CAR      201
 
-#define CMD_NAME_DATA "Chunk Data"
-#define CMD_NAME_REQU "Chunk Request"
+#define CMD_NAME_DATA "ChunkData"
+#define CMD_NAME_REQU "ChunkRequest"
 
 class ChunkMsgData {
 public:
