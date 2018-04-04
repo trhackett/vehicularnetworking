@@ -76,7 +76,7 @@ void ServerOpDownApp::handleNodeCrash(){}
 
 void ServerOpDownApp::sendChunk(std::string destAddress, int seqnoRequest) {
     sentMessages++;
-    HeterogeneousMessage *reply = new HeterogeneousMessage("Chunk Data");
+    HeterogeneousMessage *reply = new HeterogeneousMessage(CMD_NAME_DATA);
     IPv4Address address = manager->getIPAddressForID(destAddress);
     reply->setSourceAddress("server");
 

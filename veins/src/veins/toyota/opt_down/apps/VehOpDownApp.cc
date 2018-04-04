@@ -33,12 +33,16 @@ VehOpDownApp::~VehOpDownApp() {
 void VehOpDownApp::initialize(int stage) {
     if (stage == 0) {
         // Read params
+            // Information logging
         debug = par("debug").boolValue();
         infoLogging = par("infoLogging");
+            // Gates
         toDecisionMaker = findGate("toDecisionMaker");
         fromDecisionMaker = findGate("fromDecisionMaker");
+            // Application control
         startTime = par("startTime");
         stopTime = par("stopTime");
+            // Application data variables
         beaconInterval = par("beaconInterval").doubleValue();
         beaconLength = par("beaconLength").doubleValue();
         chunkRequestLength = par("chunkRequestLength").doubleValue();
@@ -51,6 +55,7 @@ void VehOpDownApp::initialize(int stage) {
         requestHashing = par("requestHashing").boolValue();
         serverRequesetInterval = par("serverRequesetInterval").doubleValue();
         requestRatio = par("requestRatio").doubleValue();
+        clusterRequired = par("clusterRequired").boolValue();
         currentNumPeers = 0;
 
         received1stChunk = false;
@@ -68,27 +73,35 @@ void VehOpDownApp::initialize(int stage) {
         allChunksReceived = false;
         contentInterest = uniform(0,1) < interestRate; // May need to move
 
-        initializeChunksNeeded();
+
 
         // Statistics
         beaconSentCount = beaconReceivedCount = 0;
         chunkRequestServerCount = chunkRequestCarCount = chunkRequReceiveCount = 0;
         chunkReceivedServerCount = chunkReceivedCarCount = chunkSentCount= 0;
         peerSignal = registerSignal("peerCounter");
-        lastChunkTime = firstChunkTime = lastServerRequest = -1;
+        lastServerRequest = -1;
+        firstChunkTime = 0;
+        lastChunkTime = -1;
         chunksSuppressed = 0;
 
         // references
-        beaconTimer = new cMessage(SEND_BEACON);
-        requestChunksFromServerMsg = new cMessage(REQUEST_SERVER_CHUNKS);
-
-        scheduleAt(simTime() + startTime + uniform(0,1), beaconTimer);
-        scheduleAt(simTime() + firstServerRequestTime + uniform(0,2), requestChunksFromServerMsg);
+        if (contentInterest) {
+        initializeChunksNeeded();
+            beaconTimer = new cMessage(SEND_BEACON);
+            requestChunksFromServerMsg = new cMessage(REQUEST_SERVER_CHUNKS);
+            scheduleAt(simTime() + startTime + uniform(0,1), beaconTimer);
+            scheduleAt(simTime() + firstServerRequestTime + uniform(0,2), requestChunksFromServerMsg);
+        }
     }
 }
 
 
 void VehOpDownApp::handleMessage(cMessage *msg) {
+
+    if (!contentInterest) {
+        return;
+    }
 
     if (msg == beaconTimer) {
         if (cooperativeDownload) {
@@ -138,6 +151,7 @@ void VehOpDownApp::handleMessage(cMessage *msg) {
     }
     else if (strcmp(msg->getName(),"sendChunk") == 0) {
         sendChunk(msg);
+        delete(msg);
     }
 }
 
@@ -189,6 +203,10 @@ bool VehOpDownApp::processNeighbors(HeterogeneousMessage *hMsg) {
     if (!((fabs(vehAngle - peerData.getAngle()) < 0.01) &&
             (vehRoad.compare(peerData.getCurrentRoad()) == 0))) {
        // Vehicles are not neighbors
+        return false;
+    }
+    else if (int(localDynamicMap.size()) >= minNumPeers && clusterRequired) {
+        // Force the size of the cluster to be a fixed size
         return false;
     }
     else {
@@ -372,7 +390,7 @@ void VehOpDownApp::requestChunksFromCars(std::vector<int> peerChunks) {
         std::vector<int>::iterator it = std::find(chunksReceived.begin(),chunksReceived.end(),chk);
         if (it != chunksReceived.end()) {
             // Chunk not needed
-            return;
+            continue;
         }
 
         chunkRequestCarCount++;
@@ -395,6 +413,15 @@ void VehOpDownApp::chunkReceived(cMessage *msg) {
     // Nothing to do if all chunks received
     if (allChunksReceived) {
         return;
+    }
+
+    if (clusterRequired) {
+        std::string sender = hMsg->getSourceAddress();
+        if (sender.compare("server") != 0 &&
+                localDynamicMap.find(sender) == localDynamicMap.end()){
+            // Sender isn't a member of cluster
+            return;
+        }
     }
 
     // Check if chunk received is needed
@@ -497,7 +524,6 @@ void VehOpDownApp::scheduleChunkSend(ChunkMsgData* chunkMsg) {
 }
 
 void VehOpDownApp::sendChunk(cMessage *msg) {
-    chunkSentCount++;
 
     int chunkId = -1;
     std::map<int,cMessage*>::iterator it;
@@ -508,8 +534,7 @@ void VehOpDownApp::sendChunk(cMessage *msg) {
         }
     }
     assert(chunkId >= 0); // Make sure chunk was scheduled
-    // Delete and remove msg from map
-    delete(msg);
+    // Delete and remove data chunk to send from map
     chunksToSendQueue.erase(it);
 
     // Transmit data
@@ -517,7 +542,7 @@ void VehOpDownApp::sendChunk(cMessage *msg) {
     HeterogeneousMessage *hMsg = OpDownMsgUtil::prepareHM(CMD_NAME_DATA,sumoId,"-1",DSRC, chunkRequestLength);
     hMsg->setWsmData(cm->toString().c_str());
     send(hMsg, toDecisionMaker);
-
+    chunkSentCount++;
     INFO_ID("Veh " << sumoId << " sending chunk " << chunkId);
 }
 

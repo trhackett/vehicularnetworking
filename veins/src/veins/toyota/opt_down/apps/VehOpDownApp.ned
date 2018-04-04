@@ -33,6 +33,7 @@ simple VehOpDownApp like IBaseHeteroApplLayer {
        bool cooperativeDownload = default(true);
        bool requestHashing = default(true);
        bool noDownloading = default(false);
+       bool clusterRequired = default(true); // Only receive data from cluster members
        int totalFileChunks;
        int minNumPeers;
        double requestRatio;
