@@ -205,10 +205,12 @@ bool VehOpDownApp::processNeighbors(HeterogeneousMessage *hMsg) {
        // Vehicles are not neighbors
         return false;
     }
-    else if (int(localDynamicMap.size()) >= minNumPeers && clusterRequired) {
+    /*
+     * else if (int(localDynamicMap.size()) >= minNumPeers && clusterRequired) {
         // Force the size of the cluster to be a fixed size
         return false;
     }
+    */
     else {
         std::string peerId = peerData.getVehicleId();
         chunkVecType chIds;
